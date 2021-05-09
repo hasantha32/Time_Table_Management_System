@@ -58,7 +58,6 @@ import javax.swing.JMenuBar;
 import java.awt.SystemColor;
 
 public class Add_Subjects {
-
 	
 	private JFrame frame;
 	private JTextField textField;
