@@ -87,7 +87,6 @@ public class Add_Session {
 	}
 	
 	
-
 	/**
 	 * Create the application.
 	 */
