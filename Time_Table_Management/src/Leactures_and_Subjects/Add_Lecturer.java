@@ -1316,10 +1316,7 @@ public class Add_Lecturer {
 						  
 						  pstd.close();
                           rs.close();
-								
-			
-						
-						
+	
 					}
 				}
 				catch(Exception w) {
