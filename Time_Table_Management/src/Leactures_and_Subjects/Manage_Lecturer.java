@@ -569,9 +569,6 @@ public class Manage_Lecturer {
 		
 		mnNewMenu_7.add(mntmNewMenuItem_22);
 		
-		
-		
-		///////////////////////
 		////
 		
 		

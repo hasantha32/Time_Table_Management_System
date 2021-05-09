@@ -244,8 +244,7 @@ public class Manage_Subjects {
                  	spinner_3.setValue((Integer)table.getValueAt(selectedRow, 7));
                 //comboBoxFacultyName.setSelectedItem(table_1.getValueAt(selectedRow, 2).toString());
 				
-			
-				
+					
 			}
 		});
 		scrollPane.setViewportView(table);
@@ -964,19 +963,7 @@ public class Manage_Subjects {
 		
 		mnNewMenu_5.add(mntmNewMenuItem_34);
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		////////////////////////////////////////////////////////////
-		
-		
 		
 		
 		
