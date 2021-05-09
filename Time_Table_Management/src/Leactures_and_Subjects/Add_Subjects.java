@@ -276,9 +276,7 @@ public class Add_Subjects {
 		             //System.out.println(value);
 						
 						
-		                
-		                
-
+		          
 	                	Connection con = DBConnection.connect();
 
 	                    String query = "INSERT INTO SUbjects values('" + subjectcode + "','" + subjectname + "','" + offeredyear + "','" +
