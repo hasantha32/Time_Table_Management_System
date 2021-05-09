@@ -65,6 +65,8 @@ public class Manage_Sessions {
 	private JTable table;
 	private JSpinner spinner_1,spinner_1_1;
 
+	
+	
 	/**
 	 * Launch the application.
 	 */
@@ -115,9 +117,7 @@ public class Manage_Sessions {
 		}
 	}
 	
-	
-	
-	
+
 	
 	public void fillcombobox() {
 		Connection conn = DBConnection.connect();
