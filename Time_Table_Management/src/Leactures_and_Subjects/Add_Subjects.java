@@ -59,6 +59,7 @@ import java.awt.SystemColor;
 
 public class Add_Subjects {
 
+	
 	private JFrame frame;
 	private JTextField textField;
 	private JTextField textField_1;
