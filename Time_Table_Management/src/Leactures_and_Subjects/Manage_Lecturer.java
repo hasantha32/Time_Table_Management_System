@@ -87,7 +87,7 @@ public class Manage_Lecturer {
 	PreparedStatement pst = null;
 	Connection conn = null;
 	ResultSet rs = null;
-
+//////
 	/**
 	 * Launch the application.
 	 */
