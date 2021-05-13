@@ -70,6 +70,7 @@ public class Dashboard {
 	private JButton btnUpdateSession;
 	private JButton btnManageLsession;
 
+	
 	/**
 	 * Launch the application.
 	 */
