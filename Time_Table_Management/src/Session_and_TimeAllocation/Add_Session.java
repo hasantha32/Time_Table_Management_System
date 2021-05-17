@@ -523,6 +523,8 @@ public class Add_Session {
 							String numberofstudents=spinner_2.getValue().toString();
 							String duration=spinner.getValue().toString();
 						
+							String starttime=comboBox_1_1.getSelectedItem().toString();
+							String endtime=comboBox_1_1_2.getSelectedItem().toString();
 							String day=comboBox_1_1_1_1.getSelectedItem().toString();
 							
 				               //String spinner=spinner;
@@ -538,7 +540,7 @@ public class Add_Session {
 		                	Connection con = DBConnection.connect();
 
 		                    String query = "INSERT INTO Sessions values(null,'" + Lecturer1 + "','" + Lecturer2 + "','" + Tag + "','" +
-		                    		Group + "','" + numberofstudents + "','"+ day +"','"+ duration +"','"+ subjectname +"','"+ duration +"')";
+		                    		Group + "','" + numberofstudents + "','"+ day +"','"+ duration +"','"+ starttime +"','"+ endtime +"',,'"+ subjectname +"','"+ duration +"')";
 
 		                    java.sql.Statement sta = con.createStatement();
 		                    int xx = sta.executeUpdate(query);
