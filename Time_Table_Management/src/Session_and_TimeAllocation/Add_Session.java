@@ -68,7 +68,7 @@ public class Add_Session {
 	 */
 	PreparedStatement pst=null;
 	ResultSet rs = null;
-	JSpinner spinner,spinner_1,spinner_1_1,spinner_2;
+	JSpinner spinner,spinner_1_1,spinner_2;
 	JComboBox comboBox_1_1_1;
 	private JTextField txtAddSession;
 	private JTextField txtTimeTableManagement;
@@ -273,12 +273,6 @@ public class Add_Session {
 		spinner.setBounds(554, 248, 202, 29);
 		panel_3.add(spinner);
 		
-		 spinner_1 = new JSpinner();
-		spinner_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		spinner_1.setModel(new SpinnerDateModel(new Date(1615141800000L), new Date(1615141800000L), null, Calendar.HOUR));
-		spinner_1.setBounds(171, 334, 232, 29);
-		panel_3.add(spinner_1);
-		
 		 spinner_1_1 = new JSpinner();
 		spinner_1_1.setModel(new SpinnerDateModel(new Date(1615141800000L), null, null, Calendar.HOUR));
 		spinner_1_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
@@ -298,6 +292,12 @@ public class Add_Session {
 		comboBox_1_1_1.setBackground(Color.WHITE);
 		comboBox_1_1_1.setBounds(554, 300, 202, 29);
 		panel_3.add(comboBox_1_1_1);
+		
+		JComboBox comboBox_1_1 = new JComboBox();
+		comboBox_1_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		comboBox_1_1.setBackground(Color.WHITE);
+		comboBox_1_1.setBounds(171, 338, 232, 29);
+		panel_3.add(comboBox_1_1);
 		
 		txtTimeTableManagement = new JTextField();
 		txtTimeTableManagement.setBounds(0, 0, 956, 87);
@@ -465,7 +465,7 @@ public class Add_Session {
 				try {
 					
 					
-					if(comboBoxLec1.getSelectedItem().equals("")||comboBox_1.getSelectedItem().equals("") ||comboBox_2.getSelectedItem().equals("")||comboBox_3.getSelectedItem().equals("")||comboBox_1_1_1.getSelectedItem().equals("")||spinner_1.getValue().equals("")||spinner_2.getValue().equals("")||spinner.getValue().equals("")||spinner_1_1.getValue().equals("")) {
+					if(comboBoxLec1.getSelectedItem().equals("")||comboBox_1.getSelectedItem().equals("") ||comboBox_2.getSelectedItem().equals("")||comboBox_3.getSelectedItem().equals("")||comboBox_1_1_1.getSelectedItem().equals("")||spinner_2.getValue().equals("")||spinner.getValue().equals("")||spinner_1_1.getValue().equals("")) {
 						JOptionPane.showMessageDialog(null, "Please fill the form");
 						
 						 
@@ -505,7 +505,7 @@ public class Add_Session {
 							String subjectname=comboBox_1_1_1.getSelectedItem().toString();
 							String numberofstudents=spinner_2.getValue().toString();
 							String duration=spinner.getValue().toString();
-							String starttime=spinner_1.getValue().toString();
+						
 							String endtime=spinner_1_1.getValue().toString();
 							
 				               //String spinner=spinner;
@@ -521,7 +521,7 @@ public class Add_Session {
 		                	Connection con = DBConnection.connect();
 
 		                    String query = "INSERT INTO Sessions values(null,'" + Lecturer1 + "','" + Lecturer2 + "','" + Tag + "','" +
-		                    		Group + "','" + numberofstudents + "','" + starttime + "','"+ endtime +"','"+ duration +"','"+ subjectname +"')";
+		                    		Group + "','" + numberofstudents + "','"+ endtime +"','"+ duration +"','"+ subjectname +"')";
 
 		                    java.sql.Statement sta = con.createStatement();
 		                    int xx = sta.executeUpdate(query);
