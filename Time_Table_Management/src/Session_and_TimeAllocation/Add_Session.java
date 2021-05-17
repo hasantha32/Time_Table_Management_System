@@ -290,12 +290,14 @@ public class Add_Session {
 		
 		
 		comboBox_1_1 = new JComboBox();
+		comboBox_1_1.setModel(new DefaultComboBoxModel(new String[] {"8","9","10","11", "12","13","14", "15","16"}));
 		comboBox_1_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBox_1_1.setBackground(Color.WHITE);
 		comboBox_1_1.setBounds(171, 338, 232, 29);
 		panel_3.add(comboBox_1_1);
 		
 		 comboBox_1_1_2 = new JComboBox();
+		 comboBox_1_1_2.setModel(new DefaultComboBoxModel(new String[] {"9","10","11","12","13","14","15","16","17"}));
 		comboBox_1_1_2.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBox_1_1_2.setBackground(Color.WHITE);
 		comboBox_1_1_2.setBounds(171, 389, 232, 29);
