@@ -540,7 +540,7 @@ public class Add_Session {
 		                	Connection con = DBConnection.connect();
 
 		                    String query = "INSERT INTO Sessions values(null,'" + Lecturer1 + "','" + Lecturer2 + "','" + Tag + "','" +
-		                    		Group + "','" + numberofstudents + "','"+ day +"','"+ duration +"','"+ starttime +"','"+ endtime +"',,'"+ subjectname +"','"+ duration +"')";
+		                    		Group + "','" + numberofstudents + "','"+ day +"','"+ duration +"','"+ starttime +"','"+ endtime +"',,'"+ subjectname +"')";
 
 		                    java.sql.Statement sta = con.createStatement();
 		                    int xx = sta.executeUpdate(query);
@@ -576,7 +576,9 @@ public class Add_Session {
 		                    
 		                   
 		                
-							
+		    				comboBox_1_1.setSelectedItem(null);
+		    				comboBox_1_1_2.setSelectedItem(null);
+		    				comboBox_1_1_1_1.setSelectedItem(null);
 							
 							
 							
@@ -624,6 +626,9 @@ public class Add_Session {
 				//comboBox_1_1.setSelectedItem(null);
 				comboBox_1_1_1.setSelectedItem(null);
 				//textField.setText(null);comboBox_2
+				comboBox_1_1.setSelectedItem(null);
+				comboBox_1_1_2.setSelectedItem(null);
+				comboBox_1_1_1_1.setSelectedItem(null);
 			
 			}
 		});
