@@ -365,9 +365,24 @@ public class Manage_Sessions {
                 
                  	
                  	//spinner_1.setValue(table.getValueAt(selectedRow, 6).toString());
-                 	spinner.setValue((Double)table.getValueAt(selectedRow, 8));	
-                 	spinner_1.setValue((Double)table.getValueAt(selectedRow, 6));
-                 	spinner_1_1.setValue((String)table.getValueAt(selectedRow, 7).toString());
+                 	spinner.setValue((Double)table.getValueAt(selectedRow, 8));
+                 	
+                 	 String starttime=table.getValueAt(selectedRow, 6).toString();
+                  	String getstarttime=(String)comboBox_3_1.getSelectedItem();
+                  	comboBox_3_1.setSelectedItem(starttime);
+                  	
+                  	 String endtime=table.getValueAt(selectedRow, 7).toString();
+                   	String getendtime=(String)comboBoxLec1_3_1.getSelectedItem();
+                   	comboBoxLec1_3_1.setSelectedItem(endtime);
+                   	
+                  	
+               	 String day=table.getValueAt(selectedRow, 10).toString();
+                	String getday=(String)comboBoxLec1_3_1_1.getSelectedItem();
+                	comboBoxLec1_3_1_1.setSelectedItem(day);
+                	
+                	
+                 	//spinner_1.setValue((Double)table.getValueAt(selectedRow, 6));
+                 	//spinner_1_1.setValue((String)table.getValueAt(selectedRow, 7).toString());
                  	//spinner_3.setValue((Integer)table.getValueAt(selectedRow, 8));
                 //comboBoxFacultyName.setSelectedItem(table_1.getValueAt(selectedRow, 2).toString());
 				
@@ -569,7 +584,7 @@ public class Manage_Sessions {
 				
 
 				try {
-					if(comboBoxLec1.getSelectedItem().equals("")||comboBox_1.getSelectedItem().equals("") ||comboBox_2.getSelectedItem().equals("")||comboBox_3.getSelectedItem().equals("")||textField_1.getText().equals("")||spinner.getValue().equals("")||spinner_1.getValue().equals("")||spinner_1_1.getValue().equals("")||comboBoxLec1_3.getSelectedItem().equals("")) {
+					if(comboBoxLec1.getSelectedItem().equals("")||comboBox_1.getSelectedItem().equals("") ||comboBox_2.getSelectedItem().equals("")||comboBox_3.getSelectedItem().equals("")||textField_1.getText().equals("")||spinner.getValue().equals("")||comboBox_3_1.getSelectedItem().equals("")||comboBoxLec1_3_1.getSelectedItem().equals("")||comboBoxLec1_3.getSelectedItem().equals("")||comboBoxLec1_3_1_1.getSelectedItem().equals("")) {
 						
 						JOptionPane.showMessageDialog(null, "Please fill the form");
 						
@@ -579,7 +594,7 @@ public class Manage_Sessions {
 					}else {
 					Connection con = DBConnection.connect();
 					
-					String query="Update Sessions set Lecturer1='"+comboBoxLec1.getSelectedItem()+"',Lecturer2='"+comboBox_1.getSelectedItem()+"',Tag='"+comboBox_2.getSelectedItem()+"',StudentGroup='"+comboBox_3.getSelectedItem()+"',NumberOfStudents='"+textField_1.getText()+"',Duration='"+spinner.getValue()+"',StartTime='"+spinner_1.getValue()+"' ,EndTime='"+spinner_1_1.getValue()+"' ,SubjectName='"+comboBoxLec1_3.getSelectedItem()+"'where SessionID='"+textField.getText()+"' ";//spinner_1
+					String query="Update Sessions set Lecturer1='"+comboBoxLec1.getSelectedItem()+"',Lecturer2='"+comboBox_1.getSelectedItem()+"',Tag='"+comboBox_2.getSelectedItem()+"',StudentGroup='"+comboBox_3.getSelectedItem()+"',NumberOfStudents='"+textField_1.getText()+"',Duration='"+spinner.getValue()+"',StartTime='"+comboBox_3_1.getSelectedItem()+"',EndTime='"+comboBoxLec1_3_1.getSelectedItem()+"' ,SubjectName='"+comboBoxLec1_3.getSelectedItem()+"',day='"+comboBoxLec1_3_1_1.getSelectedItem()+"'where SessionID='"+textField.getText()+"' ";//spinner_1
 					PreparedStatement pst=con.prepareStatement(query);
 					pst.executeUpdate();
 					JOptionPane.showMessageDialog(null, "Data Updated");
