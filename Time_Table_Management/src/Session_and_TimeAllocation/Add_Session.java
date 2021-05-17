@@ -61,7 +61,7 @@ import javax.swing.JMenuItem;
 public class Add_Session {
 
 	private JFrame frame;
-	private JComboBox comboBoxLec1,comboBox_1,comboBox_2,comboBox_3,comboBox_1_1,comboBox_1_1_2;
+	private JComboBox comboBoxLec1,comboBox_1,comboBox_2,comboBox_3,comboBox_1_1,comboBox_1_1_2,comboBox_1_1_1_1;
 
 	/**
 	 * Launch the application.
@@ -262,7 +262,7 @@ public class Add_Session {
 		JLabel lblNewLabel_11 = new JLabel("Subject Name");
 		lblNewLabel_11.setForeground(Color.WHITE);
 		lblNewLabel_11.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_11.setBounds(437, 300, 142, 29);
+		lblNewLabel_11.setBounds(437, 300, 107, 29);
 		panel_3.add(lblNewLabel_11);
 		
 	    spinner = new JSpinner();
@@ -302,6 +302,19 @@ public class Add_Session {
 		comboBox_1_1_2.setBackground(Color.WHITE);
 		comboBox_1_1_2.setBounds(171, 389, 232, 29);
 		panel_3.add(comboBox_1_1_2);
+		
+		JLabel lblNewLabel_11_1 = new JLabel("Day");
+		lblNewLabel_11_1.setForeground(Color.WHITE);
+		lblNewLabel_11_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		lblNewLabel_11_1.setBounds(437, 354, 107, 29);
+		panel_3.add(lblNewLabel_11_1);
+		
+		comboBox_1_1_1_1 = new JComboBox();
+		comboBox_1_1_1_1.setModel(new DefaultComboBoxModel(new String[] {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"}));
+		comboBox_1_1_1_1.setFont(new Font("Times New Roman", Font.BOLD, 17));
+		comboBox_1_1_1_1.setBackground(Color.WHITE);
+		comboBox_1_1_1_1.setBounds(554, 354, 202, 29);
+		panel_3.add(comboBox_1_1_1_1);
 		
 		txtTimeTableManagement = new JTextField();
 		txtTimeTableManagement.setBounds(0, 0, 956, 87);
@@ -469,7 +482,7 @@ public class Add_Session {
 				try {
 					
 					
-					if(comboBoxLec1.getSelectedItem().equals("")||comboBox_1.getSelectedItem().equals("") ||comboBox_2.getSelectedItem().equals("")||comboBox_3.getSelectedItem().equals("")||comboBox_1_1_1.getSelectedItem().equals("")||spinner_2.getValue().equals("")||spinner.getValue().equals("")||spinner_1_1.getValue().equals("")) {
+					if(comboBoxLec1.getSelectedItem().equals("")||comboBox_1.getSelectedItem().equals("") ||comboBox_2.getSelectedItem().equals("")||comboBox_3.getSelectedItem().equals("")||comboBox_1_1_1.getSelectedItem().equals("")||spinner_2.getValue().equals("")||spinner.getValue().equals("")||comboBox_1_1.getSelectedItem().equals("")||comboBox_1_1_2.getSelectedItem().equals("")||comboBox_1_1_1_1.getSelectedItem().equals("")) {
 						JOptionPane.showMessageDialog(null, "Please fill the form");
 						
 						 
@@ -510,7 +523,7 @@ public class Add_Session {
 							String numberofstudents=spinner_2.getValue().toString();
 							String duration=spinner.getValue().toString();
 						
-							String endtime=spinner_1_1.getValue().toString();
+							String day=comboBox_1_1_1_1.getSelectedItem().toString();
 							
 				               //String spinner=spinner;
 				               //String value =spinner.getValue().toString();
@@ -525,7 +538,7 @@ public class Add_Session {
 		                	Connection con = DBConnection.connect();
 
 		                    String query = "INSERT INTO Sessions values(null,'" + Lecturer1 + "','" + Lecturer2 + "','" + Tag + "','" +
-		                    		Group + "','" + numberofstudents + "','"+ endtime +"','"+ duration +"','"+ subjectname +"')";
+		                    		Group + "','" + numberofstudents + "','"+ day +"','"+ duration +"','"+ subjectname +"','"+ duration +"')";
 
 		                    java.sql.Statement sta = con.createStatement();
 		                    int xx = sta.executeUpdate(query);
