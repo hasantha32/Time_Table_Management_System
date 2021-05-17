@@ -61,14 +61,14 @@ import javax.swing.JMenuItem;
 public class Add_Session {
 
 	private JFrame frame;
-	private JComboBox comboBoxLec1,comboBox_1,comboBox_2,comboBox_3;
+	private JComboBox comboBoxLec1,comboBox_1,comboBox_2,comboBox_3,comboBox_1_1,comboBox_1_1_2;
 
 	/**
 	 * Launch the application.
 	 */
 	PreparedStatement pst=null;
 	ResultSet rs = null;
-	JSpinner spinner,spinner_1_1,spinner_2;
+	JSpinner spinner,spinner_2;
 	JComboBox comboBox_1_1_1;
 	private JTextField txtAddSession;
 	private JTextField txtTimeTableManagement;
@@ -273,12 +273,6 @@ public class Add_Session {
 		spinner.setBounds(554, 248, 202, 29);
 		panel_3.add(spinner);
 		
-		 spinner_1_1 = new JSpinner();
-		spinner_1_1.setModel(new SpinnerDateModel(new Date(1615141800000L), null, null, Calendar.HOUR));
-		spinner_1_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		spinner_1_1.setBounds(171, 381, 232, 29);
-		panel_3.add(spinner_1_1);
-		
 		 spinner_2 = new JSpinner();
 		spinner_2.setModel(new SpinnerNumberModel(1, 1, 400, 1));
 		spinner_2.setForeground(Color.BLACK);
@@ -293,11 +287,19 @@ public class Add_Session {
 		comboBox_1_1_1.setBounds(554, 300, 202, 29);
 		panel_3.add(comboBox_1_1_1);
 		
-		JComboBox comboBox_1_1 = new JComboBox();
+		
+		
+		comboBox_1_1 = new JComboBox();
 		comboBox_1_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBox_1_1.setBackground(Color.WHITE);
 		comboBox_1_1.setBounds(171, 338, 232, 29);
 		panel_3.add(comboBox_1_1);
+		
+		 comboBox_1_1_2 = new JComboBox();
+		comboBox_1_1_2.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		comboBox_1_1_2.setBackground(Color.WHITE);
+		comboBox_1_1_2.setBounds(171, 389, 232, 29);
+		panel_3.add(comboBox_1_1_2);
 		
 		txtTimeTableManagement = new JTextField();
 		txtTimeTableManagement.setBounds(0, 0, 956, 87);
