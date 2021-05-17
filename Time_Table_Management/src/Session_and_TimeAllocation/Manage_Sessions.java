@@ -363,8 +363,6 @@ public class Manage_Sessions {
                  	comboBoxLec1_3.setSelectedItem(subjectName);
                  	
                 
-                 	
-                 	//spinner_1.setValue(table.getValueAt(selectedRow, 6).toString());
                  	spinner.setValue((Double)table.getValueAt(selectedRow, 8));
                  	
                  	 String starttime=table.getValueAt(selectedRow, 6).toString();
