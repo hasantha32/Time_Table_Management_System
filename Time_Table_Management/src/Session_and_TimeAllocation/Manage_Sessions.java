@@ -317,6 +317,116 @@ public class Manage_Sessions {
 		
 
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setBounds(0, 76, 1011, 128);
+		panel_5.add(scrollPane);
+		
+		table = new JTable();
+		table.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+
+				
+
+              int selectedRow=table.getSelectedRow();
+				
+				
+			
+              textField_1.setText(table.getValueAt(selectedRow,5).toString());
+              textField.setText(table.getValueAt(selectedRow,0).toString());
+         
+              	
+              String lecturer1=table.getValueAt(selectedRow, 1).toString();
+              	String getlecturername=(String)comboBoxLec1.getSelectedItem();
+              	comboBoxLec1.setSelectedItem(lecturer1);
+              	
+             String lecturer2=table.getValueAt(selectedRow, 2).toString();
+              	String getlecturer2=(String)comboBox_1.getSelectedItem();
+              	comboBox_1.setSelectedItem(lecturer2);
+              
+               String tagname=table.getValueAt(selectedRow, 3).toString();
+              	String getTag=(String)comboBox_2.getSelectedItem();
+              	comboBox_2.setSelectedItem(tagname);
+              	
+              String studentgroup=table.getValueAt(selectedRow, 4).toString();
+               	String getstudengroup=(String)comboBox_3.getSelectedItem();
+               	comboBox_3.setSelectedItem(studentgroup);
+               	
+              String subjectName=table.getValueAt(selectedRow, 9).toString();
+               	String getsubjectname=(String)comboBoxLec1_3.getSelectedItem();
+               	comboBoxLec1_3.setSelectedItem(subjectName);
+               	
+           	 String starttime=table.getValueAt(selectedRow, 6).toString();
+         	String getstarttime=(String)comboBox_3_1.getSelectedItem();
+         	comboBox_3_1.setSelectedItem(starttime);
+         	
+         	 String endtime=table.getValueAt(selectedRow, 7).toString();
+          	String getendtime=(String)comboBoxLec1_3_1.getSelectedItem();
+          	comboBoxLec1_3_1.setSelectedItem(endtime);
+          	
+         	
+      	 String day=table.getValueAt(selectedRow, 10).toString();
+       	String getday=(String)comboBoxLec1_3_1_1.getSelectedItem();
+       	comboBoxLec1_3_1_1.setSelectedItem(day);
+       	
+       	spinner.setValue((Double)table.getValueAt(selectedRow,8));	
+    	 
+              
+               
+               	
+               
+              	
+               	//spinner_1.setValue((Double)table.getValueAt(selectedRow, 6));
+               	//spinner_1_1.setValue((String)table.getValueAt(selectedRow, 7).toString());
+               	//spinner_3.setValue((Integer)table.getValueAt(selectedRow, 8));
+              //comboBoxFacultyName.setSelectedItem(table_1.getValueAt(selectedRow, 2).toString());
+				
+			
+				
+			
+				
+			}
+		});
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+				{null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null},
+				{null, null, null, null, null, null, null},
+			},
+			new String[] {
+				"ID", "Lecturer 1", "Lecturer 2", "Subject Code", "Subject Name", "Group ID", "Tag", "Start Time", "End Time", "Day"
+			}
+		) {
+			Class[] columnTypes = new Class[] {
+				Integer.class, String.class, String.class, Float.class, String.class, Float.class, String.class, String.class, Float.class, String.class
+			};
+			public Class getColumnClass(int columnIndex) {
+				return columnTypes[columnIndex];
+			}
+		});
+		scrollPane.setViewportView(table);
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		JLabel lblNewLabel_2 = new JLabel("Select Lecturer 1");
 		lblNewLabel_2.setForeground(Color.WHITE);
 		lblNewLabel_2.setFont(new Font("Times New Roman", Font.BOLD, 16));
@@ -522,6 +632,39 @@ public class Manage_Sessions {
 		});
 		btnNewButton_16.setBackground(Color.BLACK);
 		btnNewButton_16.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		 comboBox = new JComboBox();
+		comboBox.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Tutorials", "Labs", "Lectures"}));
+		comboBox.setBounds(415, 13, 183, 32);
+		panel_5.add(comboBox);
+		comboBox.setBackground(Color.LIGHT_GRAY);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		JButton btnNewButton_17 = new JButton("Delete");
 		btnNewButton_17.setForeground(Color.WHITE);
@@ -1202,104 +1345,7 @@ public class Manage_Sessions {
 		
 		
 		
-		
-		
-		 comboBox = new JComboBox();
-		comboBox.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Tutorials", "Labs", "Lectures"}));
-		comboBox.setBounds(415, 13, 183, 32);
-		panel_5.add(comboBox);
-		comboBox.setBackground(Color.LIGHT_GRAY);
-		
-		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 76, 1011, 128);
-		panel_5.add(scrollPane);
-		
-		table = new JTable();
-		table.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				
 
-				
-
-               int selectedRow=table.getSelectedRow();
-				
-				
-			
-               textField_1.setText(table.getValueAt(selectedRow,5).toString());
-               textField.setText(table.getValueAt(selectedRow,0).toString());
-          
-               	
-               String lecturer1=table.getValueAt(selectedRow, 1).toString();
-               	String getlecturername=(String)comboBoxLec1.getSelectedItem();
-               	comboBoxLec1.setSelectedItem(lecturer1);
-               	
-              String lecturer2=table.getValueAt(selectedRow, 2).toString();
-               	String getlecturer2=(String)comboBox_1.getSelectedItem();
-               	comboBox_1.setSelectedItem(lecturer2);
-               
-                String tagname=table.getValueAt(selectedRow, 3).toString();
-               	String getTag=(String)comboBox_2.getSelectedItem();
-               	comboBox_2.setSelectedItem(tagname);
-               	
-               String studentgroup=table.getValueAt(selectedRow, 4).toString();
-                	String getstudengroup=(String)comboBox_3.getSelectedItem();
-                	comboBox_3.setSelectedItem(studentgroup);
-                	
-               String subjectName=table.getValueAt(selectedRow, 9).toString();
-                	String getsubjectname=(String)comboBoxLec1_3.getSelectedItem();
-                	comboBoxLec1_3.setSelectedItem(subjectName);
-                	
-               
-                	spinner.setValue((Double)table.getValueAt(selectedRow, 8));
-                	
-                	 String starttime=table.getValueAt(selectedRow, 6).toString();
-                 	String getstarttime=(String)comboBox_3_1.getSelectedItem();
-                 	comboBox_3_1.setSelectedItem(starttime);
-                 	
-                 	 String endtime=table.getValueAt(selectedRow, 7).toString();
-                  	String getendtime=(String)comboBoxLec1_3_1.getSelectedItem();
-                  	comboBoxLec1_3_1.setSelectedItem(endtime);
-                  	
-                 	
-              	 String day=table.getValueAt(selectedRow, 10).toString();
-               	String getday=(String)comboBoxLec1_3_1_1.getSelectedItem();
-               	comboBoxLec1_3_1_1.setSelectedItem(day);
-               	
-               	
-                	//spinner_1.setValue((Double)table.getValueAt(selectedRow, 6));
-                	//spinner_1_1.setValue((String)table.getValueAt(selectedRow, 7).toString());
-                	//spinner_3.setValue((Integer)table.getValueAt(selectedRow, 8));
-               //comboBoxFacultyName.setSelectedItem(table_1.getValueAt(selectedRow, 2).toString());
-				
-			
-				
-			
-				
-			}
-		});
-		table.setModel(new DefaultTableModel(
-			new Object[][] {
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-				{null, null, null, null, null, null, null},
-			},
-			new String[] {
-				"ID", "Lecturer 1", "Lecturer 2", "Subject Code", "Subject Name", "Group ID", "Tag", "Start Time", "End Time", "Day"
-			}
-		) {
-			Class[] columnTypes = new Class[] {
-				Integer.class, String.class, String.class, Float.class, String.class, Float.class, String.class, String.class, Float.class, String.class
-			};
-			public Class getColumnClass(int columnIndex) {
-				return columnTypes[columnIndex];
-			}
-		});
-		scrollPane.setViewportView(table);
-		
-		
 		
 		
 		
