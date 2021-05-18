@@ -372,7 +372,7 @@ public class AAdd_Session {
 		btnClear.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnClear.setEnabled(true);
 		btnClear.setBackground(new Color(0, 128, 128));
-		btnClear.setBounds(611, 445, 141, 31);
+		btnClear.setBounds(620, 418, 141, 31);
 		panel_3.add(btnClear);
 		
 		 lec2 = new JComboBox();
@@ -439,7 +439,7 @@ public class AAdd_Session {
 		btnAdd.setForeground(Color.WHITE);
 		btnAdd.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnAdd.setBackground(new Color(0, 128, 128));
-		btnAdd.setBounds(330, 445, 141, 31);
+		btnAdd.setBounds(339, 418, 141, 31);
 		panel_3.add(btnAdd);
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -556,7 +556,7 @@ public class AAdd_Session {
 		
 		JPanel panel_2_1 = new JPanel();
 		panel_2_1.setBackground(Color.GRAY);
-		panel_2_1.setBounds(10, 615, 174, 38);
+		panel_2_1.setBounds(0, 615, 174, 48);
 		AddsessFrm.getContentPane().add(panel_2_1);
 		
 		JButton btnDelete = new JButton("<<Back");
@@ -567,54 +567,54 @@ public class AAdd_Session {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
-		panel_1.setBounds(10, 503, 174, 113);
+		panel_1.setBounds(0, 503, 174, 113);
 		AddsessFrm.getContentPane().add(panel_1);
 		
 		JButton btnManageSession = new JButton("MANAGE SESSION");
 		btnManageSession.setForeground(Color.WHITE);
 		btnManageSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageSession.setBackground(Color.BLACK);
-		btnManageSession.setBounds(10, 435, 174, 35);
+		btnManageSession.setBounds(0, 435, 174, 35);
 		AddsessFrm.getContentPane().add(btnManageSession);
 		
 		JButton btnManageLsession = new JButton("ADD SESSION");
 		btnManageLsession.setForeground(Color.RED);
 		btnManageLsession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageLsession.setBackground(Color.BLACK);
-		btnManageLsession.setBounds(10, 400, 174, 35);
+		btnManageLsession.setBounds(0, 400, 174, 35);
 		AddsessFrm.getContentPane().add(btnManageLsession);
 		
 		JButton btnUpdateSession = new JButton("MANAGE SUBJECTS");
 		btnUpdateSession.setForeground(Color.WHITE);
 		btnUpdateSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnUpdateSession.setBackground(Color.BLACK);
-		btnUpdateSession.setBounds(10, 372, 174, 29);
+		btnUpdateSession.setBounds(0, 372, 174, 29);
 		AddsessFrm.getContentPane().add(btnUpdateSession);
 		
 		JButton btnAddSession = new JButton("ADD SUBJECT");
 		btnAddSession.setForeground(Color.WHITE);
 		btnAddSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnAddSession.setBackground(Color.BLACK);
-		btnAddSession.setBounds(10, 337, 174, 35);
+		btnAddSession.setBounds(0, 337, 174, 35);
 		AddsessFrm.getContentPane().add(btnAddSession);
 		
 		JButton btnManageLecturer = new JButton("MANAGE LECTURERS");
 		btnManageLecturer.setForeground(Color.WHITE);
 		btnManageLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageLecturer.setBackground(Color.BLACK);
-		btnManageLecturer.setBounds(10, 309, 174, 29);
+		btnManageLecturer.setBounds(0, 309, 174, 29);
 		AddsessFrm.getContentPane().add(btnManageLecturer);
 		
 		JButton btnAddLecturer = new JButton("ADD LECTURER");
 		btnAddLecturer.setForeground(Color.WHITE);
 		btnAddLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnAddLecturer.setBackground(Color.BLACK);
-		btnAddLecturer.setBounds(10, 274, 174, 35);
+		btnAddLecturer.setBounds(0, 274, 174, 35);
 		AddsessFrm.getContentPane().add(btnAddLecturer);
 		
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setBackground(Color.GRAY);
-		panel_1_1.setBounds(10, 127, 174, 150);
+		panel_1_1.setBounds(0, 127, 174, 150);
 		AddsessFrm.getContentPane().add(panel_1_1);
 		
 		txtTimeTableManagement = new JTextField();
@@ -624,7 +624,7 @@ public class AAdd_Session {
 		txtTimeTableManagement.setEditable(false);
 		txtTimeTableManagement.setColumns(10);
 		txtTimeTableManagement.setBackground(Color.GRAY);
-		txtTimeTableManagement.setBounds(10, 37, 1334, 56);
+		txtTimeTableManagement.setBounds(0, 37, 1334, 56);
 		AddsessFrm.getContentPane().add(txtTimeTableManagement);
 		
 		JMenuBar menuBar = new JMenuBar();
@@ -635,15 +635,15 @@ public class AAdd_Session {
 		menuBar.setBounds(0, 0, 1344, 27);
 		AddsessFrm.getContentPane().add(menuBar);
 		
-				JButton button_5 = new JButton("Search Sessions");
-				button_5.setFont(new Font("Arial Black", Font.BOLD, 12));
-				button_5.setBackground(Color.BLACK);
-				button_5.setForeground(Color.WHITE);
-				button_5.setBounds(10, 468, 174, 37);
-				AddsessFrm.getContentPane().add(button_5);
+				JButton btnSearchSession = new JButton("SEARCH SESSION");
+				btnSearchSession.setFont(new Font("Arial Black", Font.BOLD, 12));
+				btnSearchSession.setBackground(Color.BLACK);
+				btnSearchSession.setForeground(Color.WHITE);
+				btnSearchSession.setBounds(0, 468, 174, 37);
+				AddsessFrm.getContentPane().add(btnSearchSession);
 				
 						JPanel panel_5 = new JPanel();
-						panel_5.setBounds(10, 92, 1334, 38);
+						panel_5.setBounds(0, 92, 1334, 38);
 						AddsessFrm.getContentPane().add(panel_5);
 						panel_5.setForeground(Color.RED);
 						panel_5.setBackground(Color.BLACK);
@@ -656,7 +656,7 @@ public class AAdd_Session {
 								lblAddNewSession.setFont(new Font("Times New Roman", Font.BOLD, 20));
 								lblAddNewSession.setBounds(507, 0, 278, 31);
 								panel_5.add(lblAddNewSession);
-				button_5.addActionListener(new ActionListener() {
+				btnSearchSession.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
 
 
