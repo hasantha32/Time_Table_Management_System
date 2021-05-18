@@ -369,8 +369,8 @@ public class Add_Session {
 		btnClear.setForeground(Color.WHITE);
 		btnClear.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnClear.setEnabled(true);
-		btnClear.setBackground(new Color(0, 128, 128));
-		btnClear.setBounds(620, 418, 141, 31);
+		btnClear.setBackground(Color.BLACK);
+		btnClear.setBounds(611, 403, 150, 46);
 		panel_3.add(btnClear);
 		
 		 lec2 = new JComboBox();
@@ -382,7 +382,7 @@ public class Add_Session {
 		lblSessionSignature.setForeground(Color.WHITE);
 		lblSessionSignature.setBackground(Color.WHITE);
 		lblSessionSignature.setFont(new Font("Tahoma", Font.BOLD, 12));
-		lblSessionSignature.setBounds(611, 217, 126, 23);
+		lblSessionSignature.setBounds(621, 243, 126, 23);
 		panel_3.add(lblSessionSignature);
 		
 		
@@ -436,8 +436,8 @@ public class Add_Session {
 		btnAdd.setToolTipText("Click button to save details");
 		btnAdd.setForeground(Color.WHITE);
 		btnAdd.setFont(new Font("Tahoma", Font.BOLD, 14));
-		btnAdd.setBackground(new Color(0, 128, 128));
-		btnAdd.setBounds(339, 418, 141, 31);
+		btnAdd.setBackground(Color.BLACK);
+		btnAdd.setBounds(339, 403, 154, 46);
 		panel_3.add(btnAdd);
 		btnAdd.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -516,7 +516,7 @@ public class Add_Session {
 		btnGensign.setForeground(Color.WHITE);
 		btnGensign.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnGensign.setBackground(new Color(119, 136, 153));
-		btnGensign.setBounds(611, 304, 399, 36);
+		btnGensign.setBounds(620, 295, 399, 36);
 		panel_3.add(btnGensign);
 		
 		txtSubcod = new JTextField();
