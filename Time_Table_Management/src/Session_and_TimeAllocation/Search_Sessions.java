@@ -94,13 +94,13 @@ public class Search_Sessions {
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from lecturers ";
+				String query="select * from Lecturers ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("lectureName");
+					String name =rs.getString("LecturerName");
 					lecbox.addItem(name);
 					 
 				}
@@ -120,13 +120,13 @@ public class Search_Sessions {
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from subjects ";
+				String query="select * from SUbjects ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("subName");
+					String name =rs.getString("SubjectName");
 					subjBox.addItem(name);
 					 
 				}
@@ -144,13 +144,13 @@ public class Search_Sessions {
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from StudentGroup ";
+				String query="select * from Student_Groups ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("GroupID");
+					String name =rs.getString("G_ID");
 					groupBox.addItem(name);
 					 
 				}
@@ -168,13 +168,13 @@ public class Search_Sessions {
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from StudentGroup ";
+				String query="select * from Student_Groups ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("SubGroupID");
+					String name =rs.getString("G_ID");
 					groupBox.addItem(name);
 					 
 				}
