@@ -712,6 +712,19 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(btnManageLsession);
 		
 		JButton btnManageSession = new JButton("MANAGE SESSION");
+
+		btnManageSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Sessions managesession=new Manage_Sessions();
+				Manage_Sessions.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
+		
 		btnManageSession.setForeground(Color.RED);
 		btnManageSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageSession.setBackground(Color.BLACK);
@@ -719,6 +732,17 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(btnManageSession);
 		
 		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
+		btnManageSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Search_Sessions searchsession=new Search_Sessions();
+				Search_Sessions.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnManageSession_1.setForeground(Color.WHITE);
 		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageSession_1.setBackground(Color.BLACK);

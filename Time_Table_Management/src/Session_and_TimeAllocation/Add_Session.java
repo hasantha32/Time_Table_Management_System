@@ -572,6 +572,17 @@ public class Add_Session {
 		AddsessFrm.getContentPane().add(panel_1);
 		
 		JButton btnManageSession = new JButton("MANAGE SESSION");
+		btnManageSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Sessions managesession=new Manage_Sessions();
+				Manage_Sessions.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnManageSession.setForeground(Color.WHITE);
 		btnManageSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageSession.setBackground(Color.BLACK);
@@ -586,6 +597,19 @@ public class Add_Session {
 		AddsessFrm.getContentPane().add(btnManageLsession);
 		
 		JButton btnUpdateSession = new JButton("MANAGE SUBJECTS");
+		
+
+		btnUpdateSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Subjects managesubjects=new Manage_Subjects();
+				Manage_Subjects.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
 		btnUpdateSession.setForeground(Color.WHITE);
 		btnUpdateSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnUpdateSession.setBackground(Color.BLACK);
@@ -687,6 +711,9 @@ public class Add_Session {
 		AddsessFrm.getContentPane().add(menuBar);
 		
 				JButton btnSearchSession = new JButton("SEARCH SESSION");
+				
+				
+				
 				btnSearchSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 				btnSearchSession.setBackground(Color.BLACK);
 				btnSearchSession.setForeground(Color.WHITE);
