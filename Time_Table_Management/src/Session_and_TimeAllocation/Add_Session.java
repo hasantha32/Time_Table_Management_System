@@ -702,6 +702,17 @@ public class Add_Session {
 						panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
 						
 								JLabel lblAddNewSession = new JLabel("ADD SESSION");
+								btnManageLsession.addActionListener(new ActionListener() {
+									public void actionPerformed(ActionEvent arg0) {
+										
+										Add_Session addsession=new Add_Session();
+										Add_Session.main(null);
+										frame.setVisible(false);
+										
+									}
+									
+								});
+							
 								lblAddNewSession.setHorizontalAlignment(SwingConstants.CENTER);
 								lblAddNewSession.setForeground(Color.RED);
 								lblAddNewSession.setFont(new Font("Arial Black", Font.BOLD, 20));

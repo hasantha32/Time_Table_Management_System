@@ -564,6 +564,17 @@ public class Search_Sessions {
 		SrchSesFrm.getContentPane().add(btnUpdateSession);
 		
 		JButton btnManageLsession = new JButton("ADD SESSION");
+		btnManageLsession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Add_Session addsession=new Add_Session();
+				Add_Session.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+	
 		btnManageLsession.setForeground(Color.WHITE);
 		btnManageLsession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageLsession.setBackground(Color.BLACK);
@@ -571,6 +582,19 @@ public class Search_Sessions {
 		SrchSesFrm.getContentPane().add(btnManageLsession);
 		
 		JButton btnManageSession = new JButton("MANAGE SESSION");
+
+		btnManageSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Sessions managesession=new Manage_Sessions();
+				Manage_Sessions.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
+		
 		btnManageSession.setForeground(Color.WHITE);
 		btnManageSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageSession.setBackground(Color.BLACK);

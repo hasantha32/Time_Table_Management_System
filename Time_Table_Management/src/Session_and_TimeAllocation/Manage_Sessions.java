@@ -694,6 +694,17 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(btnUpdateSession);
 		
 		JButton btnManageLsession = new JButton("ADD SESSION");
+		btnManageLsession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Add_Session addsession=new Add_Session();
+				Add_Session.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+	
 		btnManageLsession.setForeground(Color.WHITE);
 		btnManageLsession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageLsession.setBackground(Color.BLACK);
