@@ -24,6 +24,7 @@ public class Manage_Sessions {
 		});
 	}
 
+	
 	/**
 	 * Create the application.
 	 */
