@@ -36,7 +36,9 @@ import javax.swing.table.DefaultTableModel;
 
 import DBC.DBConnection;
 import Leactures_and_Subjects.Add_Lecturer;
+import Leactures_and_Subjects.Add_Subjects;
 import Leactures_and_Subjects.Manage_Lecturer;
+import Leactures_and_Subjects.Manage_Subjects;
 import net.proteanit.sql.DbUtils;
 
 import javax.swing.JTextPane;
@@ -591,6 +593,18 @@ public class Add_Session {
 		AddsessFrm.getContentPane().add(btnUpdateSession);
 		
 		JButton btnAddSession = new JButton("ADD SUBJECT");
+		
+		btnAddSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Add_Subjects addsubjects=new Add_Subjects();
+				Add_Subjects.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
 		btnAddSession.setForeground(Color.WHITE);
 		btnAddSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnAddSession.setBackground(Color.BLACK);
@@ -598,6 +612,19 @@ public class Add_Session {
 		AddsessFrm.getContentPane().add(btnAddSession);
 		
 		JButton btnManageLecturer = new JButton("MANAGE LECTURERS");
+
+		btnUpdateSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Subjects managesubjects=new Manage_Subjects();
+				Manage_Subjects.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
+		
 		
 		btnManageLecturer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {

@@ -33,7 +33,10 @@ import javax.swing.table.TableColumnModel;
 
 
 import DBC.DBConnection;
+import Leactures_and_Subjects.Add_Lecturer;
+import Leactures_and_Subjects.Add_Subjects;
 import Leactures_and_Subjects.Manage_Lecturer;
+import Leactures_and_Subjects.Manage_Subjects;
 
 import javax.swing.JScrollPane;
 import javax.swing.JComboBox;
@@ -485,6 +488,18 @@ public class Search_Sessions {
 		SrchSesFrm.getContentPane().add(panel_1_1);
 		
 		JButton btnAddLecturer = new JButton("ADD LECTURER");
+		
+		btnAddLecturer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Add_Lecturer addlecturer=new Add_Lecturer();
+				Add_Lecturer.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnAddLecturer.setForeground(Color.WHITE);
 		btnAddLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnAddLecturer.setBackground(Color.BLACK);
@@ -510,6 +525,18 @@ public class Search_Sessions {
 		SrchSesFrm.getContentPane().add(btnManageLecturer);
 		
 		JButton btnAddSession = new JButton("ADD SUBJECT");
+		
+		btnAddSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Add_Subjects addsubjects=new Add_Subjects();
+				Add_Subjects.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
 		btnAddSession.setForeground(Color.WHITE);
 		btnAddSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnAddSession.setBackground(Color.BLACK);
@@ -517,6 +544,19 @@ public class Search_Sessions {
 		SrchSesFrm.getContentPane().add(btnAddSession);
 		
 		JButton btnUpdateSession = new JButton("MANAGE SUBJECTS");
+
+		btnUpdateSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Subjects managesubjects=new Manage_Subjects();
+				Manage_Subjects.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
+		
 		btnUpdateSession.setForeground(Color.WHITE);
 		btnUpdateSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnUpdateSession.setBackground(Color.BLACK);

@@ -45,7 +45,10 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 
 import DBC.DBConnection;
+import Leactures_and_Subjects.Add_Lecturer;
+import Leactures_and_Subjects.Add_Subjects;
 import Leactures_and_Subjects.Manage_Lecturer;
+import Leactures_and_Subjects.Manage_Subjects;
 
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -602,7 +605,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_5.setBounds(0, 99, 1334, 38);
 		ManageSesFrm.getContentPane().add(panel_5);
 		
-		JLabel lblManageSessions = new JLabel("Manage Sessions");
+		JLabel lblManageSessions = new JLabel("MANAGE SESSIONS");
 		lblManageSessions.setHorizontalAlignment(SwingConstants.CENTER);
 		lblManageSessions.setForeground(Color.RED);
 		lblManageSessions.setFont(new Font("Arial Black", Font.BOLD, 19));
@@ -615,6 +618,18 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(panel_1_1);
 		
 		JButton btnAddLecturer = new JButton("ADD LECTURER");
+		
+		btnAddLecturer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Add_Lecturer addlecturer=new Add_Lecturer();
+				Add_Lecturer.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnAddLecturer.setForeground(Color.WHITE);
 		btnAddLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnAddLecturer.setBackground(Color.BLACK);
@@ -640,6 +655,18 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(btnManageLecturer);
 		
 		JButton btnAddSession = new JButton("ADD SUBJECT");
+		
+		btnAddSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Add_Subjects addsubjects=new Add_Subjects();
+				Add_Subjects.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
 		btnAddSession.setForeground(Color.WHITE);
 		btnAddSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnAddSession.setBackground(Color.BLACK);
@@ -647,6 +674,19 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(btnAddSession);
 		
 		JButton btnUpdateSession = new JButton("MANAGE SUBJECTS");
+
+		btnUpdateSession.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Subjects managesubjects=new Manage_Subjects();
+				Manage_Subjects.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
+		
 		btnUpdateSession.setForeground(Color.WHITE);
 		btnUpdateSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnUpdateSession.setBackground(Color.BLACK);
@@ -661,14 +701,14 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(btnManageLsession);
 		
 		JButton btnManageSession = new JButton("MANAGE SESSION");
-		btnManageSession.setForeground(Color.WHITE);
+		btnManageSession.setForeground(Color.RED);
 		btnManageSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageSession.setBackground(Color.BLACK);
 		btnManageSession.setBounds(0, 443, 174, 35);
 		ManageSesFrm.getContentPane().add(btnManageSession);
 		
 		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
-		btnManageSession_1.setForeground(Color.RED);
+		btnManageSession_1.setForeground(Color.WHITE);
 		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageSession_1.setBackground(Color.BLACK);
 		btnManageSession_1.setBounds(0, 477, 174, 35);
