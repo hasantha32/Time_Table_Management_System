@@ -732,7 +732,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(btnManageSession);
 		
 		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
-		btnManageSession.addActionListener(new ActionListener() {
+		btnManageSession_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				Search_Sessions searchsession=new Search_Sessions();

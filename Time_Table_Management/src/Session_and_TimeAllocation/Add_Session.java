@@ -712,6 +712,16 @@ public class Add_Session {
 		
 				JButton btnSearchSession = new JButton("SEARCH SESSION");
 				
+				btnSearchSession.addActionListener(new ActionListener() {
+					public void actionPerformed(ActionEvent arg0) {
+						
+						Search_Sessions searchsession=new Search_Sessions();
+						Search_Sessions.main(null);
+						frame.setVisible(false);
+						
+					}
+					
+				});
 				
 				
 				btnSearchSession.setFont(new Font("Arial Black", Font.BOLD, 11));
