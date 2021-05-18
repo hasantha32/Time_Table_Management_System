@@ -36,6 +36,7 @@ import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 
 import DBC.DBConnection;
+import Home.Dashboard;
 import Home.StartUp;
 import Leactures_and_Subjects.Add_Lecturer;
 import Leactures_and_Subjects.Add_Subjects;
@@ -299,7 +300,7 @@ public class Add_Session {
 		panel_3.add(lblLecturer);
 
 		 lec1 = new JComboBox();
-		 lec1.setModel(new DefaultComboBoxModel(new String[] {"----------Select Lecturer 1 ----------"}));
+		 lec1.setModel(new DefaultComboBoxModel(new String[] {"Select Lecturer 1"}));
 		lec1.setBounds(254, 38, 239, 28);
 		panel_3.add(lec1);
 
@@ -534,8 +535,8 @@ public class Add_Session {
 		
 		btnGensign.setForeground(Color.WHITE);
 		btnGensign.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnGensign.setBackground(new Color(119, 136, 153));
-		btnGensign.setBounds(620, 295, 399, 36);
+		btnGensign.setBackground(Color.GRAY);
+		btnGensign.setBounds(722, 295, 297, 36);
 		panel_3.add(btnGensign);
 		
 		txtSubcod = new JTextField();
@@ -577,6 +578,17 @@ public class Add_Session {
 		AddsessFrm.getContentPane().add(panel_2_1);
 		
 		JButton btnDelete = new JButton("<<Back");
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Dashboard dashboard=new Dashboard();
+				Dashboard.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnDelete.setForeground(new Color(240, 248, 255));
 		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 		btnDelete.setBackground(Color.BLACK);

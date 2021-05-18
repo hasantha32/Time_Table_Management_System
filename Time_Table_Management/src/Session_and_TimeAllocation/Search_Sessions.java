@@ -35,6 +35,7 @@ import javax.swing.table.TableColumnModel;
 
 
 import DBC.DBConnection;
+import Home.Dashboard;
 import Home.StartUp;
 import Leactures_and_Subjects.Add_Lecturer;
 import Leactures_and_Subjects.Add_Subjects;
@@ -488,7 +489,7 @@ public class Search_Sessions {
 		textField.setEditable(false);
 		textField.setColumns(10);
 		textField.setBackground(Color.GRAY);
-		textField.setBounds(3, 32, 1334, 65);
+		textField.setBounds(0, 32, 1337, 65);
 		SrchSesFrm.getContentPane().add(textField);
 		
 		
@@ -498,7 +499,7 @@ public class Search_Sessions {
 		menuBar.setBorderPainted(false);
 		menuBar.setBorder(null);
 		menuBar.setBackground(Color.BLACK);
-		menuBar.setBounds(6, 8, 1331, 27);
+		menuBar.setBounds(0, 0, 1331, 35);
 		SrchSesFrm.getContentPane().add(menuBar);
 		JMenu mnNewMenu = new JMenu("Category");
 		mnNewMenu.setFont(new Font("Segoe UI", Font.BOLD, 15));
@@ -1078,6 +1079,18 @@ public class Search_Sessions {
 		SrchSesFrm.getContentPane().add(panel_2);
 		
 		JButton btnDelete = new JButton("<<Back");
+		
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Dashboard dashboard=new Dashboard();
+				Dashboard.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnDelete.setForeground(new Color(240, 248, 255));
 		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 		btnDelete.setBackground(Color.BLACK);

@@ -46,6 +46,7 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 
 import DBC.DBConnection;
+import Home.Dashboard;
 import Home.StartUp;
 import Leactures_and_Subjects.Add_Lecturer;
 import Leactures_and_Subjects.Add_Subjects;
@@ -578,7 +579,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnGenerateSessionSign.setForeground(Color.WHITE);
 		btnGenerateSessionSign.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnGenerateSessionSign.setBackground(Color.GRAY);
-		btnGenerateSessionSign.setBounds(632, 227, 405, 33);
+		btnGenerateSessionSign.setBounds(714, 227, 323, 33);
 		panel_3.add(btnGenerateSessionSign);
 		
 		JScrollPane scrollPane_1 = new JScrollPane();
@@ -1079,14 +1080,14 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_5.setForeground(Color.RED);
 		panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
 		panel_5.setBackground(Color.BLACK);
-		panel_5.setBounds(0, 99, 1334, 38);
+		panel_5.setBounds(0, 99, 1334, 42);
 		ManageSesFrm.getContentPane().add(panel_5);
 		
 		JLabel lblManageSessions = new JLabel("MANAGE SESSIONS");
 		lblManageSessions.setHorizontalAlignment(SwingConstants.CENTER);
 		lblManageSessions.setForeground(Color.RED);
 		lblManageSessions.setFont(new Font("Arial Black", Font.BOLD, 19));
-		lblManageSessions.setBounds(507, 0, 278, 31);
+		lblManageSessions.setBounds(522, 10, 278, 31);
 		panel_5.add(lblManageSessions);
 		
 		JPanel panel_1_1 = new JPanel();
@@ -1237,6 +1238,17 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(panel_2_1);
 		
 		JButton btnDelete = new JButton("<<Back");
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Dashboard dashboard=new Dashboard();
+				Dashboard.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnDelete.setForeground(new Color(240, 248, 255));
 		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 		btnDelete.setBackground(Color.BLACK);
