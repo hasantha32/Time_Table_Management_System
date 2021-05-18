@@ -474,6 +474,8 @@ public class Search_Sessions {
 		textField.setBounds(3, 32, 1334, 65);
 		SrchSesFrm.getContentPane().add(textField);
 		
+		
+		///ADD header navigation
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setForeground(Color.BLACK);
 		menuBar.setBorderPainted(false);
@@ -481,6 +483,10 @@ public class Search_Sessions {
 		menuBar.setBackground(Color.BLACK);
 		menuBar.setBounds(6, 8, 1331, 27);
 		SrchSesFrm.getContentPane().add(menuBar);
+		
+		
+		
+		
 		
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setBackground(Color.GRAY);
