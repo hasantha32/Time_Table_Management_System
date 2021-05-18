@@ -515,7 +515,7 @@ public class Search_Sessions {
 		SrchSesFrm.getContentPane().add(btnUpdateSession);
 		
 		JButton btnManageLsession = new JButton("ADD SESSION");
-		btnManageLsession.setForeground(Color.RED);
+		btnManageLsession.setForeground(Color.WHITE);
 		btnManageLsession.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageLsession.setBackground(Color.BLACK);
 		btnManageLsession.setBounds(0, 410, 174, 35);
@@ -544,8 +544,12 @@ public class Search_Sessions {
 		btnDelete.setBackground(Color.BLACK);
 		panel_2.add(btnDelete);
 		
-		JButton btnManageSession_1 = new JButton("MANAGE SESSION");
-		btnManageSession_1.setForeground(Color.WHITE);
+		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
+		btnManageSession_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnManageSession_1.setForeground(Color.RED);
 		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageSession_1.setBackground(Color.BLACK);
 		btnManageSession_1.setBounds(0, 477, 174, 35);
