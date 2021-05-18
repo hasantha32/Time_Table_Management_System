@@ -453,7 +453,7 @@ public class Search_Sessions {
 		panel_5.setBounds(3, 96, 1334, 38);
 		SrchSesFrm.getContentPane().add(panel_5);
 		
-		JLabel lblSearchSessions = new JLabel("Search Sessions");
+		JLabel lblSearchSessions = new JLabel("SEARCH SESSIONS");
 		lblSearchSessions.setHorizontalAlignment(SwingConstants.CENTER);
 		lblSearchSessions.setForeground(Color.RED);
 		lblSearchSessions.setFont(new Font("Arial Black", Font.BOLD, 19));

@@ -35,6 +35,7 @@ import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 
 import DBC.DBConnection;
+import Leactures_and_Subjects.Add_Lecturer;
 import net.proteanit.sql.DbUtils;
 
 import javax.swing.JTextPane;
@@ -51,7 +52,7 @@ public class Add_Session {
 
 	
 
-	
+	private JFrame frame;
 	private JComboBox lec1;
 	private JComboBox lec2;
 	private JComboBox subname;
@@ -603,6 +604,19 @@ public class Add_Session {
 		AddsessFrm.getContentPane().add(btnManageLecturer);
 		
 		JButton btnAddLecturer = new JButton("ADD LECTURER");
+	
+		
+		btnAddLecturer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Add_Lecturer addlecturer=new Add_Lecturer();
+				Add_Lecturer.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnAddLecturer.setForeground(Color.WHITE);
 		btnAddLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnAddLecturer.setBackground(Color.BLACK);
@@ -650,7 +664,7 @@ public class Add_Session {
 								JLabel lblAddNewSession = new JLabel("Add New Session");
 								lblAddNewSession.setHorizontalAlignment(SwingConstants.CENTER);
 								lblAddNewSession.setForeground(Color.RED);
-								lblAddNewSession.setFont(new Font("Times New Roman", Font.BOLD, 20));
+								lblAddNewSession.setFont(new Font("Arial Black", Font.BOLD, 20));
 								lblAddNewSession.setBounds(507, 0, 278, 31);
 								panel_5.add(lblAddNewSession);
 				btnSearchSession.addActionListener(new ActionListener() {
