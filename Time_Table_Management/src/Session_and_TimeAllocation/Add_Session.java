@@ -139,7 +139,7 @@ public class Add_Session {
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from Tags ";
+				String query="select * from Tag ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
@@ -535,13 +535,13 @@ public class Add_Session {
 			 		try {
 						String subject = subname.getSelectedItem().toString();
 						Connection con = DBConnection.connect();
-						String query = "select subCode from subjects where subName = '" + subject + "'";
+						String query = "select SubjectCode from SUbjects where SubjectName = '" + subject + "'";
 						PreparedStatement pst = con.prepareStatement(query);
 						ResultSet rs = pst.executeQuery();
 						
 						while (rs.next()) {
 
-							String name = rs.getString("subCode");
+							String name = rs.getString("SubjectCode");
 							txtSubcod.setText(name);
 							
 						}
