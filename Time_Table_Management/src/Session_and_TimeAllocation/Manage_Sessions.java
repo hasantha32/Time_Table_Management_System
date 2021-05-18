@@ -295,7 +295,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBackground(Color.DARK_GRAY);
-		panel_2.setBounds(264, 138, 1075, 523);
+		panel_2.setBounds(224, 145, 1075, 523);
 		ManageSesFrm.getContentPane().add(panel_2);
 
 		JScrollPane scrollPane_2 = new JScrollPane();
@@ -418,7 +418,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnClear.setForeground(Color.WHITE);
 		btnClear.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnClear.setEnabled(true);
-		btnClear.setBackground(new Color(0, 128, 128));
+		btnClear.setBackground(Color.BLACK);
 		btnClear.setBounds(629, 272, 141, 31);
 		panel_3.add(btnClear);
 
@@ -427,17 +427,17 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnDel.setForeground(Color.WHITE);
 		btnDel.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnDel.setEnabled(true);
-		btnDel.setBackground(new Color(0, 128, 128));
+		btnDel.setBackground(Color.BLACK);
 		btnDel.setBounds(450, 272, 141, 31);
 		panel_3.add(btnDel);
 
-		JButton btnEdit = new JButton("EDIT");
+		JButton btnEdit = new JButton("UPDATE");
 		btnEdit.setToolTipText("Click button to edit session");
 		
 		btnEdit.setForeground(Color.WHITE);
 		btnEdit.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnEdit.setEnabled(true);
-		btnEdit.setBackground(new Color(0, 128, 128));
+		btnEdit.setBackground(Color.BLACK);
 		btnEdit.setBounds(268, 272, 141, 31);
 		panel_3.add(btnEdit);
 
@@ -548,7 +548,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		
 		btnGenerateSessionSign.setForeground(Color.WHITE);
 		btnGenerateSessionSign.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnGenerateSessionSign.setBackground(new Color(119, 136, 153));
+		btnGenerateSessionSign.setBackground(Color.GRAY);
 		btnGenerateSessionSign.setBounds(632, 227, 405, 33);
 		panel_3.add(btnGenerateSessionSign);
 		

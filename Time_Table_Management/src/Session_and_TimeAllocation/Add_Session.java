@@ -250,14 +250,14 @@ public class Add_Session {
 		panel_2.setForeground(SystemColor.activeCaption);
 		panel_2.setLayout(null);
 		panel_2.setBackground(new Color(230, 230, 250));
-		panel_2.setBounds(260, 128, 1084, 543);
+		panel_2.setBounds(227, 127, 1084, 543);
 		AddsessFrm.getContentPane().add(panel_2);
 
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(new TitledBorder(null, "", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		panel_3.setBackground(Color.DARK_GRAY);
-		panel_3.setBounds(10, 54, 1055, 491);
+		panel_3.setBounds(10, 23, 1055, 491);
 		panel_2.add(panel_3);
 		
 		JScrollPane scrollPane = new JScrollPane();
@@ -661,7 +661,7 @@ public class Add_Session {
 						panel_5.setLayout(null);
 						panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
 						
-								JLabel lblAddNewSession = new JLabel("Add New Session");
+								JLabel lblAddNewSession = new JLabel("ADD SESSION");
 								lblAddNewSession.setHorizontalAlignment(SwingConstants.CENTER);
 								lblAddNewSession.setForeground(Color.RED);
 								lblAddNewSession.setFont(new Font("Arial Black", Font.BOLD, 20));
