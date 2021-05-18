@@ -102,7 +102,7 @@ public class Add_Subjects {
 		frame.getContentPane().setBackground(SystemColor.activeCaption);
 		frame.setBackground(Color.YELLOW);
 		frame.setTitle("Add Subjects");
-		frame.setBounds(1, 30, 1540, 760);
+		frame.setBounds(30, 30, 970, 675);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		

@@ -111,7 +111,7 @@ public class Manage_Subjects {
 		frame.getContentPane().setBackground(SystemColor.activeCaption);
 		frame.setBackground(Color.YELLOW);
 		frame.setTitle("Manage Subject");
-		frame.setBounds(1, 30, 1540, 760);
+		frame.setBounds(100,100, 1000, 735);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
