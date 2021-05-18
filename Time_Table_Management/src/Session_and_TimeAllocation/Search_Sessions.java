@@ -244,7 +244,7 @@ public class Search_Sessions {
 
 		SrchSesFrm.getContentPane().setBackground(SystemColor.activeCaption);
 		SrchSesFrm.setBackground(Color.YELLOW);
-		SrchSesFrm.setTitle("Time Table Management System");
+		SrchSesFrm.setTitle("Search sesssion");
 		SrchSesFrm.setLocationRelativeTo(null);
 	
 		SrchSesFrm.setVisible(true);

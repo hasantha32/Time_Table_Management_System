@@ -304,7 +304,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 
 		ManageSesFrm.getContentPane().setBackground(SystemColor.activeCaption);
 		ManageSesFrm.setBackground(Color.YELLOW);
-		ManageSesFrm.setTitle("Time Table Management System");
+		ManageSesFrm.setTitle("Manage Sessions");
 		ManageSesFrm.setSize(1350, 715);
 		
 		//ManageSesFrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

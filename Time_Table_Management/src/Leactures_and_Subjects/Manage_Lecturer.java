@@ -118,12 +118,13 @@ public class Manage_Lecturer {
 	private void initialize() {
 		frame = new JFrame();
 		frame.getContentPane().setBackground(SystemColor.activeCaption);
+		frame.setBackground(Color.YELLOW);
+		frame.setTitle("Manage Lecturer");
 		frame.setBounds(1, 30, 1540, 760);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		
-		
+	
 		
 		
 		

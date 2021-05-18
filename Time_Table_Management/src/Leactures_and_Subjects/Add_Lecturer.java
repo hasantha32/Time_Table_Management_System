@@ -128,7 +128,9 @@ public class Add_Lecturer {
 	private void initialize() {
 		frame = new JFrame();
 		frame.getContentPane().setBackground(SystemColor.activeCaption);
-		frame.setBounds(100,100, 960, 635);
+		frame.setBackground(Color.YELLOW);
+		frame.setTitle("Add Lecturer");
+		frame.setBounds(1, 30, 1540, 760);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
