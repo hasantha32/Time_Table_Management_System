@@ -107,13 +107,13 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from lecturers ";
+				String query="select * from Lecturers ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("lectureName");
+					String name =rs.getString("LecturerName");
 					lecr1.addItem(name);
 					 
 				}
@@ -131,13 +131,13 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from lecturers ";
+				String query="select * from Lecturers ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("lectureName");
+					String name =rs.getString("LecturerName");
 					lecr2.addItem(name);
 					 
 				}
@@ -155,13 +155,13 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from subjects ";
+				String query="select * from SUbjects ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("subName");
+					String name =rs.getString("SubjectName");
 					sbj.addItem(name);
 					 
 				}
@@ -179,13 +179,13 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from Tags ";
+				String query="select * from Tag ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("RelatedTag");
+					String name =rs.getString("relatedtag");
 					tg.addItem(name);
 					 
 				}
@@ -203,13 +203,13 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from StudentGroup ";
+				String query="select * from Student_Groups ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("GroupID");
+					String name =rs.getString("G_ID");
 					grpId.addItem(name);
 					 
 				}
@@ -227,13 +227,13 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from StudentGroup ";
+				String query="select * from Student_Groups ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("SubGroupID");
+					String name =rs.getString("Sub_G_ID");
 					grpId.addItem(name);
 					 
 				}
@@ -458,13 +458,13 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		 		try {
 					String subject = sbj.getSelectedItem().toString();
 					Connection con = DBConnection.connect();
-					String query = "select subCode from subjects where subName = '" + subject + "'";
+					String query = "select SubjectCode from subjects where SubjectName = '" + subject + "'";
 					PreparedStatement pst = con.prepareStatement(query);
 					ResultSet rs = pst.executeQuery();
 					
 					while (rs.next()) {
 
-						String name = rs.getString("subCode");
+						String name = rs.getString("SubjectCode");
 						cod.setText(name);
 						
 					}
