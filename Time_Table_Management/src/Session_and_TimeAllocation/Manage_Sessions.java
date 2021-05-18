@@ -413,7 +413,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBorder(new EmptyBorder(0, 0, 0, 0));
-		panel_3.setBackground(new Color(245, 245, 245));
+		panel_3.setBackground(Color.DARK_GRAY);
 		panel_3.setBounds(10, 213, 1055, 335);
 		panel_2.add(panel_3);
 
@@ -451,6 +451,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(lecr1);
 
 		JLabel lblLecturer = new JLabel("Lecturer 1");
+		lblLecturer.setForeground(Color.WHITE);
 		lblLecturer.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblLecturer.setBounds(73, 11, 96, 23);
 		panel_3.add(lblLecturer);
@@ -483,16 +484,19 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(sbj);
 
 		JLabel label_3 = new JLabel("Subject Name");
+		label_3.setForeground(Color.WHITE);
 		label_3.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_3.setBounds(73, 113, 149, 23);
 		panel_3.add(label_3);
 
 		JLabel label_4 = new JLabel("Selected Subject Code");
+		label_4.setForeground(Color.WHITE);
 		label_4.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_4.setBounds(73, 170, 149, 23);
 		panel_3.add(label_4);
 
 		JLabel label_5 = new JLabel("Tag");
+		label_5.setForeground(Color.WHITE);
 		label_5.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_5.setBounds(73, 220, 132, 23);
 		panel_3.add(label_5);
@@ -503,6 +507,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(tg);
 
 		JLabel label_6 = new JLabel("Group/Sub Group ID");
+		label_6.setForeground(Color.WHITE);
 		label_6.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_6.setBounds(632, 12, 150, 23);
 		panel_3.add(label_6);
@@ -513,6 +518,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(grpId);
 
 		JLabel label_7 = new JLabel("No Of Students");
+		label_7.setForeground(Color.WHITE);
 		label_7.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_7.setBounds(632, 61, 108, 23);
 		panel_3.add(label_7);
@@ -523,6 +529,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(noStud);
 
 		JLabel label_8 = new JLabel("Duration(hrs)");
+		label_8.setForeground(Color.WHITE);
 		label_8.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_8.setBounds(632, 113, 108, 23);
 		panel_3.add(label_8);
@@ -533,6 +540,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(duration);
 		
 		JLabel lblLecturer_1 = new JLabel("Lecturer 2");
+		lblLecturer_1.setForeground(Color.WHITE);
 		lblLecturer_1.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblLecturer_1.setBounds(73, 61, 96, 23);
 		panel_3.add(lblLecturer_1);
@@ -543,6 +551,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(lecr2);
 		
 		JLabel label_1 = new JLabel("Session Signature");
+		label_1.setForeground(Color.WHITE);
 		label_1.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_1.setBounds(632, 159, 126, 23);
 		panel_3.add(label_1);

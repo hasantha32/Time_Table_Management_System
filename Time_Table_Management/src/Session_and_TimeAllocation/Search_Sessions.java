@@ -432,7 +432,7 @@ public class Search_Sessions {
 		//clear button
 		JButton btnNewButton = new JButton("CLEAR");
 		btnNewButton.setToolTipText("Click button to clear search bar");
-		btnNewButton.setBackground(new Color(0, 139, 139));
+		btnNewButton.setBackground(Color.BLACK);
 		btnNewButton.setForeground(new Color(255, 255, 255));
 		btnNewButton.setFont(new Font("Dialog", Font.BOLD, 13));
 		btnNewButton.addActionListener(new ActionListener() {
