@@ -1457,7 +1457,7 @@ JButton btnClear = new JButton("Clear");
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
-		panel_1.setBounds(0, 543, 174, 102);
+		panel_1.setBounds(0, 579, 174, 66);
 		frame.getContentPane().add(panel_1);
 		
 		JButton btnManageLsession = new JButton("ADD SESSION");
@@ -1760,6 +1760,13 @@ JButton btnClear = new JButton("Clear");
 		JPanel panel = new JPanel();
 		panel.setBounds(1118, 539, 259, 65);
 		frame.getContentPane().add(panel);
+		
+		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
+		btnManageSession_1.setForeground(Color.WHITE);
+		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnManageSession_1.setBackground(Color.BLACK);
+		btnManageSession_1.setBounds(0, 541, 174, 40);
+		frame.getContentPane().add(btnManageSession_1);
 		
 	
 	}
