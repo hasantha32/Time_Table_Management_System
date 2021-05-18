@@ -67,13 +67,13 @@ public class Add_Session {
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from lecturers ";
+				String query="select * from Lecturers ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
 				while(rs.next())
 				{
-					String name =rs.getString("lectureName");
+					String name =rs.getString("LecturerName");
 					lec1.addItem(name);
 					 
 				}
@@ -91,7 +91,7 @@ public class Add_Session {
 
 				Connection con = DBConnection.connect();
 
-				String query="select * from lecturers ";
+				String query="select * from Lecturers ";
 				PreparedStatement pst=con.prepareStatement(query);
 				ResultSet rs=pst.executeQuery();
 				
