@@ -446,7 +446,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(btnEdit);
 
 		 lecr1 = new JComboBox();
-		 lecr1.setModel(new DefaultComboBoxModel(new String[] {"----------Select Lecturer 1 ----------"}));
+		 lecr1.setModel(new DefaultComboBoxModel(new String[] {"Select Lecturer 1 "}));
 		lecr1.setBounds(244, 12, 245, 27);
 		panel_3.add(lecr1);
 
@@ -457,7 +457,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(lblLecturer);
 
 		 sbj = new JComboBox();
-		 sbj.setModel(new DefaultComboBoxModel(new String[] {"---------- Select Subject  ----------"}));
+		 sbj.setModel(new DefaultComboBoxModel(new String[] {" Select Subject "}));
 		 sbj.addActionListener(new ActionListener() {
 		 	public void actionPerformed(ActionEvent e) {
 		 		try {
@@ -502,7 +502,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(label_5);
 
 		 tg = new JComboBox();
-		 tg.setModel(new DefaultComboBoxModel(new String[] {"------------Select Tag ------------"}));
+		 tg.setModel(new DefaultComboBoxModel(new String[] {"Select Tag"}));
 		tg.setBounds(244, 221, 245, 27);
 		panel_3.add(tg);
 
@@ -513,7 +513,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(label_6);
 
 		 grpId = new JComboBox();
-		 grpId.setModel(new DefaultComboBoxModel(new String[] {"--------Select Group/Sub Group ID--------"}));
+		 grpId.setModel(new DefaultComboBoxModel(new String[] {"Select Group/Sub Group ID"}));
 		grpId.setBounds(792, 13, 245, 27);
 		panel_3.add(grpId);
 
