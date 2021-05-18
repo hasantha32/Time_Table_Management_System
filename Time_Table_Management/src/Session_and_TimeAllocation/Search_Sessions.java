@@ -34,8 +34,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 
-import Advanced.Consecutive_sessions;
-import DB.DbConnection;
+
 import DBC.DBConnection;
 
 import javax.swing.JScrollPane;
@@ -62,7 +61,7 @@ public class Search_Sessions {
 
 		try {
 
-			Connection con = DbConnection.connect();
+			Connection con = DBConnection.connect();
 
 			String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCode As SubCode,subName As SubName,tag As Tag,studentGroup As GroupID,NoOfStudents As Students,duration As Duration,sessionSignature As SessionSignature from session ";
 			
@@ -122,7 +121,7 @@ public class Search_Sessions {
 	  public  void  loadSubjectName(){ 
 		  try {
 
-				Connection con = DbConnection.connect();
+				Connection con = DBConnection.connect();
 
 				String query="select * from subjects ";
 				PreparedStatement pst=con.prepareStatement(query);
@@ -146,7 +145,7 @@ public class Search_Sessions {
 	  public  void  loadGroup(){ 
 		  try {
 
-				Connection con = DbConnection.connect();
+				Connection con = DBConnection.connect();
 
 				String query="select * from StudentGroup ";
 				PreparedStatement pst=con.prepareStatement(query);
@@ -170,7 +169,7 @@ public class Search_Sessions {
 	  public  void  loadSubGroup(){ 
 		  try {
 
-				Connection con = DbConnection.connect();
+				Connection con = DBConnection.connect();
 
 				String query="select * from StudentGroup ";
 				PreparedStatement pst=con.prepareStatement(query);
@@ -224,11 +223,11 @@ public class Search_Sessions {
 		SrchSesFrm.setBounds(0, 0, 1350, 700);
 		SrchSesFrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-		SrchSesFrm.getContentPane().setBackground(SystemColor.inactiveCaptionBorder);
+		SrchSesFrm.getContentPane().setBackground(SystemColor.activeCaption);
 		SrchSesFrm.setBackground(Color.YELLOW);
 		SrchSesFrm.setTitle("Time Table Management System");
 		SrchSesFrm.setLocationRelativeTo(null);
-		SrchSesFrm.setIconImage(logo);
+	
 		SrchSesFrm.setVisible(true);
 		//ManageSesFrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
@@ -236,8 +235,8 @@ public class Search_Sessions {
 
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
-		panel_3.setBackground(new Color(230, 230, 250));
-		panel_3.setBounds(272, 144, 1065, 527);
+		panel_3.setBackground(Color.DARK_GRAY);
+		panel_3.setBounds(229, 144, 1065, 527);
 		SrchSesFrm.getContentPane().add(panel_3);
 
 		JScrollPane scrollPane = new JScrollPane();
@@ -273,7 +272,7 @@ public class Search_Sessions {
 		scrollPane_1.setViewportView(table);
 
 				try {
-					Connection con = DbConnection.connect();
+					Connection con = DBConnection.connect();
 
 					//String query="select * from session ";
 					String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCode As SubCode,subName As SubName,tag As Tag,studentGroup As GroupID,NoOfStudents As Students,duration As Duration,sessionSignature As SessionSignature from session ";
@@ -311,7 +310,7 @@ public class Search_Sessions {
 						try {
 							
 							String l2 = lecbox.getSelectedItem().toString();
-							 Connection con = DbConnection.connect();
+							 Connection con = DBConnection.connect();
 							// String selection=(String)searchcomboBox.getSelectedItem();
 							 String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCode As SubCode,subName As SubName,tag As Tag,studentGroup As GroupID,NoOfStudents As Students,duration As Duration,sessionSignature As SessionSignature from session  where lec1=? or lec2= '"+l2+"'";
 							 PreparedStatement pst= con.prepareStatement(query);
@@ -343,7 +342,7 @@ public class Search_Sessions {
 				subjBox.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent arg0) {
 						try {
-							 Connection con = DbConnection.connect();
+							 Connection con = DBConnection.connect();
 							// String selection=(String)searchcomboBox.getSelectedItem();
 							 String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCode As SubCode,subName As SubName,tag As Tag,studentGroup As GroupID,NoOfStudents As Students,duration As Duration,sessionSignature As SessionSignature from session  where subName=?";
 							 PreparedStatement pst= con.prepareStatement(query);
@@ -371,7 +370,7 @@ public class Search_Sessions {
 				 groupBox.addActionListener(new ActionListener() {
 						public void actionPerformed(ActionEvent arg0) {
 							try {
-								 Connection con = DbConnection.connect();
+								 Connection con = DBConnection.connect();
 								// String selection=(String)searchcomboBox.getSelectedItem();
 								 String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCode As SubCode,subName As SubName,tag As Tag,studentGroup As GroupID,NoOfStudents As Students,duration As Duration,sessionSignature As SessionSignature from session  where studentGroup=?";
 								 PreparedStatement pst= con.prepareStatement(query);
@@ -393,18 +392,21 @@ public class Search_Sessions {
 				 
 		
 		JLabel label_1 = new JLabel("Search by Lecturer :");
+		label_1.setForeground(Color.WHITE);
 		label_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_1.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_1.setBounds(78, 61, 180, 37);
 		panel_3.add(label_1);
 
 		JLabel label_2 = new JLabel("Search by Group/Sub Group :");
+		label_2.setForeground(Color.WHITE);
 		label_2.setHorizontalAlignment(SwingConstants.CENTER);
 		label_2.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_2.setBounds(444, 61, 215, 37);
 		panel_3.add(label_2);
 
 		JLabel label_3 = new JLabel("Search by Subject :");
+		label_3.setForeground(Color.WHITE);
 		label_3.setFont(new Font("Tahoma", Font.BOLD, 12));
 		label_3.setBounds(850, 61, 215, 37);
 		panel_3.add(label_3);
@@ -422,6 +424,7 @@ public class Search_Sessions {
 		panel_3.add(subjBox);
 
 		JPanel panel_4 = new JPanel();
+		panel_4.setBackground(Color.DARK_GRAY);
 		panel_4.setBounds(10, 11, 1045, 474);
 		panel_3.add(panel_4);
 		
@@ -475,7 +478,7 @@ public class Search_Sessions {
 		menuBar.setBorderPainted(false);
 		menuBar.setBorder(null);
 		menuBar.setBackground(Color.BLACK);
-		menuBar.setBounds(3, 4, 956, 27);
+		menuBar.setBounds(6, 8, 1331, 27);
 		SrchSesFrm.getContentPane().add(menuBar);
 		
 		JPanel panel_1_1 = new JPanel();
