@@ -484,7 +484,11 @@ public class Add_Session {
 			
 					JOptionPane.showMessageDialog(null, "Please Generate Session Signature.","Alert",JOptionPane.WARNING_MESSAGE);
 
+				}else if(lec1.getSelectedItem().toString().equals(lec2.getSelectedItem().toString())){
+					JOptionPane.showMessageDialog(null, "Select a different lecturer for lecturer 2");
+					
 				}
+				
 				else {
 
 					try {
