@@ -64,6 +64,7 @@ public class Add_Session {
 	private JFrame frame;
 	private JComboBox comboBoxLec1,comboBox_1,comboBox_2,comboBox_3,comboBox_1_1,comboBox_1_1_2,comboBox_1_1_1_1;
 
+	
 	/**
 	 * Launch the application.
 	 */
