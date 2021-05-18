@@ -26,6 +26,7 @@ import Session_and_TimeAllocation.Manage_Not_Available_Times;
 import Session_and_TimeAllocation.Manage_Session_Rooms;
 import Session_and_TimeAllocation.Manage_Sessions;
 import Session_and_TimeAllocation.Not_Available_Time;
+import Session_and_TimeAllocation.Search_Sessions;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationConsecutive;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationNoneOverlaping;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationParallel;
@@ -1683,6 +1684,16 @@ public class Add_Lecturer {
 		frame.getContentPane().add(btnManageSession);
 		
 		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
+		btnManageSession_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Search_Sessions searchsession=new Search_Sessions();
+				Search_Sessions.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
 		btnManageSession_1.setForeground(Color.WHITE);
 		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageSession_1.setBackground(Color.BLACK);
