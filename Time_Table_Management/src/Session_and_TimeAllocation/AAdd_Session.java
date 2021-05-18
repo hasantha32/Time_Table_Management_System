@@ -636,7 +636,7 @@ public class AAdd_Session {
 		AddsessFrm.getContentPane().add(menuBar);
 		
 				JButton btnSearchSession = new JButton("SEARCH SESSION");
-				btnSearchSession.setFont(new Font("Arial Black", Font.BOLD, 12));
+				btnSearchSession.setFont(new Font("Arial Black", Font.BOLD, 11));
 				btnSearchSession.setBackground(Color.BLACK);
 				btnSearchSession.setForeground(Color.WHITE);
 				btnSearchSession.setBounds(0, 468, 174, 37);

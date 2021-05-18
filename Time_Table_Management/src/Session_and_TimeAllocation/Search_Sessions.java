@@ -44,6 +44,8 @@ import javax.swing.JTable;
 import javax.swing.UIManager;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.border.LineBorder;
+import javax.swing.JTextField;
+import javax.swing.JMenuBar;
 
 public class Search_Sessions {
 
@@ -53,6 +55,7 @@ public class Search_Sessions {
 	private JComboBox lecbox;
 	private JComboBox subjBox;
 	private JComboBox groupBox;
+	private JTextField textField;
 	
 	
 	public void refreshtable() {
@@ -441,6 +444,109 @@ public class Search_Sessions {
 		});
 		btnNewButton.setBounds(477, 489, 140, 27);
 		panel_3.add(btnNewButton);
+		
+		JPanel panel_5 = new JPanel();
+		panel_5.setLayout(null);
+		panel_5.setForeground(Color.RED);
+		panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
+		panel_5.setBackground(Color.BLACK);
+		panel_5.setBounds(3, 96, 1334, 38);
+		SrchSesFrm.getContentPane().add(panel_5);
+		
+		JLabel lblSearchSessions = new JLabel("Search Sessions");
+		lblSearchSessions.setHorizontalAlignment(SwingConstants.CENTER);
+		lblSearchSessions.setForeground(Color.RED);
+		lblSearchSessions.setFont(new Font("Arial Black", Font.BOLD, 19));
+		lblSearchSessions.setBounds(507, 0, 278, 31);
+		panel_5.add(lblSearchSessions);
+		
+		textField = new JTextField();
+		textField.setText("                                                                       Time Table Management System");
+		textField.setForeground(Color.WHITE);
+		textField.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		textField.setEditable(false);
+		textField.setColumns(10);
+		textField.setBackground(Color.GRAY);
+		textField.setBounds(3, 32, 1334, 65);
+		SrchSesFrm.getContentPane().add(textField);
+		
+		JMenuBar menuBar = new JMenuBar();
+		menuBar.setForeground(Color.BLACK);
+		menuBar.setBorderPainted(false);
+		menuBar.setBorder(null);
+		menuBar.setBackground(Color.BLACK);
+		menuBar.setBounds(3, 4, 956, 27);
+		SrchSesFrm.getContentPane().add(menuBar);
+		
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setBackground(Color.GRAY);
+		panel_1_1.setBounds(0, 133, 174, 157);
+		SrchSesFrm.getContentPane().add(panel_1_1);
+		
+		JButton btnAddLecturer = new JButton("ADD LECTURER");
+		btnAddLecturer.setForeground(Color.WHITE);
+		btnAddLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnAddLecturer.setBackground(Color.BLACK);
+		btnAddLecturer.setBounds(0, 289, 174, 35);
+		SrchSesFrm.getContentPane().add(btnAddLecturer);
+		
+		JButton btnManageLecturer = new JButton("MANAGE LECTURERS");
+		btnManageLecturer.setForeground(Color.WHITE);
+		btnManageLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnManageLecturer.setBackground(Color.BLACK);
+		btnManageLecturer.setBounds(0, 323, 174, 29);
+		SrchSesFrm.getContentPane().add(btnManageLecturer);
+		
+		JButton btnAddSession = new JButton("ADD SUBJECT");
+		btnAddSession.setForeground(Color.WHITE);
+		btnAddSession.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnAddSession.setBackground(Color.BLACK);
+		btnAddSession.setBounds(0, 349, 174, 35);
+		SrchSesFrm.getContentPane().add(btnAddSession);
+		
+		JButton btnUpdateSession = new JButton("MANAGE SUBJECTS");
+		btnUpdateSession.setForeground(Color.WHITE);
+		btnUpdateSession.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnUpdateSession.setBackground(Color.BLACK);
+		btnUpdateSession.setBounds(0, 383, 174, 29);
+		SrchSesFrm.getContentPane().add(btnUpdateSession);
+		
+		JButton btnManageLsession = new JButton("ADD SESSION");
+		btnManageLsession.setForeground(Color.RED);
+		btnManageLsession.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnManageLsession.setBackground(Color.BLACK);
+		btnManageLsession.setBounds(0, 410, 174, 35);
+		SrchSesFrm.getContentPane().add(btnManageLsession);
+		
+		JButton btnManageSession = new JButton("MANAGE SESSION");
+		btnManageSession.setForeground(Color.WHITE);
+		btnManageSession.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnManageSession.setBackground(Color.BLACK);
+		btnManageSession.setBounds(0, 443, 174, 35);
+		SrchSesFrm.getContentPane().add(btnManageSession);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GRAY);
+		panel_1.setBounds(0, 513, 174, 106);
+		SrchSesFrm.getContentPane().add(panel_1);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(Color.GRAY);
+		panel_2.setBounds(0, 615, 174, 48);
+		SrchSesFrm.getContentPane().add(panel_2);
+		
+		JButton btnDelete = new JButton("<<Back");
+		btnDelete.setForeground(new Color(240, 248, 255));
+		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
+		btnDelete.setBackground(Color.BLACK);
+		panel_2.add(btnDelete);
+		
+		JButton btnManageSession_1 = new JButton("MANAGE SESSION");
+		btnManageSession_1.setForeground(Color.WHITE);
+		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnManageSession_1.setBackground(Color.BLACK);
+		btnManageSession_1.setBounds(0, 477, 174, 35);
+		SrchSesFrm.getContentPane().add(btnManageSession_1);
 		
 		
 		        //load data to dropdown lec1
