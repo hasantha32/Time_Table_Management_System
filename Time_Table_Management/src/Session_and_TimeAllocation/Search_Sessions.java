@@ -231,39 +231,6 @@ public class Search_Sessions {
 
 		SrchSesFrm.getContentPane().setLayout(null);
 
-		JPanel panel = new JPanel();
-		panel.setLayout(null);
-		panel.setBackground(new Color(51, 153, 153));
-		panel.setBounds(10, 41, 1344, 65);
-		SrchSesFrm.getContentPane().add(panel);
-
-		JLabel label = new JLabel(" Sessions");
-		label.setHorizontalAlignment(SwingConstants.CENTER);
-		label.setForeground(Color.WHITE);
-		label.setFont(new Font("Tahoma", Font.BOLD, 22));
-		label.setBackground(new Color(32, 178, 170));
-		label.setBounds(262, 18, 1082, 36);
-		panel.add(label);
-
-		JSeparator separator = new JSeparator();
-		separator.setForeground(new Color(32, 178, 170));
-		separator.setBackground(new Color(0, 139, 139));
-		separator.setBounds(262, 102, 1082, 9);
-		SrchSesFrm.getContentPane().add(separator);
-
-		JPanel panel_2 = new JPanel();
-		panel_2.setLayout(null);
-		panel_2.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
-		panel_2.setBounds(262, 107, 1082, 37);
-		SrchSesFrm.getContentPane().add(panel_2);
-
-		JLabel lblSearchSessions = new JLabel("Search Sessions");
-		lblSearchSessions.setHorizontalAlignment(SwingConstants.CENTER);
-		lblSearchSessions.setForeground(new Color(0, 128, 128));
-		lblSearchSessions.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblSearchSessions.setBounds(405, 0, 278, 31);
-		panel_2.add(lblSearchSessions);
-
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBackground(new Color(230, 230, 250));

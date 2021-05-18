@@ -477,7 +477,7 @@ public class AAdd_Session {
 						}else {
 							
 							
-						Connection con = DbConnection.connect();
+						Connection con = DBConnection.connect();
 						
 				
 						String query = "INSERT INTO session values(null, '" + lect1 + "','" + lect2 + "','" + subjcode + "', '" + subjname + "', '" + tags + "', '" + grpId + "','"+count+"','"+hour+"','"+signature+"')";
@@ -536,7 +536,7 @@ public class AAdd_Session {
 			 		
 			 		try {
 						String subject = subname.getSelectedItem().toString();
-						Connection con = DbConnection.connect();
+						Connection con = DBConnection.connect();
 						String query = "select subCode from subjects where subName = '" + subject + "'";
 						PreparedStatement pst = con.prepareStatement(query);
 						ResultSet rs = pst.executeQuery();
@@ -666,6 +666,8 @@ public class AAdd_Session {
 					}
 				});
 
+				
+				
 		//clear button
 		btnClear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
