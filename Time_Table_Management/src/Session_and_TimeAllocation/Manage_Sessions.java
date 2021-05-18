@@ -209,7 +209,7 @@ public class Manage_Sessions {
 		spinner.setForeground(Color.BLACK);
 		spinner.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		spinner.setBackground(Color.LIGHT_GRAY);
-		spinner.setBounds(689, 320, 142, 26);
+		spinner.setBounds(688, 399, 169, 26);
 		panel_5.add(spinner);
 		
 		JButton btnNewButton_13 = new JButton("Search");
@@ -488,13 +488,13 @@ public class Manage_Sessions {
 		textField_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		textField_1.setColumns(10);
 		textField_1.setBackground(Color.LIGHT_GRAY);
-		textField_1.setBounds(689, 276, 142, 29);
+		textField_1.setBounds(689, 276, 168, 29);
 		panel_5.add(textField_1);
 		
 		JLabel lblNewLabel_8 = new JLabel("Duration(Hours)");
 		lblNewLabel_8.setForeground(Color.WHITE);
 		lblNewLabel_8.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_8.setBounds(549, 315, 127, 43);
+		lblNewLabel_8.setBounds(548, 394, 127, 43);
 		panel_5.add(lblNewLabel_8);
 		
 		
@@ -502,13 +502,13 @@ public class Manage_Sessions {
 		JLabel lblNewLabel_7 = new JLabel("Start Time");
 		lblNewLabel_7.setForeground(Color.WHITE);
 		lblNewLabel_7.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_7.setBounds(549, 365, 121, 35);
+		lblNewLabel_7.setBounds(549, 315, 121, 35);
 		panel_5.add(lblNewLabel_7);
 		
 		JLabel lblNewLabel_9 = new JLabel("End Time");
 		lblNewLabel_9.setForeground(Color.WHITE);
 		lblNewLabel_9.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_9.setBounds(549, 409, 127, 32);
+		lblNewLabel_9.setBounds(549, 359, 127, 32);
 		panel_5.add(lblNewLabel_9);
 		
 		 
@@ -534,7 +534,7 @@ public class Manage_Sessions {
 		JLabel lblNewLabel_11_1 = new JLabel("SessionID");
 		lblNewLabel_11_1.setForeground(Color.WHITE);
 		lblNewLabel_11_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_11_1.setBounds(547, 230, 129, 29);
+		lblNewLabel_11_1.setBounds(131, 224, 129, 29);
 		panel_5.add(lblNewLabel_11_1);
 		
 		textField = new JTextField();
@@ -542,11 +542,11 @@ public class Manage_Sessions {
 		textField.setFont(new Font("Times New Roman", Font.BOLD, 20));
 		textField.setColumns(10);
 		textField.setBackground(Color.LIGHT_GRAY);
-		textField.setBounds(689, 233, 168, 26);
+		textField.setBounds(283, 227, 168, 26);
 		panel_5.add(textField);
 		
 		JButton btnNewButton_12 = new JButton("Refresh");
-		btnNewButton_12.setBounds(392, 214, 132, 39);
+		btnNewButton_12.setBounds(530, 210, 132, 43);
 		panel_5.add(btnNewButton_12);
 		btnNewButton_12.setForeground(Color.WHITE);
 		btnNewButton_12.addActionListener(new ActionListener() {
@@ -564,7 +564,7 @@ public class Manage_Sessions {
 
 		comboBox_3_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBox_3_1.setBackground(Color.LIGHT_GRAY);
-		comboBox_3_1.setBounds(689, 364, 168, 32);
+		comboBox_3_1.setBounds(689, 314, 168, 32);
 		panel_5.add(comboBox_3_1);
 		
 		 comboBoxLec1_3_1 = new JComboBox();
@@ -572,20 +572,20 @@ public class Manage_Sessions {
 
 		comboBoxLec1_3_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBoxLec1_3_1.setBackground(Color.LIGHT_GRAY);
-		comboBoxLec1_3_1.setBounds(689, 408, 168, 29);
+		comboBoxLec1_3_1.setBounds(689, 358, 168, 29);
 		panel_5.add(comboBoxLec1_3_1);
 		
 		JLabel lblNewLabel_9_1 = new JLabel("Day");
 		lblNewLabel_9_1.setForeground(Color.WHITE);
 		lblNewLabel_9_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_9_1.setBounds(549, 452, 127, 32);
+		lblNewLabel_9_1.setBounds(549, 438, 127, 32);
 		panel_5.add(lblNewLabel_9_1);
 		
 		 comboBoxLec1_3_1_1 = new JComboBox();
 		comboBoxLec1_3_1_1.setModel(new DefaultComboBoxModel(new String[]  {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"}));
 		comboBoxLec1_3_1_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBoxLec1_3_1_1.setBackground(Color.LIGHT_GRAY);
-		comboBoxLec1_3_1_1.setBounds(689, 451, 168, 29);
+		comboBoxLec1_3_1_1.setBounds(689, 437, 168, 29);
 		panel_5.add(comboBoxLec1_3_1_1);
 		
 		JButton btnNewButton_16 = new JButton("Update");
