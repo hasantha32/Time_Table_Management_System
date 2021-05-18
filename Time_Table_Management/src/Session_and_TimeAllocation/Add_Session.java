@@ -296,12 +296,12 @@ public class Add_Session {
 
 		 subname = new JComboBox();
 	
-		 subname.setModel(new DefaultComboBoxModel(new String[] {"----------Select Subject----------"}));
+		 subname.setModel(new DefaultComboBoxModel(new String[] {"Select Subject"}));
 		subname.setBounds(254, 159, 239, 28);
 		panel_3.add(subname);
 
 		 tag = new JComboBox();
-		 tag.setModel(new DefaultComboBoxModel(new String[] {"------------Select Tag ------------"}));
+		 tag.setModel(new DefaultComboBoxModel(new String[] {"Select Tag"}));
 		tag.setBounds(254, 279, 239, 28);
 		panel_3.add(tag);
 
@@ -313,7 +313,7 @@ public class Add_Session {
 		panel_3.add(label_2);
 
 		 groupId = new JComboBox();
-		groupId.setModel(new DefaultComboBoxModel(new String[] {"--------Select Group/Sub Group ID--------"}));
+		groupId.setModel(new DefaultComboBoxModel(new String[] {"Select Group/Sub Group ID"}));
 		groupId.setBounds(771, 38, 239, 28);
 		panel_3.add(groupId);
 
