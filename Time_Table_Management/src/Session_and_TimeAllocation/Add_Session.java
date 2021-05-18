@@ -57,6 +57,7 @@ import javax.swing.DefaultComboBoxModel;
 import java.awt.SystemColor;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JTextArea;
 
 public class Add_Session {
 
@@ -72,6 +73,7 @@ public class Add_Session {
 	JComboBox comboBox_1_1_1;
 	private JTextField txtAddSession;
 	private JTextField txtTimeTableManagement;
+	private JTextField textField;
 	public static void main(String[] args) {
 		DBConnection.connect();
 		EventQueue.invokeLater(new Runnable() {
@@ -198,71 +200,71 @@ public class Add_Session {
 		JLabel lblNewLabel_4 = new JLabel("Select Tag");
 		lblNewLabel_4.setForeground(Color.WHITE);
 		lblNewLabel_4.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_4.setBounds(484, 87, 72, 36);
+		lblNewLabel_4.setBounds(10, 274, 72, 36);
 		panel_3.add(lblNewLabel_4);
 		
-		JLabel lblNewLabel_5 = new JLabel("Student Group");
+		JLabel lblNewLabel_5 = new JLabel("Group/Sub Group ID");
 		lblNewLabel_5.setForeground(Color.WHITE);
 		lblNewLabel_5.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_5.setBounds(10, 225, 160, 36);
+		lblNewLabel_5.setBounds(431, 87, 142, 36);
 		panel_3.add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("No.of.Students");
 		lblNewLabel_6.setForeground(Color.WHITE);
 		lblNewLabel_6.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_6.setBounds(10, 271, 160, 43);
+		lblNewLabel_6.setBounds(431, 126, 109, 43);
 		panel_3.add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_8 = new JLabel("Duration");
 		lblNewLabel_8.setForeground(Color.WHITE);
 		lblNewLabel_8.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_8.setBounds(437, 235, 160, 43);
+		lblNewLabel_8.setBounds(433, 247, 81, 43);
 		panel_3.add(lblNewLabel_8);
 		
 	    comboBoxLec1 = new JComboBox();
 
 	    comboBoxLec1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBoxLec1.setBackground(Color.WHITE);
-		comboBoxLec1.setBounds(211, 87, 217, 29);
+		comboBoxLec1.setBounds(195, 87, 203, 29);
 		panel_3.add(comboBoxLec1);
 		
 		 comboBox_1 = new JComboBox();
 	
 		 comboBox_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBox_1.setBackground(Color.WHITE);
-		comboBox_1.setBounds(211, 135, 217, 29);
+		comboBox_1.setBounds(195, 135, 203, 29);
 		panel_3.add(comboBox_1);
 		
 		 comboBox_2 = new JComboBox();
 		 comboBox_2.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		 comboBox_2.setModel(new DefaultComboBoxModel(new String[] {"Tutorials", "Labs", "Lecturers"}));
 		comboBox_2.setBackground(Color.WHITE);
-		comboBox_2.setBounds(560, 90, 191, 29);
+		comboBox_2.setBounds(196, 278, 202, 29);
 		panel_3.add(comboBox_2);
 		
 		 comboBox_3 = new JComboBox();
 		 comboBox_3.setModel(new DefaultComboBoxModel(new String[] {"12.1", "12.2", "13.1", "13.2", "14.1", "14.2"}));
 		 comboBox_3.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBox_3.setBackground(Color.WHITE);
-		comboBox_3.setBounds(171, 236, 232, 29);
+		comboBox_3.setBounds(588, 91, 164, 29);
 		panel_3.add(comboBox_3);
 		
 		JLabel lblNewLabel_7 = new JLabel("Start Time");
 		lblNewLabel_7.setForeground(Color.WHITE);
 		lblNewLabel_7.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_7.setBounds(10, 324, 142, 35);
+		lblNewLabel_7.setBounds(433, 170, 101, 35);
 		panel_3.add(lblNewLabel_7);
 		
 		JLabel lblNewLabel_9 = new JLabel("End Time");
 		lblNewLabel_9.setForeground(Color.WHITE);
 		lblNewLabel_9.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_9.setBounds(10, 372, 130, 53);
+		lblNewLabel_9.setBounds(433, 204, 86, 53);
 		panel_3.add(lblNewLabel_9);
 		
 		JLabel lblNewLabel_11 = new JLabel("Subject Name");
 		lblNewLabel_11.setForeground(Color.WHITE);
 		lblNewLabel_11.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_11.setBounds(437, 300, 107, 29);
+		lblNewLabel_11.setBounds(10, 179, 107, 29);
 		panel_3.add(lblNewLabel_11);
 		
 	    spinner = new JSpinner();
@@ -270,7 +272,7 @@ public class Add_Session {
 		spinner.setModel(new SpinnerNumberModel(new Float(1), new Float(1), new Float(5), new Float(1)));
 		spinner.setForeground(Color.BLACK);
 		spinner.setBackground(Color.LIGHT_GRAY);
-		spinner.setBounds(554, 248, 202, 29);
+		spinner.setBounds(586, 260, 166, 29);
 		panel_3.add(spinner);
 		
 		 spinner_2 = new JSpinner();
@@ -278,13 +280,13 @@ public class Add_Session {
 		spinner_2.setForeground(Color.BLACK);
 		spinner_2.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		spinner_2.setBackground(Color.WHITE);
-		spinner_2.setBounds(171, 289, 232, 29);
+		spinner_2.setBounds(586, 133, 166, 29);
 		panel_3.add(spinner_2);
 		
 		 comboBox_1_1_1 = new JComboBox();
 		comboBox_1_1_1.setFont(new Font("Times New Roman", Font.BOLD, 17));
 		comboBox_1_1_1.setBackground(Color.WHITE);
-		comboBox_1_1_1.setBounds(554, 300, 202, 29);
+		comboBox_1_1_1.setBounds(196, 186, 202, 29);
 		panel_3.add(comboBox_1_1_1);
 		
 		
@@ -293,28 +295,62 @@ public class Add_Session {
 		comboBox_1_1.setModel(new DefaultComboBoxModel(new String[] {"8","9","10","11", "12","13","14", "15","16"}));
 		comboBox_1_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBox_1_1.setBackground(Color.WHITE);
-		comboBox_1_1.setBounds(171, 338, 232, 29);
+		comboBox_1_1.setBounds(586, 173, 166, 29);
 		panel_3.add(comboBox_1_1);
 		
 		 comboBox_1_1_2 = new JComboBox();
 		 comboBox_1_1_2.setModel(new DefaultComboBoxModel(new String[] {"9","10","11","12","13","14","15","16","17"}));
 		comboBox_1_1_2.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		comboBox_1_1_2.setBackground(Color.WHITE);
-		comboBox_1_1_2.setBounds(171, 389, 232, 29);
+		comboBox_1_1_2.setBounds(586, 215, 166, 29);
 		panel_3.add(comboBox_1_1_2);
 		
 		JLabel lblNewLabel_11_1 = new JLabel("Day");
 		lblNewLabel_11_1.setForeground(Color.WHITE);
 		lblNewLabel_11_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		lblNewLabel_11_1.setBounds(437, 354, 107, 29);
+		lblNewLabel_11_1.setBounds(433, 301, 107, 29);
 		panel_3.add(lblNewLabel_11_1);
 		
 		comboBox_1_1_1_1 = new JComboBox();
 		comboBox_1_1_1_1.setModel(new DefaultComboBoxModel(new String[] {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"}));
 		comboBox_1_1_1_1.setFont(new Font("Times New Roman", Font.BOLD, 17));
 		comboBox_1_1_1_1.setBackground(Color.WHITE);
-		comboBox_1_1_1_1.setBounds(554, 354, 202, 29);
+		comboBox_1_1_1_1.setBounds(586, 301, 166, 29);
 		panel_3.add(comboBox_1_1_1_1);
+		
+		textField = new JTextField();
+		textField.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		textField.setEditable(false);
+		textField.setColumns(10);
+		textField.setBackground(Color.LIGHT_GRAY);
+		textField.setBounds(195, 235, 203, 26);
+		panel_3.add(textField);
+		
+		JLabel lblNewLabel_11_2 = new JLabel("Selected Subject Code");
+		lblNewLabel_11_2.setForeground(Color.WHITE);
+		lblNewLabel_11_2.setFont(new Font("Times New Roman", Font.BOLD, 16));
+		lblNewLabel_11_2.setBounds(10, 235, 160, 29);
+		panel_3.add(lblNewLabel_11_2);
+		
+		JTextArea sign = new JTextArea();
+		sign.setFont(new Font("Microsoft YaHei UI", Font.PLAIN, 12));
+		sign.setEditable(false);
+		sign.setBounds(315, 340, 236, 29);
+		panel_3.add(sign);
+		
+		JLabel lblSessionSignature = new JLabel("Session Signature");
+		lblSessionSignature.setForeground(Color.WHITE);
+		lblSessionSignature.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblSessionSignature.setBounds(191, 339, 126, 23);
+		panel_3.add(lblSessionSignature);
+		
+		JButton btnGensign = new JButton("GENERATE SESSION SIGNATURE");
+		btnGensign.setToolTipText("Click button to generate session signature");
+		btnGensign.setForeground(Color.WHITE);
+		btnGensign.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnGensign.setBackground(new Color(119, 136, 153));
+		btnGensign.setBounds(164, 387, 399, 36);
+		panel_3.add(btnGensign);
 		
 		txtTimeTableManagement = new JTextField();
 		txtTimeTableManagement.setBounds(0, 0, 956, 87);
