@@ -45,6 +45,7 @@ import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 
 import DBC.DBConnection;
+import Leactures_and_Subjects.Manage_Lecturer;
 
 import javax.swing.JTable;
 import javax.swing.JTextField;
@@ -54,7 +55,7 @@ import javax.swing.UIManager;
 import javax.swing.JMenuBar;
 
 public class Manage_Sessions {
-
+	private JFrame frame;
 	private JFrame ManageSesFrm;
 	
 	private JTable table;
@@ -621,6 +622,17 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().add(btnAddLecturer);
 		
 		JButton btnManageLecturer = new JButton("MANAGE LECTURERS");
+		
+		btnManageLecturer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Lecturer managelecture=new Manage_Lecturer();
+				Manage_Lecturer.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
 		btnManageLecturer.setForeground(Color.WHITE);
 		btnManageLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageLecturer.setBackground(Color.BLACK);

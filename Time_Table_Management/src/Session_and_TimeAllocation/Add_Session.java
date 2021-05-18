@@ -36,6 +36,7 @@ import javax.swing.table.DefaultTableModel;
 
 import DBC.DBConnection;
 import Leactures_and_Subjects.Add_Lecturer;
+import Leactures_and_Subjects.Manage_Lecturer;
 import net.proteanit.sql.DbUtils;
 
 import javax.swing.JTextPane;
@@ -597,6 +598,18 @@ public class Add_Session {
 		AddsessFrm.getContentPane().add(btnAddSession);
 		
 		JButton btnManageLecturer = new JButton("MANAGE LECTURERS");
+		
+		btnManageLecturer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Lecturer managelecture=new Manage_Lecturer();
+				Manage_Lecturer.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnManageLecturer.setForeground(Color.WHITE);
 		btnManageLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageLecturer.setBackground(Color.BLACK);

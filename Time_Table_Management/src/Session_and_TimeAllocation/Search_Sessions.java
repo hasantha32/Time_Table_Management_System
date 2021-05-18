@@ -33,6 +33,7 @@ import javax.swing.table.TableColumnModel;
 
 
 import DBC.DBConnection;
+import Leactures_and_Subjects.Manage_Lecturer;
 
 import javax.swing.JScrollPane;
 import javax.swing.JComboBox;
@@ -44,7 +45,7 @@ import javax.swing.JTextField;
 import javax.swing.JMenuBar;
 
 public class Search_Sessions {
-
+	private JFrame frame;
 	private JFrame SrchSesFrm;
 	
 	private JTable table;
@@ -491,6 +492,17 @@ public class Search_Sessions {
 		SrchSesFrm.getContentPane().add(btnAddLecturer);
 		
 		JButton btnManageLecturer = new JButton("MANAGE LECTURERS");
+		
+		btnManageLecturer.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Lecturer managelecture=new Manage_Lecturer();
+				Manage_Lecturer.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
 		btnManageLecturer.setForeground(Color.WHITE);
 		btnManageLecturer.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnManageLecturer.setBackground(Color.BLACK);
