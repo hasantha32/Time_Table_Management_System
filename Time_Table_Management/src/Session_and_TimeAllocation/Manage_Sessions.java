@@ -90,6 +90,7 @@ public class Manage_Sessions {
 	private JTextField textField;
 	private JComboBox lecbox;
 	private JComboBox groupBox;
+	private JComboBox subjBox;
 	
 	
 	public void refreshtable() {
@@ -1269,6 +1270,12 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnDelete.setBackground(Color.BLACK);
 		panel_2_1.add(btnDelete);
 
+		
+		
+		
+		
+		//Search bar for lecturer
+		
 		 lecbox = new JComboBox();
 		lecbox.setForeground(Color.DARK_GRAY);
 		lecbox.setFont(UIManager.getFont("Spinner.font"));
@@ -1316,6 +1323,13 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		 
 		 
 		////
+		
+		
+		
+		
+		//Search bar for Groupid
+		
+		
 		 groupBox = new JComboBox();
 		
 		
@@ -1342,6 +1356,8 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 					
 				}
 			});
+		 groupBox.setModel(new DefaultComboBoxModel(new String[] {"                       Select Group"}));
+			groupBox.setBounds(438, 109, 223, 27);
 		groupBox.setBackground(Color.WHITE);
 		groupBox.setBounds(608, 239, 223, 27);
 		ManageSesFrm.getContentPane().add(groupBox);
@@ -1359,10 +1375,43 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		label_3_1.setBounds(1020, 191, 215, 37);
 		ManageSesFrm.getContentPane().add(label_3_1);
 		
-		JComboBox subjBox = new JComboBox();
+		
+		
+		
+		 /// 
+		
+		//
+		
+		//Search bar for subName
+		
+		 subjBox = new JComboBox();
+		
 		subjBox.setForeground(Color.DARK_GRAY);
 		subjBox.setFont(UIManager.getFont("Spinner.font"));
+		subjBox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				try {
+					 Connection con = DBConnection.connect();
+					// String selection=(String)searchcomboBox.getSelectedItem();
+					 String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCode As SubCode,subName As SubName,tag As Tag,studentGroup As GroupID,NoOfStudents As Students,duration As Duration,sessionSignature As SessionSignature from session  where subName=?";
+					 PreparedStatement pst= con.prepareStatement(query);
+					 pst.setString(1,(String)subjBox.getSelectedItem());
+					 ResultSet rs=pst.executeQuery();
+
+					 table.setModel(DbUtils.resultSetToTableModel(rs));
+					 pst.close();
+					 
+				 }catch(Exception ep) {
+					 ep.printStackTrace();
+				 }
+				
+				
+				
+			}
+		});
 		subjBox.setBackground(Color.WHITE);
+		subjBox.setModel(new DefaultComboBoxModel(new String[] {"                      Select Subject"}));
+		
 		subjBox.setBounds(982, 239, 223, 27);
 		ManageSesFrm.getContentPane().add(subjBox);
 		
