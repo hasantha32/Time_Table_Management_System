@@ -411,7 +411,7 @@ public class Manage_Subjects {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
-		panel_1.setBounds(0, 507, 174, 126);
+		panel_1.setBounds(0, 469, 174, 164);
 		frame.getContentPane().add(panel_1);
 		
 		JPanel panel_2 = new JPanel();
@@ -571,23 +571,6 @@ public class Manage_Subjects {
 		txtTimeTableManagement.setBackground(Color.GRAY);
 		txtTimeTableManagement.setBounds(0, 0, 986, 87);
 		frame.getContentPane().add(txtTimeTableManagement);
-		
-		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
-		btnManageSession_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Search_Sessions searchsession=new Search_Sessions();
-				Search_Sessions.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		btnManageSession_1.setForeground(Color.WHITE);
-		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
-		btnManageSession_1.setBackground(Color.BLACK);
-		btnManageSession_1.setBounds(0, 469, 174, 40);
-		frame.getContentPane().add(btnManageSession_1);
 		
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setForeground(new Color(0, 0, 0));

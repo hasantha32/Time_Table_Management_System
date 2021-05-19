@@ -23,7 +23,7 @@ import Session_and_TimeAllocation.Manage_Not_Available_Times;
 import Session_and_TimeAllocation.Manage_Session_Rooms;
 import Session_and_TimeAllocation.Manage_Sessions;
 import Session_and_TimeAllocation.Not_Available_Time;
-import Session_and_TimeAllocation.Search_Sessions;
+
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationConsecutive;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationNoneOverlaping;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationParallel;
@@ -398,7 +398,7 @@ public class Add_Subjects {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
-		panel_1.setBounds(0, 470, 174, 107);
+		panel_1.setBounds(0, 433, 174, 144);
 		frame.getContentPane().add(panel_1);
 		
 		JButton btnManageSession = new JButton("MANAGE SESSION");
@@ -529,23 +529,6 @@ public class Add_Subjects {
 		textField_3.setBackground(Color.GRAY);
 		textField_3.setBounds(0, 0, 956, 87);
 		frame.getContentPane().add(textField_3);
-		
-		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
-		btnManageSession_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Search_Sessions searchsession=new Search_Sessions();
-				Search_Sessions.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		btnManageSession_1.setForeground(Color.WHITE);
-		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
-		btnManageSession_1.setBackground(Color.BLACK);
-		btnManageSession_1.setBounds(0, 435, 174, 40);
-		frame.getContentPane().add(btnManageSession_1);
 		
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setForeground(new Color(0, 0, 0));

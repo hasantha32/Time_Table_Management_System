@@ -47,7 +47,7 @@ import Session_and_TimeAllocation.Manage_Not_Available_Times;
 import Session_and_TimeAllocation.Manage_Session_Rooms;
 import Session_and_TimeAllocation.Manage_Sessions;
 import Session_and_TimeAllocation.Not_Available_Time;
-import Session_and_TimeAllocation.Search_Sessions;
+
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationConsecutive;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationNoneOverlaping;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationParallel;
@@ -1459,7 +1459,7 @@ JButton btnClear = new JButton("Clear");
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
-		panel_1.setBounds(0, 579, 174, 66);
+		panel_1.setBounds(0, 546, 174, 99);
 		frame.getContentPane().add(panel_1);
 		
 		JButton btnManageLsession = new JButton("ADD SESSION");
@@ -1762,23 +1762,6 @@ JButton btnClear = new JButton("Clear");
 		JPanel panel = new JPanel();
 		panel.setBounds(1118, 539, 259, 65);
 		frame.getContentPane().add(panel);
-		
-		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
-		btnManageSession_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Search_Sessions searchsession=new Search_Sessions();
-				Search_Sessions.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		btnManageSession_1.setForeground(Color.WHITE);
-		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
-		btnManageSession_1.setBackground(Color.BLACK);
-		btnManageSession_1.setBounds(0, 541, 174, 40);
-		frame.getContentPane().add(btnManageSession_1);
 		
 	
 	}
