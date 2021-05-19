@@ -556,7 +556,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 					
 					
 					frmAddStudentGroup.dispose();
-					new  Parallel_sessions();
+					new  SessionsANDnotAvailableTimeAllocationParallel();
 					
 				}
 			});
