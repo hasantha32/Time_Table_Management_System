@@ -38,22 +38,8 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
 
-import DB.DbConnection;
 import DBC.DBConnection;
-import Home.Home;
-import Lecturer.Add_Lecturer;
-import Locations.ManageLocations;
-import Rooms.ConsecutiveSessionRooms;
-import Rooms.ManageSessionsRooms;
-import Session.Add_Session;
-import Statistics.Statistics;
-import Student.Add_StudentGroup;
-import Student.Manage_studentGroup;
-import Subject.Add_Subjects;
-import Tags.Add_Tags;
 import Timetable.Lecturer;
-import WorkingDays.AddWorkingdays;
-import WorkingDays.ManageWorkingDays;
 import net.proteanit.sql.DbUtils;
 
 import javax.swing.JRadioButton;
@@ -311,7 +297,7 @@ public void refreshtable() {
 		frame.setBounds(0, 0, 1350, 700);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		frame.setIconImage(logo);
+		
 		frame.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
 		frame.setVisible(true);
 		
@@ -421,7 +407,7 @@ public void refreshtable() {
 
 					try {
 							
-						Connection con = DbConnection.connect();
+						Connection con = DBConnection.connect();
 						
 				
 						String query = "INSERT INTO notavailableTime values(null,'"+ selectLec +"','"+ selectGroup + "','"+ selectSubGroup + 
@@ -612,7 +598,7 @@ public void refreshtable() {
 				try {
 					
 					
-					Connection con = DbConnection.connect();
+					Connection con = DBConnection.connect();
 					String query="Delete from notavailableTime where timeID='"+id.getText()+"'";
 					PreparedStatement pst=con.prepareStatement(query);
 					pst.execute();
@@ -727,7 +713,7 @@ public void refreshtable() {
 		try {
 			
 			
-			Connection con = DbConnection.connect();
+			Connection con = DBConnection.connect();
 			 
 			 
 			//String query="SELECT timeID as TID, selectLec as Lecturer, selectGroup as Group, selectSubGroup as SubGroup, selectRoom as Room, sessionSign as Signature, Date as Day, startTime as Start, start as STime,endTime as End, end as ETime FROM notavailableTime ";
@@ -769,7 +755,7 @@ public void refreshtable() {
 			
 				
 				try {
-					Connection con = DbConnection.connect();					
+					Connection con = DBConnection.connect();					
 					String query="Update notavailableTime set selectLec='"+selectlec.getSelectedItem()+"',selectGroup='"+selectgroup.getSelectedItem()+ "',selectSubGroup='"
 					+selectsubgroup.getSelectedItem()+"',selectRoom='"+selectroom.getSelectedItem()+"',sessionSign='"+sessionsign.getSelectedItem()+"',Date='"+day.getValue()+"',startTime='"+start.getText()+"',start='"+starttime.getValue()+"',endTime='"+end.getText()+"',end='"+endtime.getValue()+"'"
 							+ " where timeID='"+id.getText()+"'";
