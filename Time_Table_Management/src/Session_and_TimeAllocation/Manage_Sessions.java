@@ -1226,24 +1226,6 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnManageSession.setBounds(0, 443, 174, 35);
 		ManageSesFrm.getContentPane().add(btnManageSession);
 		
-		JButton btnManageSession_1 = new JButton("SEARCH SESSION");
-		btnManageSession_1.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Search_Sessions searchsession=new Search_Sessions();
-				Search_Sessions.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		
-		btnManageSession_1.setForeground(Color.WHITE);
-		btnManageSession_1.setFont(new Font("Arial Black", Font.BOLD, 11));
-		btnManageSession_1.setBackground(Color.BLACK);
-		btnManageSession_1.setBounds(0, 477, 174, 35);
-		ManageSesFrm.getContentPane().add(btnManageSession_1);
-		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
 		panel_1.setBounds(0, 510, 174, 118);
@@ -1418,6 +1400,11 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		
 		subjBox.setBounds(963, 166, 223, 27);
 		ManageSesFrm.getContentPane().add(subjBox);
+		
+		JPanel panel_3_1 = new JPanel();
+		panel_3_1.setBackground(Color.DARK_GRAY);
+		panel_3_1.setBounds(222, 115, 1075, 89);
+		ManageSesFrm.getContentPane().add(panel_3_1);
 		
 		
 		//generate session signature

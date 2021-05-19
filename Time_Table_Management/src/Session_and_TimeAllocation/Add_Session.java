@@ -1184,38 +1184,6 @@ public class Add_Session {
 		});
 		
 		mnNewMenu_7.add(mntmNewMenuItem_22);
-		
-		
-		
-		
-		
-		
-		
-		
-		//////////////////////////
-		
-	
-		///////////
-		
-				JButton btnSearchSession = new JButton("SEARCH SESSION");
-				
-				btnSearchSession.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent arg0) {
-						
-						Search_Sessions searchsession=new Search_Sessions();
-						Search_Sessions.main(null);
-						frame.setVisible(false);
-						
-					}
-					
-				});
-				
-				
-				btnSearchSession.setFont(new Font("Arial Black", Font.BOLD, 11));
-				btnSearchSession.setBackground(Color.BLACK);
-				btnSearchSession.setForeground(Color.WHITE);
-				btnSearchSession.setBounds(0, 468, 174, 37);
-				AddsessFrm.getContentPane().add(btnSearchSession);
 				
 						JPanel panel_5 = new JPanel();
 						panel_5.setBounds(0, 92, 1334, 38);
@@ -1242,15 +1210,6 @@ public class Add_Session {
 								lblAddNewSession.setFont(new Font("Arial Black", Font.BOLD, 20));
 								lblAddNewSession.setBounds(507, 0, 278, 31);
 								panel_5.add(lblAddNewSession);
-				btnSearchSession.addActionListener(new ActionListener() {
-					public void actionPerformed(ActionEvent e) {
-
-
-						AddsessFrm.dispose();
-						new Search_Sessions();
-
-					}
-				});
 
 				
 				
