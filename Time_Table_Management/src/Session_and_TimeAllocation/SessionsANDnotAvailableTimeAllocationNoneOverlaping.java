@@ -50,6 +50,7 @@ import javax.swing.border.LineBorder;
 import java.awt.Panel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.JMenuBar;
 
 public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 
@@ -58,6 +59,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 	private JFrame frmAddStudentGroup;
 	private JTable table;
 	private JComboBox comboBox_ps;
+	private JTextField textField;
 	
 	
 	// fill session 1
@@ -331,7 +333,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 			
 			JPanel panel_1_1 = new JPanel();
 			panel_1_1.setBackground(Color.GRAY);
-			panel_1_1.setBounds(0, 128, 268, 110);
+			panel_1_1.setBounds(0, 143, 268, 95);
 			frmAddStudentGroup.getContentPane().add(panel_1_1);
 			
 			JPanel panel_1 = new JPanel();
@@ -349,6 +351,39 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 			btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 			btnDelete.setBackground(Color.BLACK);
 			panel_2_1.add(btnDelete);
+			
+			textField = new JTextField();
+			textField.setText("                                                                       Time Table Management System");
+			textField.setForeground(Color.WHITE);
+			textField.setFont(new Font("Tahoma", Font.PLAIN, 23));
+			textField.setEditable(false);
+			textField.setColumns(10);
+			textField.setBackground(Color.GRAY);
+			textField.setBounds(0, 35, 1334, 74);
+			frmAddStudentGroup.getContentPane().add(textField);
+			
+			JMenuBar menuBar = new JMenuBar();
+			menuBar.setForeground(Color.BLACK);
+			menuBar.setBorderPainted(false);
+			menuBar.setBorder(null);
+			menuBar.setBackground(Color.BLACK);
+			menuBar.setBounds(0, 0, 1344, 37);
+			frmAddStudentGroup.getContentPane().add(menuBar);
+			
+			JPanel panel_5 = new JPanel();
+			panel_5.setLayout(null);
+			panel_5.setForeground(Color.RED);
+			panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
+			panel_5.setBackground(Color.BLACK);
+			panel_5.setBounds(0, 102, 1334, 42);
+			frmAddStudentGroup.getContentPane().add(panel_5);
+			
+			JLabel lblNotAvaailableSessions = new JLabel("NOT OVRLAPPING SESSIONS");
+			lblNotAvaailableSessions.setHorizontalAlignment(SwingConstants.CENTER);
+			lblNotAvaailableSessions.setForeground(Color.RED);
+			lblNotAvaailableSessions.setFont(new Font("Arial Black", Font.BOLD, 19));
+			lblNotAvaailableSessions.setBounds(507, 10, 319, 31);
+			panel_5.add(lblNotAvaailableSessions);
 			btnNewButton_2_1_3.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
