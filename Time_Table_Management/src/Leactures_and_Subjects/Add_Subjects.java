@@ -235,10 +235,7 @@ public class Add_Subjects {
 				
 				}
 				
-				else if(!(textField_1.getText().trim().matches("^[0-9]{4}+"))){
-					JOptionPane.showMessageDialog(null, "Subject code should contain 4 intigers");
-				
-				}else{
+				else{
 					
 					Connection connec = DBConnection.connect();
 					
