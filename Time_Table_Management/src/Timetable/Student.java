@@ -206,7 +206,7 @@ public class Student {
 		
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 0, 1344, 65);
+		panel.setBounds(0, 35, 1344, 65);
 		panel.setBackground(Color.GRAY);
 		frmAddStudentGroup.getContentPane().add(panel);
 		panel.setLayout(null);
@@ -215,7 +215,7 @@ public class Student {
 		lblNewLabel_10.setForeground(Color.WHITE);
 		lblNewLabel_10.setFont(new Font("Times New Roman", Font.BOLD, 27));
 		lblNewLabel_10.setBackground(Color.WHITE);
-		lblNewLabel_10.setBounds(680, 13, 333, 29);
+		lblNewLabel_10.setBounds(573, 26, 333, 29);
 		panel.add(lblNewLabel_10);
 				
 				
@@ -223,7 +223,7 @@ public class Student {
 		JPanel panel_6 = new JPanel();
 		panel_6.setLayout(null);
 		panel_6.setBackground(SystemColor.activeCaption);
-		panel_6.setBounds(263, 143, 1081, 522);
+		panel_6.setBounds(231, 143, 1081, 522);
 		frmAddStudentGroup.getContentPane().add(panel_6);
 		
 		
@@ -349,7 +349,7 @@ public class Student {
 		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnNewButton_2_1.setForeground(Color.WHITE);
 		btnNewButton_2_1.setBackground(Color.BLACK);
-		btnNewButton_2_1.setBounds(0, 319, 183, 37);
+		btnNewButton_2_1.setBounds(0, 319, 198, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1);
 		
 		
@@ -358,7 +358,7 @@ public class Student {
 		btnNewButton_2_1_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnNewButton_2_1_1.setForeground(Color.RED);
 		btnNewButton_2_1_1.setBackground(Color.BLACK);
-		btnNewButton_2_1_1.setBounds(0, 355, 183, 37);
+		btnNewButton_2_1_1.setBounds(0, 355, 198, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_1);
 		
 		
@@ -367,8 +367,44 @@ public class Student {
 		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnNewButton_2_1_2.setForeground(Color.WHITE);
 		btnNewButton_2_1_2.setBackground(Color.BLACK);
-		btnNewButton_2_1_2.setBounds(0, 391, 183, 37);
+		btnNewButton_2_1_2.setBounds(0, 391, 198, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
+		
+		JPanel panel_5 = new JPanel();
+		panel_5.setLayout(null);
+		panel_5.setForeground(Color.RED);
+		panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
+		panel_5.setBackground(Color.BLACK);
+		panel_5.setBounds(0, 99, 1334, 45);
+		frmAddStudentGroup.getContentPane().add(panel_5);
+		
+		JLabel lblStudent = new JLabel("STUDENT");
+		lblStudent.setHorizontalAlignment(SwingConstants.CENTER);
+		lblStudent.setForeground(Color.RED);
+		lblStudent.setFont(new Font("Arial Black", Font.BOLD, 20));
+		lblStudent.setBounds(541, 10, 278, 31);
+		panel_5.add(lblStudent);
+		
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setBackground(Color.GRAY);
+		panel_1_1.setBounds(0, 143, 198, 177);
+		frmAddStudentGroup.getContentPane().add(panel_1_1);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GRAY);
+		panel_1.setBounds(0, 427, 198, 203);
+		frmAddStudentGroup.getContentPane().add(panel_1);
+		
+		JPanel panel_2_1 = new JPanel();
+		panel_2_1.setBackground(Color.GRAY);
+		panel_2_1.setBounds(0, 628, 198, 37);
+		frmAddStudentGroup.getContentPane().add(panel_2_1);
+		
+		JButton btnDelete = new JButton("<<Back");
+		btnDelete.setForeground(new Color(240, 248, 255));
+		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
+		btnDelete.setBackground(Color.BLACK);
+		panel_2_1.add(btnDelete);
 		btnNewButton_2_1_2.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
