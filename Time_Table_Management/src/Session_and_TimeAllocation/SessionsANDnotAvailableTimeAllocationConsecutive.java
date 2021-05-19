@@ -472,7 +472,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 			JButton btnNewButton_2_1_3 = new JButton("Not Available Times");
 			btnNewButton_2_1_3.setForeground(Color.WHITE);
 			btnNewButton_2_1_3.setBackground(Color.BLACK);
-			btnNewButton_2_1_3.setBounds(-1, 393, 268, 37);
+			btnNewButton_2_1_3.setBounds(-1, 393, 270, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_3);
 			btnNewButton_2_1_3.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
@@ -508,6 +508,27 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 			menuBar.setBackground(Color.BLACK);
 			menuBar.setBounds(-1, 0, 1344, 37);
 			frmAddStudentGroup.getContentPane().add(menuBar);
+			
+			JPanel panel_1_1 = new JPanel();
+			panel_1_1.setBackground(Color.GRAY);
+			panel_1_1.setBounds(-1, 144, 270, 141);
+			frmAddStudentGroup.getContentPane().add(panel_1_1);
+			
+			JPanel panel_1 = new JPanel();
+			panel_1.setBackground(Color.GRAY);
+			panel_1.setBounds(0, 428, 269, 182);
+			frmAddStudentGroup.getContentPane().add(panel_1);
+			
+			JPanel panel_2_1 = new JPanel();
+			panel_2_1.setBackground(Color.GRAY);
+			panel_2_1.setBounds(-1, 609, 270, 54);
+			frmAddStudentGroup.getContentPane().add(panel_2_1);
+			
+			JButton btnDelete = new JButton("<<Back");
+			btnDelete.setForeground(new Color(240, 248, 255));
+			btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
+			btnDelete.setBackground(Color.BLACK);
+			panel_2_1.add(btnDelete);
 			btnNewButton_2_1_3.addActionListener(new ActionListener() {
 				
 				public void actionPerformed(ActionEvent e) {
