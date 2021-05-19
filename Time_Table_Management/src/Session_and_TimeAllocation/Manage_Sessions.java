@@ -190,6 +190,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				{
 					String name =rs.getString("SubjectName");
 					sbj.addItem(name);
+					subjBox.addItem(name);
 					 
 				}
 
@@ -1108,7 +1109,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setBackground(Color.GRAY);
-		panel_1_1.setBounds(0, 133, 174, 157);
+		panel_1_1.setBounds(0, 98, 174, 192);
 		ManageSesFrm.getContentPane().add(panel_1_1);
 		
 		JButton btnAddLecturer = new JButton("ADD LECTURER");
@@ -1304,14 +1305,14 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 			}
 		});
 		lecbox.setModel(new DefaultComboBoxModel(new String[] {"                      Select Lecturer"}));
-		lecbox.setBounds(277, 239, 223, 27);
+		lecbox.setBounds(289, 199, 223, 27);
 		ManageSesFrm.getContentPane().add(lecbox);
 		
 		JLabel label_1_1 = new JLabel("Search by Lecturer :");
 		label_1_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_1_1.setForeground(Color.WHITE);
 		label_1_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_1_1.setBounds(248, 191, 180, 37);
+		label_1_1.setBounds(282, 152, 180, 37);
 		ManageSesFrm.getContentPane().add(label_1_1);
 		
 		
@@ -1357,22 +1358,25 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				}
 			});
 		 groupBox.setModel(new DefaultComboBoxModel(new String[] {"                       Select Group"}));
-			groupBox.setBounds(438, 109, 223, 27);
+			
 		groupBox.setBackground(Color.WHITE);
-		groupBox.setBounds(608, 239, 223, 27);
+		groupBox.setBounds(604, 199, 223, 27);
 		ManageSesFrm.getContentPane().add(groupBox);
+		
+		
+		
 		
 		JLabel label_2 = new JLabel("Search by Group/Sub Group :");
 		label_2.setHorizontalAlignment(SwingConstants.CENTER);
 		label_2.setForeground(Color.WHITE);
 		label_2.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_2.setBounds(614, 191, 215, 37);
+		label_2.setBounds(615, 152, 215, 37);
 		ManageSesFrm.getContentPane().add(label_2);
 		
 		JLabel label_3_1 = new JLabel("Search by Subject :");
 		label_3_1.setForeground(Color.WHITE);
 		label_3_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_3_1.setBounds(1020, 191, 215, 37);
+		label_3_1.setBounds(968, 152, 215, 37);
 		ManageSesFrm.getContentPane().add(label_3_1);
 		
 		
@@ -1412,7 +1416,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		subjBox.setBackground(Color.WHITE);
 		subjBox.setModel(new DefaultComboBoxModel(new String[] {"                      Select Subject"}));
 		
-		subjBox.setBounds(982, 239, 223, 27);
+		subjBox.setBounds(930, 200, 223, 27);
 		ManageSesFrm.getContentPane().add(subjBox);
 		
 		
