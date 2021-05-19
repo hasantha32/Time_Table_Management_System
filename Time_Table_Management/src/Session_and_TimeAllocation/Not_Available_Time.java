@@ -50,6 +50,7 @@ import javax.swing.SpinnerListModel;
 
 import java.util.Date;
 import javax.swing.JMenuBar;
+import javax.swing.border.MatteBorder;
 
 
 
@@ -72,6 +73,7 @@ public class Not_Available_Time {
 	private JComboBox selectsubgroup ;
 	private JComboBox selectroom ;
 	private JComboBox selectgroup ;
+	private JTextField textField_1;
 	
 	//refresh all the data
 	
@@ -302,29 +304,10 @@ public void refreshtable() {
 		frame.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
 		frame.setVisible(true);
 		
-		
-		
-		
-		
-		JPanel panel = new JPanel();
-		panel.setForeground(Color.WHITE);
-		panel.setBounds(0, 37, 1344, 65);
-		panel.setBackground(Color.GRAY);
-		frame.getContentPane().add(panel);
-		panel.setLayout(null);
-		
-		
-		
-		JLabel label_1 = new JLabel("Not Available Time");
-		label_1.setBounds(594, 10, 270, 31);
-		panel.add(label_1);
-		label_1.setForeground(Color.WHITE);
-		label_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBackground(SystemColor.activeCaption);
-		panel_3.setBounds(245, 130, 1081, 508);
+		panel_3.setBounds(245, 145, 1081, 508);
 		frame.getContentPane().add(panel_3);
 		
 		
@@ -786,26 +769,31 @@ public void refreshtable() {
 		
 		//conseccutive sessions button
 		JButton btnNewButton_2_1 = new JButton("Conseccutive Sessions");
+		btnNewButton_2_1.setForeground(Color.WHITE);
 		btnNewButton_2_1.setBounds(0, 251, 268, 37);
 		frame.getContentPane().add(btnNewButton_2_1);
-		btnNewButton_2_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		
 		
 		//parallel sessions button
 		JButton btnNewButton_2_1_1 = new JButton("Parallel Sessions");
+		btnNewButton_2_1_1.setForeground(Color.WHITE);
 		btnNewButton_2_1_1.setBounds(0, 286, 275, 37);
 		frame.getContentPane().add(btnNewButton_2_1_1);
-		btnNewButton_2_1_1.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnNewButton_2_1_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		
 		//non overlapping session button
 		JButton btnNewButton_2_1_2 = new JButton("Non Overlapping Sessions");
+		btnNewButton_2_1_2.setForeground(Color.WHITE);
 		btnNewButton_2_1_2.setBounds(0, 323, 275, 37);
 		frame.getContentPane().add(btnNewButton_2_1_2);
-		btnNewButton_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 14));
-		JButton button = new JButton("Not available time");
-		button.setBounds(0, 358, 263, 37);
-		frame.getContentPane().add(button);
-		button.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
+		JButton btnNotAvailableTime = new JButton("Not available time");
+		btnNotAvailableTime.setBackground(Color.BLACK);
+		btnNotAvailableTime.setForeground(Color.RED);
+		btnNotAvailableTime.setBounds(0, 358, 263, 37);
+		frame.getContentPane().add(btnNotAvailableTime);
+		btnNotAvailableTime.setFont(new Font("Arial Black", Font.BOLD, 11));
 		
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setForeground(Color.BLACK);
@@ -814,7 +802,32 @@ public void refreshtable() {
 		menuBar.setBackground(Color.BLACK);
 		menuBar.setBounds(0, 0, 1344, 37);
 		frame.getContentPane().add(menuBar);
-		button.addActionListener(new ActionListener() {
+		
+		textField_1 = new JTextField();
+		textField_1.setText("                                                                       Time Table Management System");
+		textField_1.setForeground(Color.WHITE);
+		textField_1.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		textField_1.setEditable(false);
+		textField_1.setColumns(10);
+		textField_1.setBackground(Color.GRAY);
+		textField_1.setBounds(0, 35, 1334, 74);
+		frame.getContentPane().add(textField_1);
+		
+		JPanel panel_5 = new JPanel();
+		panel_5.setLayout(null);
+		panel_5.setForeground(Color.RED);
+		panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
+		panel_5.setBackground(Color.BLACK);
+		panel_5.setBounds(0, 102, 1334, 42);
+		frame.getContentPane().add(panel_5);
+		
+		JLabel lblNotAvailableTime = new JLabel("NOT AVAILABLE TIME");
+		lblNotAvailableTime.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNotAvailableTime.setForeground(Color.RED);
+		lblNotAvailableTime.setFont(new Font("Arial Black", Font.BOLD, 19));
+		lblNotAvailableTime.setBounds(522, 10, 278, 31);
+		panel_5.add(lblNotAvailableTime);
+		btnNotAvailableTime.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
 			
