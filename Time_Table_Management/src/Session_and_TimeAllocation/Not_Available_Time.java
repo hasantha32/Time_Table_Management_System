@@ -49,6 +49,7 @@ import javax.swing.SpinnerDateModel;
 import javax.swing.SpinnerListModel;
 
 import java.util.Date;
+import javax.swing.JMenuBar;
 
 
 
@@ -307,7 +308,7 @@ public void refreshtable() {
 		
 		JPanel panel = new JPanel();
 		panel.setForeground(Color.WHITE);
-		panel.setBounds(0, 0, 1344, 65);
+		panel.setBounds(0, 37, 1344, 65);
 		panel.setBackground(Color.GRAY);
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
@@ -805,6 +806,14 @@ public void refreshtable() {
 		button.setBounds(0, 358, 263, 37);
 		frame.getContentPane().add(button);
 		button.setFont(new Font("Tahoma", Font.BOLD, 14));
+		
+		JMenuBar menuBar = new JMenuBar();
+		menuBar.setForeground(Color.BLACK);
+		menuBar.setBorderPainted(false);
+		menuBar.setBorder(null);
+		menuBar.setBackground(Color.BLACK);
+		menuBar.setBounds(0, 0, 1344, 37);
+		frame.getContentPane().add(menuBar);
 		button.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
