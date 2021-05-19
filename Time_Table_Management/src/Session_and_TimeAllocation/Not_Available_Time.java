@@ -289,7 +289,7 @@ public void refreshtable() {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.getContentPane().setBackground(SystemColor.inactiveCaptionBorder);
+		frame.getContentPane().setBackground(SystemColor.activeCaption);
 		frame.setBackground(Color.YELLOW);
 		frame.setResizable(false);
 		frame.setTitle("Time Table Management System");
@@ -312,23 +312,19 @@ public void refreshtable() {
 		frame.getContentPane().add(panel);
 		panel.setLayout(null);
 		
-		JLabel lblNewLabel_10 = new JLabel("Advanced");
-		lblNewLabel_10.setForeground(Color.WHITE);
-		lblNewLabel_10.setFont(new Font("Times New Roman", Font.BOLD, 27));
-		lblNewLabel_10.setBackground(Color.WHITE);
-		lblNewLabel_10.setBounds(723, 13, 419, 29);
-		panel.add(lblNewLabel_10);
+		
+		
+		JLabel label_1 = new JLabel("Not Available Time");
+		label_1.setBounds(594, 10, 270, 31);
+		panel.add(label_1);
+		label_1.setForeground(Color.WHITE);
+		label_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
-		panel_3.setBackground(new Color(230, 230, 250));
-		panel_3.setBounds(263, 62, 1081, 628);
+		panel_3.setBackground(SystemColor.activeCaption);
+		panel_3.setBounds(245, 130, 1081, 508);
 		frame.getContentPane().add(panel_3);
-		
-		JPanel panel_6 = new JPanel();
-		panel_6.setLayout(null);
-		panel_6.setBounds(-11, 0, 1093, 39);
-		panel_3.add(panel_6);
 		
 		
 		
@@ -339,14 +335,16 @@ public void refreshtable() {
 		
 		
 		JPanel panel_4 = new JPanel();
+		panel_4.setForeground(Color.WHITE);
 		panel_4.setLayout(null);
 		panel_4.setBorder(new TitledBorder(null, "", TitledBorder.LEADING, TitledBorder.TOP, null, null));
-		panel_4.setBackground(SystemColor.menu);
-		panel_4.setBounds(24, 91, 1036, 326);
+		panel_4.setBackground(Color.DARK_GRAY);
+		panel_4.setBounds(22, 10, 1036, 326);
 		panel_3.add(panel_4);
 	
 		//select lecture 
 		JLabel lblNewLabel_2 = new JLabel("Select Lecturer");
+		lblNewLabel_2.setForeground(Color.WHITE);
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblNewLabel_2.setBounds(28, 26, 149, 23);
 		panel_4.add(lblNewLabel_2);
@@ -361,17 +359,20 @@ public void refreshtable() {
 	
 		
 		JLabel lblSelectSubGroup = new JLabel("Selected sub Group");
+		lblSelectSubGroup.setForeground(Color.WHITE);
 		lblSelectSubGroup.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblSelectSubGroup.setBounds(28, 182, 149, 23);
 		panel_4.add(lblSelectSubGroup);
 		
 		
 		JLabel StartTime = new JLabel("Sart Time");
+		StartTime.setForeground(Color.WHITE);
 		StartTime.setFont(new Font("Tahoma", Font.BOLD, 12));
 		StartTime.setBounds(560, 111, 91, 23);
 		panel_4.add(StartTime);
 		
 		JLabel EndTime = new JLabel("End Time");
+		EndTime.setForeground(Color.WHITE);
 		EndTime.setFont(new Font("Tahoma", Font.BOLD, 12));
 		EndTime.setBounds(560, 170, 57, 23);
 		panel_4.add(EndTime);
@@ -463,7 +464,7 @@ public void refreshtable() {
 		
 		id = new JTextField();
 		id.setBackground(SystemColor.menu);
-		id.setBounds(0, 0, 43, 23);
+		id.setBounds(-21, 66, 7, 23);
 		panel_4.add(id);
 		
 		//start time AM
@@ -498,6 +499,7 @@ public void refreshtable() {
 		
 		//Add date
 		JLabel date = new JLabel("Day");
+		date.setForeground(Color.WHITE);
 		date.setFont(new Font("Tahoma", Font.BOLD, 12));
 		date.setBounds(560, 47, 74, 14);
 		panel_4.add(date);
@@ -513,6 +515,7 @@ public void refreshtable() {
 		
 		//Add session sign
 		JLabel session = new JLabel("Session Signature");
+		session.setForeground(Color.WHITE);
 		session.setFont(new Font("Tahoma", Font.BOLD, 12));
 		session.setBounds(28, 87, 113, 14);
 		panel_4.add(session);
@@ -524,6 +527,7 @@ public void refreshtable() {
 		fillsign();
 		
 		JLabel lblNewLabel = new JLabel("Select Room");
+		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblNewLabel.setBounds(28, 241, 113, 14);
 		panel_4.add(lblNewLabel);
@@ -539,6 +543,7 @@ public void refreshtable() {
 	
 		//select group
 		JLabel lblSelectGroup = new JLabel("Select Group");
+		lblSelectGroup.setForeground(Color.WHITE);
 		lblSelectGroup.setFont(new Font("Tahoma", Font.BOLD, 12));
 		lblSelectGroup.setBounds(28, 136, 137, 14);
 		panel_4.add(lblSelectGroup);
@@ -624,18 +629,11 @@ public void refreshtable() {
 		delete.setFont(new Font("Tahoma", Font.BOLD, 14));
 		delete.setEnabled(true);
 		delete.setBackground(new Color(0, 153, 153));
-		delete.setBounds(909, 554, 141, 31);
+		delete.setBounds(597, 467, 141, 31);
 		panel_3.add(delete);
-	
-		
-		JSeparator separator = new JSeparator();
-		separator.setForeground(new Color(32, 178, 170));
-		separator.setBackground(new Color(0, 139, 139));
-		separator.setBounds(-1, 40, 1082, 21);
-		panel_3.add(separator);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(24, 419, 1036, 124);
+		scrollPane.setBounds(22, 333, 1036, 124);
 		panel_3.add(scrollPane);
 		
 		
@@ -782,16 +780,8 @@ public void refreshtable() {
 		btnUpdate.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnUpdate.setEnabled(true);
 		btnUpdate.setBackground(new Color(0, 153, 153));
-		btnUpdate.setBounds(81, 556, 141, 31);
+		btnUpdate.setBounds(319, 467, 141, 31);
 		panel_3.add(btnUpdate);
-		
-		
-		
-		JLabel label = new JLabel("Not Available Time");
-		label.setForeground(new Color(0, 128, 128));
-		label.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		label.setBounds(452, 60, 270, 31);
-		panel_3.add(label);
 		
 		//conseccutive sessions button
 		JButton btnNewButton_2_1 = new JButton("Conseccutive Sessions");
