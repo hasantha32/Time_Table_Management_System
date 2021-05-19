@@ -174,6 +174,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 		
 		
 		JLabel lblNewLabel_4 = new JLabel("Session 1");
+		lblNewLabel_4.setForeground(Color.WHITE);
 		lblNewLabel_4.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		lblNewLabel_4.setBounds(52, 29, 80, 21);
 		panel_7.add(lblNewLabel_4);
@@ -301,24 +302,53 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 			table.setModel(DbUtils.resultSetToTableModel(rs));
 			
 			JButton btnNewButton_2_1 = new JButton("Conseccutive Sessions");
+			btnNewButton_2_1.setBackground(Color.BLACK);
+			btnNewButton_2_1.setForeground(Color.WHITE);
 			btnNewButton_2_1.setBounds(0, 234, 268, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1);
 			btnNewButton_2_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_1 = new JButton("Parallel Sessions");
+			btnNewButton_2_1_1.setBackground(Color.BLACK);
+			btnNewButton_2_1_1.setForeground(Color.WHITE);
 			btnNewButton_2_1_1.setBounds(0, 270, 275, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_1);
 			btnNewButton_2_1_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_2 = new JButton("Non Overlapping Sessions");
+			btnNewButton_2_1_2.setBackground(Color.BLACK);
+			btnNewButton_2_1_2.setForeground(Color.RED);
 			btnNewButton_2_1_2.setBounds(0, 303, 275, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
 			btnNewButton_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_3 = new JButton("Not Available Times");
+			btnNewButton_2_1_3.setBackground(Color.BLACK);
+			btnNewButton_2_1_3.setForeground(Color.WHITE);
 			btnNewButton_2_1_3.setBounds(0, 339, 268, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_3);
 			btnNewButton_2_1_3.setFont(new Font("Tahoma", Font.BOLD, 14));
+			
+			JPanel panel_1_1 = new JPanel();
+			panel_1_1.setBackground(Color.GRAY);
+			panel_1_1.setBounds(0, 128, 268, 110);
+			frmAddStudentGroup.getContentPane().add(panel_1_1);
+			
+			JPanel panel_1 = new JPanel();
+			panel_1.setBackground(Color.GRAY);
+			panel_1.setBounds(0, 375, 268, 238);
+			frmAddStudentGroup.getContentPane().add(panel_1);
+			
+			JPanel panel_2_1 = new JPanel();
+			panel_2_1.setBackground(Color.GRAY);
+			panel_2_1.setBounds(0, 609, 268, 54);
+			frmAddStudentGroup.getContentPane().add(panel_2_1);
+			
+			JButton btnDelete = new JButton("<<Back");
+			btnDelete.setForeground(new Color(240, 248, 255));
+			btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
+			btnDelete.setBackground(Color.BLACK);
+			panel_2_1.add(btnDelete);
 			btnNewButton_2_1_3.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
