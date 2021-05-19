@@ -88,7 +88,7 @@ public class Manage_Sessions {
 	private JTextField cod;
 	private JTextField txtSid;
 	private JTextField textField;
-	
+	private JComboBox lecbox;
 	
 	
 	
@@ -1263,71 +1263,80 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 		btnDelete.setBackground(Color.BLACK);
 		panel_2_1.add(btnDelete);
+		///
+
+		 lecbox = new JComboBox();
+		 lecbox.setBackground(Color.WHITE);
+		 lecbox.setForeground(Color.DARK_GRAY);
+		 lecbox.setFont(UIManager.getFont("Spinner.font"));
+		lecbox.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				try {
+					
+					String l2 = lecbox.getSelectedItem().toString();
+					 Connection con = DBConnection.connect();
+					// String selection=(String)searchcomboBox.getSelectedItem();
+					 String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCode As SubCode,subName As SubName,tag As Tag,studentGroup As GroupID,NoOfStudents As Students,duration As Duration,sessionSignature As SessionSignature from session  where lec1=? or lec2= '"+l2+"'";
+					 PreparedStatement pst= con.prepareStatement(query);
+					 pst.setString(1,(String)lecbox.getSelectedItem());
+					 ResultSet rs=pst.executeQuery();
+
+					 table.setModel(DbUtils.resultSetToTableModel(rs));
+					 pst.close();
+					 
+				 }catch(Exception ep) {
+					 ep.printStackTrace();
+				 }
+				
+				
+				
+			}
+		});
+		lecbox.setModel(new DefaultComboBoxModel(new String[] {"                      Select Lecturer"}));
+		lecbox.setBounds(50, 109, 223, 27);
+		panel_3.add(lecbox);
 		
-		JPanel panel_3_1 = new JPanel();
-		panel_3_1.setLayout(null);
-		panel_3_1.setBackground(Color.DARK_GRAY);
-		panel_3_1.setBounds(222, 112, 1075, 202);
-		ManageSesFrm.getContentPane().add(panel_3_1);
-		
-		JScrollPane scrollPane_3 = new JScrollPane();
-		scrollPane_3.setViewportBorder(new LineBorder(new Color(0, 0, 0)));
-		scrollPane_3.setBounds(10, 61, 1045, 105);
-		panel_3_1.add(scrollPane_3);
-		
-		JComboBox lecbox = new JComboBox();
+		////
+		 lecbox = new JComboBox();
 		lecbox.setForeground(Color.DARK_GRAY);
 		lecbox.setFont(UIManager.getFont("Spinner.font"));
 		lecbox.setBackground(Color.WHITE);
-		lecbox.setBounds(50, 24, 223, 27);
-		panel_3_1.add(lecbox);
+		lecbox.setBounds(220, 239, 223, 27);
+		ManageSesFrm.getContentPane().add(lecbox);
 		
 		JLabel label_1_1 = new JLabel("Search by Lecturer :");
 		label_1_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_1_1.setForeground(Color.WHITE);
 		label_1_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_1_1.setBounds(78, -12, 180, 36);
-		panel_3_1.add(label_1_1);
-		
-		JLabel label_2 = new JLabel("Search by Group/Sub Group :");
-		label_2.setHorizontalAlignment(SwingConstants.CENTER);
-		label_2.setForeground(Color.WHITE);
-		label_2.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_2.setBounds(444, -12, 215, 36);
-		panel_3_1.add(label_2);
-		
-		JLabel label_3_1 = new JLabel("Search by Subject :");
-		label_3_1.setForeground(Color.WHITE);
-		label_3_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_3_1.setBounds(850, -12, 215, 36);
-		panel_3_1.add(label_3_1);
+		label_1_1.setBounds(248, 191, 180, 37);
+		ManageSesFrm.getContentPane().add(label_1_1);
 		
 		JComboBox groupBox = new JComboBox();
 		groupBox.setForeground(Color.DARK_GRAY);
 		groupBox.setFont(UIManager.getFont("Spinner.font"));
 		groupBox.setBackground(Color.WHITE);
-		groupBox.setBounds(438, 24, 223, 27);
-		panel_3_1.add(groupBox);
+		groupBox.setBounds(608, 239, 223, 27);
+		ManageSesFrm.getContentPane().add(groupBox);
+		
+		JLabel label_2 = new JLabel("Search by Group/Sub Group :");
+		label_2.setHorizontalAlignment(SwingConstants.CENTER);
+		label_2.setForeground(Color.WHITE);
+		label_2.setFont(new Font("Tahoma", Font.BOLD, 12));
+		label_2.setBounds(614, 191, 215, 37);
+		ManageSesFrm.getContentPane().add(label_2);
+		
+		JLabel label_3_1 = new JLabel("Search by Subject :");
+		label_3_1.setForeground(Color.WHITE);
+		label_3_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		label_3_1.setBounds(1020, 191, 215, 37);
+		ManageSesFrm.getContentPane().add(label_3_1);
 		
 		JComboBox subjBox = new JComboBox();
 		subjBox.setForeground(Color.DARK_GRAY);
 		subjBox.setFont(UIManager.getFont("Spinner.font"));
 		subjBox.setBackground(Color.WHITE);
-		subjBox.setBounds(812, 24, 223, 25);
-		panel_3_1.add(subjBox);
-		
-		JPanel panel_4 = new JPanel();
-		panel_4.setBackground(Color.DARK_GRAY);
-		panel_4.setBounds(10, 1, 1045, 161);
-		panel_3_1.add(panel_4);
-		
-		JButton btnNewButton = new JButton("CLEAR");
-		btnNewButton.setToolTipText("Click button to clear search bar");
-		btnNewButton.setForeground(Color.WHITE);
-		btnNewButton.setFont(new Font("Dialog", Font.BOLD, 13));
-		btnNewButton.setBackground(Color.BLACK);
-		btnNewButton.setBounds(444, 172, 140, 27);
-		panel_3_1.add(btnNewButton);
+		subjBox.setBounds(982, 239, 223, 27);
+		ManageSesFrm.getContentPane().add(subjBox);
 		
 		
 		//generate session signature
