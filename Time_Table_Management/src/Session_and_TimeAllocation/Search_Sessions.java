@@ -73,7 +73,6 @@ public class Search_Sessions {
 	private JComboBox lecbox;
 	private JComboBox subjBox;
 	private JComboBox groupBox;
-	private JTextField textField;
 	
 	
 	public void refreshtable() {
@@ -255,12 +254,12 @@ public class Search_Sessions {
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);
 		panel_3.setBackground(Color.DARK_GRAY);
-		panel_3.setBounds(229, 144, 1065, 527);
+		panel_3.setBounds(216, 199, 1065, 202);
 		SrchSesFrm.getContentPane().add(panel_3);
 
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setViewportBorder(new LineBorder(new Color(0, 0, 0)));
-		scrollPane.setBounds(10, 201, 1045, 277);
+		scrollPane.setBounds(10, 61, 1045, 105);
 		panel_3.add(scrollPane);
 
 		JScrollPane scrollPane_1 = new JScrollPane();
@@ -348,7 +347,7 @@ public class Search_Sessions {
 					}
 				});
 				lecbox.setModel(new DefaultComboBoxModel(new String[] {"                      Select Lecturer"}));
-				lecbox.setBounds(50, 109, 223, 27);
+				lecbox.setBounds(50, 24, 223, 27);
 				panel_3.add(lecbox);
 				
 				
@@ -414,37 +413,37 @@ public class Search_Sessions {
 		label_1.setForeground(Color.WHITE);
 		label_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_1.setBounds(78, 61, 180, 37);
+		label_1.setBounds(78, -12, 180, 36);
 		panel_3.add(label_1);
 
 		JLabel label_2 = new JLabel("Search by Group/Sub Group :");
 		label_2.setForeground(Color.WHITE);
 		label_2.setHorizontalAlignment(SwingConstants.CENTER);
 		label_2.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_2.setBounds(444, 61, 215, 37);
+		label_2.setBounds(444, -12, 215, 36);
 		panel_3.add(label_2);
 
 		JLabel label_3 = new JLabel("Search by Subject :");
 		label_3.setForeground(Color.WHITE);
 		label_3.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_3.setBounds(850, 61, 215, 37);
+		label_3.setBounds(850, -12, 215, 36);
 		panel_3.add(label_3);
 
 		
 
 		
 		groupBox.setModel(new DefaultComboBoxModel(new String[] {"                       Select Group"}));
-		groupBox.setBounds(438, 109, 223, 27);
+		groupBox.setBounds(438, 24, 223, 27);
 		panel_3.add(groupBox);
 
 		 
 		subjBox.setModel(new DefaultComboBoxModel(new String[] {"                      Select Subject"}));
-		subjBox.setBounds(812, 109, 223, 27);
+		subjBox.setBounds(812, 24, 223, 25);
 		panel_3.add(subjBox);
 
 		JPanel panel_4 = new JPanel();
 		panel_4.setBackground(Color.DARK_GRAY);
-		panel_4.setBounds(10, 11, 1045, 474);
+		panel_4.setBounds(10, 1, 1045, 161);
 		panel_3.add(panel_4);
 		
 		//clear button
@@ -464,33 +463,8 @@ public class Search_Sessions {
 				
 			}
 		});
-		btnNewButton.setBounds(477, 489, 140, 27);
+		btnNewButton.setBounds(444, 172, 140, 27);
 		panel_3.add(btnNewButton);
-		
-		JPanel panel_5 = new JPanel();
-		panel_5.setLayout(null);
-		panel_5.setForeground(Color.RED);
-		panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
-		panel_5.setBackground(Color.BLACK);
-		panel_5.setBounds(3, 96, 1334, 38);
-		SrchSesFrm.getContentPane().add(panel_5);
-		
-		JLabel lblSearchSessions = new JLabel("SEARCH SESSIONS");
-		lblSearchSessions.setHorizontalAlignment(SwingConstants.CENTER);
-		lblSearchSessions.setForeground(Color.RED);
-		lblSearchSessions.setFont(new Font("Arial Black", Font.BOLD, 19));
-		lblSearchSessions.setBounds(507, 0, 278, 31);
-		panel_5.add(lblSearchSessions);
-		
-		textField = new JTextField();
-		textField.setText("                                                                       Time Table Management System");
-		textField.setForeground(Color.WHITE);
-		textField.setFont(new Font("Tahoma", Font.PLAIN, 23));
-		textField.setEditable(false);
-		textField.setColumns(10);
-		textField.setBackground(Color.GRAY);
-		textField.setBounds(0, 32, 1337, 65);
-		SrchSesFrm.getContentPane().add(textField);
 		
 		
 		///ADD header navigation
@@ -1118,5 +1092,4 @@ public class Search_Sessions {
 				loadSubGroup();
 				
 	}
-
 }
