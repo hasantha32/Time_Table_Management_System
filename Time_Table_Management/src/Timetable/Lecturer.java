@@ -58,6 +58,7 @@ import javax.swing.border.LineBorder;
 import java.awt.Panel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.JMenuBar;
 
 public class Lecturer {
 
@@ -214,7 +215,7 @@ public class Lecturer {
 		JPanel panel_6 = new JPanel();
 		panel_6.setLayout(null);
 		panel_6.setBackground(SystemColor.activeCaption);
-		panel_6.setBounds(263, 146, 1081, 519);
+		panel_6.setBounds(245, 156, 1081, 519);
 		frmAddStudentGroup_1.getContentPane().add(panel_6);
 		
 		
@@ -383,6 +384,14 @@ public class Lecturer {
 		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 		btnDelete.setBackground(Color.BLACK);
 		panel_2_1.add(btnDelete);
+		
+		JMenuBar menuBar = new JMenuBar();
+		menuBar.setForeground(Color.BLACK);
+		menuBar.setBorderPainted(false);
+		menuBar.setBorder(null);
+		menuBar.setBackground(Color.BLACK);
+		menuBar.setBounds(0, 0, 1344, 37);
+		frmAddStudentGroup_1.getContentPane().add(menuBar);
 		btnNewButton_2_1_2.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
