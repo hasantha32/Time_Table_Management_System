@@ -436,7 +436,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 					//NotAvailableTime not= new NotAvailableTime();
 					//not.main(null);
 					frmAddStudentGroup.dispose();
-					new  NotAvailableTime();
+					new  Not_Available_Time();
 					
 					
 				}
@@ -448,7 +448,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 					//Statistics stat= new Statistics ();
 					//stat.main(null);
 					frmAddStudentGroup.dispose();
-					new  Non_overlappingSessions();
+					new  SessionsANDnotAvailableTimeAllocationNoneOverlaping();
 					
 				}
 			});
@@ -470,7 +470,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 					//Statistics stat= new 8tatistics ();
 					//stat.main(null);
 					frmAddStudentGroup.dispose();
-					new  Consecutive_sessions();
+					new  SessionsANDnotAvailableTimeAllocationConsecutive();
 					
 				}
 			});

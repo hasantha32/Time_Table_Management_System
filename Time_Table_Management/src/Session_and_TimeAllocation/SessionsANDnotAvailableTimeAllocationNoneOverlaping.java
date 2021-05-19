@@ -1,5 +1,5 @@
 
-package Advanced;
+package Session_and_TimeAllocation;
 
 import java.awt.EventQueue;
 import java.awt.Font;
@@ -151,7 +151,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 		frmAddStudentGroup.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmAddStudentGroup.getContentPane().setLayout(null);
 		frmAddStudentGroup.setExtendedState(frmAddStudentGroup.getExtendedState() | JFrame.MAXIMIZED_BOTH);
-		frmAddStudentGroup.setIconImage(logo);
+	
 		frmAddStudentGroup.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
 		frmAddStudentGroup.setVisible(true);
 		
@@ -209,7 +209,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 				
 				
 				 try {
-					 Connection con = DbConnection.connect();
+					 Connection con = DBConnection.connect();
 
 	                    String query = "INSERT INTO nonOverlapping values(null, '" + session + "')";
 
@@ -296,7 +296,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 		));
 		scrollPane.setViewportView(table);
 		try {
-			Connection con = DbConnection.connect();
+			Connection con = DBConnection.connect();
 			
 			String query="select * from nonOverlapping  ";
 			PreparedStatement pst=con.prepareStatement(query);
@@ -391,7 +391,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 				//NotAvailableTime not= new NotAvailableTime();
 				//not.main(null);
 				frmAddStudentGroup.dispose();
-				new  NotAvailableTime();
+				new  Not_Available_Time();
 				
 			}
 		});
@@ -411,7 +411,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 					
 					
 					frmAddStudentGroup.dispose();
-					new  Parallel_sessions();
+					new  SessionsANDnotAvailableTimeAllocationParallel();
 					
 				}
 			});
@@ -421,7 +421,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 				
 				
 				frmAddStudentGroup.dispose();
-				new  Consecutive_sessions();
+				new  SessionsANDnotAvailableTimeAllocationConsecutive();
 				
 			}
 		});

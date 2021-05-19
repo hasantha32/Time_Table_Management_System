@@ -869,7 +869,7 @@ public void refreshtable() {
 			public void actionPerformed(ActionEvent e) {
 
 				frame.dispose();
-				new Parallel_sessions();
+				new SessionsANDnotAvailableTimeAllocationParallel();
 				
 			}
 		});
