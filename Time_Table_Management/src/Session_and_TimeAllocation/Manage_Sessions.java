@@ -89,7 +89,7 @@ public class Manage_Sessions {
 	private JTextField txtSid;
 	private JTextField textField;
 	private JComboBox lecbox;
-	
+	private JComboBox groupBox;
 	
 	
 	public void refreshtable() {
@@ -123,6 +123,9 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 
 	}
 
+
+
+
 	//load data to dropdown lec1
 	  public  void  loadLecturer1(){ 
 		  try {
@@ -136,6 +139,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				while(rs.next())
 				{
 					String name =rs.getString("LecturerName");
+					lecbox.addItem(name);
 					lecr1.addItem(name);
 					 
 				}
@@ -257,6 +261,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				{
 					String name =rs.getString("Sub_G_ID");
 					grpId.addItem(name);
+					groupBox.addItem(name);
 					 
 				}
 
@@ -1263,12 +1268,11 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 		btnDelete.setBackground(Color.BLACK);
 		panel_2_1.add(btnDelete);
-		///
 
 		 lecbox = new JComboBox();
-		 lecbox.setBackground(Color.WHITE);
-		 lecbox.setForeground(Color.DARK_GRAY);
-		 lecbox.setFont(UIManager.getFont("Spinner.font"));
+		lecbox.setForeground(Color.DARK_GRAY);
+		lecbox.setFont(UIManager.getFont("Spinner.font"));
+		lecbox.setBackground(Color.WHITE);
 		lecbox.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				try {
@@ -1293,15 +1297,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 			}
 		});
 		lecbox.setModel(new DefaultComboBoxModel(new String[] {"                      Select Lecturer"}));
-		lecbox.setBounds(50, 109, 223, 27);
-		panel_3.add(lecbox);
-		
-		////
-		 lecbox = new JComboBox();
-		lecbox.setForeground(Color.DARK_GRAY);
-		lecbox.setFont(UIManager.getFont("Spinner.font"));
-		lecbox.setBackground(Color.WHITE);
-		lecbox.setBounds(220, 239, 223, 27);
+		lecbox.setBounds(277, 239, 223, 27);
 		ManageSesFrm.getContentPane().add(lecbox);
 		
 		JLabel label_1_1 = new JLabel("Search by Lecturer :");
@@ -1311,9 +1307,41 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		label_1_1.setBounds(248, 191, 180, 37);
 		ManageSesFrm.getContentPane().add(label_1_1);
 		
-		JComboBox groupBox = new JComboBox();
+		
+		
+		
+		
+		////
+
+		 
+		 
+		////
+		 groupBox = new JComboBox();
+		
+		
 		groupBox.setForeground(Color.DARK_GRAY);
 		groupBox.setFont(UIManager.getFont("Spinner.font"));
+		 groupBox.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+					try {
+						 Connection con = DBConnection.connect();
+						// String selection=(String)searchcomboBox.getSelectedItem();
+						 String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCode As SubCode,subName As SubName,tag As Tag,studentGroup As GroupID,NoOfStudents As Students,duration As Duration,sessionSignature As SessionSignature from session  where studentGroup=?";
+						 PreparedStatement pst= con.prepareStatement(query);
+						 pst.setString(1,(String)groupBox.getSelectedItem());
+						 ResultSet rs=pst.executeQuery();
+
+						 table.setModel(DbUtils.resultSetToTableModel(rs));
+						 pst.close();
+						 
+					 }catch(Exception ep) {
+						 ep.printStackTrace();
+					 }
+					
+					
+					
+				}
+			});
 		groupBox.setBackground(Color.WHITE);
 		groupBox.setBounds(608, 239, 223, 27);
 		ManageSesFrm.getContentPane().add(groupBox);
