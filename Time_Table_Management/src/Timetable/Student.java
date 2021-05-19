@@ -199,7 +199,7 @@ public class Student {
 		frmAddStudentGroup.setBounds(0, 0, 1350, 700);
 		frmAddStudentGroup.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmAddStudentGroup.getContentPane().setLayout(null);
-		frmAddStudentGroup.setIconImage(logo);
+	
 		
 		frmAddStudentGroup.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
 		frmAddStudentGroup.setVisible(true);
@@ -250,7 +250,7 @@ public class Student {
 				else {
 			try {
 					
-					Connection con = DbConnection.connect();
+					Connection con = DBConnection.connect();
 					
 					String query="select Date as Day,startTime || ' ' || start AS StartTime,endTime || ' ' || end AS EndTime,sessionSign from notavailableTime where (selectGroup='"+comboBox.getSelectedItem().toString()+"' ) OR (selectSubGroup = '"+comboBox.getSelectedItem().toString()+"') order by Date,StartTime,EndTime";
 					PreparedStatement pst=con.prepareStatement(query);

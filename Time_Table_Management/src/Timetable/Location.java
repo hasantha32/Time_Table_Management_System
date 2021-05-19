@@ -163,7 +163,7 @@ public class Location {
 		frmAddStudentGroup.setBounds(0, 0, 1350, 700);
 		frmAddStudentGroup.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmAddStudentGroup.getContentPane().setLayout(null);
-		frmAddStudentGroup.setIconImage(logo);
+
 		
 		frmAddStudentGroup.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
 		frmAddStudentGroup.setVisible(true);
@@ -391,7 +391,7 @@ public class Location {
 					else {
 					try {
 						
-						Connection con = DbConnection.connect();
+						Connection con = DBConnection.connect();
 						
 						String query="select Date As Day,startTime || ' ' || start as StartTime,endTime || ' ' || end As EndTime ,sessionSign As SessionSign from notavailableTime where selectRoom='"+comboBox.getSelectedItem().toString()+"' order by Date,startTime,endTime";
 						PreparedStatement pst=con.prepareStatement(query);
