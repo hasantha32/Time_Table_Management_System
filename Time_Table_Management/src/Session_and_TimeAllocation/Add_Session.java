@@ -600,7 +600,7 @@ public class Add_Session {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
-		panel_1.setBounds(0, 503, 174, 113);
+		panel_1.setBounds(0, 466, 174, 150);
 		AddsessFrm.getContentPane().add(panel_1);
 		
 		JButton btnManageSession = new JButton("MANAGE SESSION");

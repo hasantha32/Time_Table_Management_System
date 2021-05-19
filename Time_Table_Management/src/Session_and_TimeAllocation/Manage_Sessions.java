@@ -1228,7 +1228,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(Color.GRAY);
-		panel_1.setBounds(0, 510, 174, 118);
+		panel_1.setBounds(0, 476, 174, 152);
 		ManageSesFrm.getContentPane().add(panel_1);
 		
 		JPanel panel_2_1 = new JPanel();
