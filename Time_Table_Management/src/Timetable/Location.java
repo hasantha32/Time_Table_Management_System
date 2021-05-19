@@ -317,6 +317,27 @@ public class Location {
 		lblLocation.setFont(new Font("Arial Black", Font.BOLD, 20));
 		lblLocation.setBounds(541, 10, 278, 31);
 		panel_5.add(lblLocation);
+		
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setBackground(Color.GRAY);
+		panel_1_1.setBounds(0, 138, 198, 232);
+		frmAddStudentGroup.getContentPane().add(panel_1_1);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GRAY);
+		panel_1.setBounds(0, 474, 198, 153);
+		frmAddStudentGroup.getContentPane().add(panel_1);
+		
+		JPanel panel_2_1 = new JPanel();
+		panel_2_1.setBackground(Color.GRAY);
+		panel_2_1.setBounds(0, 626, 198, 37);
+		frmAddStudentGroup.getContentPane().add(panel_2_1);
+		
+		JButton btnDelete = new JButton("<<Back");
+		btnDelete.setForeground(new Color(240, 248, 255));
+		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
+		btnDelete.setBackground(Color.BLACK);
+		panel_2_1.add(btnDelete);
 		btnNewButton_2_1_2.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
