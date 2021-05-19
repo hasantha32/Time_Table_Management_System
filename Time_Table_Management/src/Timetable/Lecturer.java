@@ -181,7 +181,7 @@ public class Lecturer {
 			}
 		});
 		frmAddStudentGroup_1 = new JFrame();
-		frmAddStudentGroup_1.getContentPane().setBackground(SystemColor.inactiveCaptionBorder);
+		frmAddStudentGroup_1.getContentPane().setBackground(SystemColor.activeCaption);
 		frmAddStudentGroup_1.setBackground(Color.YELLOW);
 		frmAddStudentGroup_1.setResizable(false);
 		frmAddStudentGroup_1.setTitle("Time Table Management System");
@@ -198,7 +198,7 @@ public class Lecturer {
 		
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(0, 0, 1344, 65);
+		panel.setBounds(0, 36, 1344, 65);
 		panel.setBackground(Color.GRAY);
 		frmAddStudentGroup_1.getContentPane().add(panel);
 		panel.setLayout(null);
@@ -214,7 +214,7 @@ public class Lecturer {
 		JPanel panel_6 = new JPanel();
 		panel_6.setLayout(null);
 		panel_6.setBackground(new Color(230, 230, 250));
-		panel_6.setBounds(263, 62, 1081, 603);
+		panel_6.setBounds(263, 100, 1081, 565);
 		frmAddStudentGroup_1.getContentPane().add(panel_6);
 		
 		
@@ -222,13 +222,13 @@ public class Lecturer {
 
 		JPanel panel_6_1_1 = new JPanel();
 		panel_6_1_1.setLayout(null);
-		panel_6_1_1.setBounds(10, 42, 1081, 38);
+		panel_6_1_1.setBounds(10, 10, 1081, 38);
 		panel_6.add(panel_6_1_1);
 		
 		JLabel lblNewLabel_1_1 = new JLabel("Lecturer");
 		lblNewLabel_1_1.setForeground(new Color(0, 128, 128));
 		lblNewLabel_1_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblNewLabel_1_1.setBounds(513, 0, 278, 31);
+		lblNewLabel_1_1.setBounds(466, 10, 114, 31);
 		panel_6_1_1.add(lblNewLabel_1_1);
 		
 		
@@ -236,7 +236,7 @@ public class Lecturer {
 		
 		
 		JPanel panel_7 = new JPanel();
-		panel_7.setBounds(10, 91, 1059, 499);
+		panel_7.setBounds(10, 61, 1059, 499);
 		panel_6.add(panel_7);
 		
 	
@@ -280,7 +280,7 @@ public class Lecturer {
 		
 		btnNewButton_2.setForeground(Color.WHITE);
 		btnNewButton_2.setFont(new Font("Times New Roman", Font.BOLD, 15));
-		btnNewButton_2.setBackground(new Color(0, 139, 139));
+		btnNewButton_2.setBackground(Color.BLACK);
 		panel_7.add(btnNewButton_2);
 		
 		
@@ -315,7 +315,7 @@ public class Lecturer {
 	
 		btnNewButton_3.setForeground(Color.WHITE);
 		btnNewButton_3.setFont(new Font("Times New Roman", Font.BOLD, 15));
-		btnNewButton_3.setBackground(new Color(0, 139, 139));
+		btnNewButton_3.setBackground(Color.BLACK);
 		panel_7.add(btnNewButton_3);
 		
 		comboBox = new JComboBox();
@@ -342,15 +342,24 @@ public class Lecturer {
 		scrollPane.setViewportView(table);
 		
 		JButton btnNewButton_2_1 = new JButton("Lecture");
-		btnNewButton_2_1.setBounds(10, 339, 179, 37);
+		btnNewButton_2_1.setBackground(Color.BLACK);
+		btnNewButton_2_1.setForeground(Color.RED);
+		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1.setBounds(0, 339, 192, 37);
 		frmAddStudentGroup_1.getContentPane().add(btnNewButton_2_1);
 		
 		JButton btnNewButton_2_1_1 = new JButton("Student");
-		btnNewButton_2_1_1.setBounds(20, 374, 192, 37);
+		btnNewButton_2_1_1.setBackground(Color.BLACK);
+		btnNewButton_2_1_1.setForeground(Color.WHITE);
+		btnNewButton_2_1_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1_1.setBounds(0, 376, 192, 37);
 		frmAddStudentGroup_1.getContentPane().add(btnNewButton_2_1_1);
 		
 		JButton btnNewButton_2_1_2 = new JButton("Location");
-		btnNewButton_2_1_2.setBounds(13, 409, 240, 37);
+		btnNewButton_2_1_2.setBackground(Color.BLACK);
+		btnNewButton_2_1_2.setForeground(Color.WHITE);
+		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1_2.setBounds(0, 412, 192, 37);
 		frmAddStudentGroup_1.getContentPane().add(btnNewButton_2_1_2);
 		btnNewButton_2_1_2.addActionListener(new ActionListener() {
 			
