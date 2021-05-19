@@ -324,11 +324,11 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
 		panel_2.setBackground(Color.DARK_GRAY);
-		panel_2.setBounds(222, 317, 1075, 361);
+		panel_2.setBounds(222, 203, 1075, 475);
 		ManageSesFrm.getContentPane().add(panel_2);
 
 		JScrollPane scrollPane_2 = new JScrollPane();
-		scrollPane_2.setBounds(10, 10, 1055, 88);
+		scrollPane_2.setBounds(10, 10, 1055, 185);
 		panel_2.add(scrollPane_2);
 
 		JScrollPane scrollPane = new JScrollPane();
@@ -447,7 +447,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.setLayout(null);
 		panel_3.setBorder(new EmptyBorder(0, 0, 0, 0));
 		panel_3.setBackground(Color.DARK_GRAY);
-		panel_3.setBounds(10, 96, 1055, 265);
+		panel_3.setBounds(10, 171, 1055, 294);
 		panel_2.add(panel_3);
 
 		JButton btnClear = new JButton("CLEAR");
@@ -456,7 +456,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnClear.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnClear.setEnabled(true);
 		btnClear.setBackground(Color.BLACK);
-		btnClear.setBounds(538, 227, 141, 31);
+		btnClear.setBounds(540, 255, 141, 31);
 		panel_3.add(btnClear);
 
 		JButton btnDel = new JButton("DELETE");
@@ -465,7 +465,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnDel.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnDel.setEnabled(true);
 		btnDel.setBackground(Color.BLACK);
-		btnDel.setBounds(359, 227, 141, 31);
+		btnDel.setBounds(361, 255, 141, 31);
 		panel_3.add(btnDel);
 
 		JButton btnEdit = new JButton("UPDATE");
@@ -475,7 +475,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		btnEdit.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnEdit.setEnabled(true);
 		btnEdit.setBackground(Color.BLACK);
-		btnEdit.setBounds(177, 227, 141, 31);
+		btnEdit.setBounds(179, 255, 141, 31);
 		panel_3.add(btnEdit);
 
 		 lecr1 = new JComboBox();
@@ -1305,14 +1305,14 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 			}
 		});
 		lecbox.setModel(new DefaultComboBoxModel(new String[] {"                      Select Lecturer"}));
-		lecbox.setBounds(289, 199, 223, 27);
+		lecbox.setBounds(322, 165, 223, 27);
 		ManageSesFrm.getContentPane().add(lecbox);
 		
 		JLabel label_1_1 = new JLabel("Search by Lecturer :");
 		label_1_1.setHorizontalAlignment(SwingConstants.CENTER);
 		label_1_1.setForeground(Color.WHITE);
 		label_1_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_1_1.setBounds(282, 152, 180, 37);
+		label_1_1.setBounds(315, 118, 180, 37);
 		ManageSesFrm.getContentPane().add(label_1_1);
 		
 		
@@ -1360,7 +1360,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		 groupBox.setModel(new DefaultComboBoxModel(new String[] {"                       Select Group"}));
 			
 		groupBox.setBackground(Color.WHITE);
-		groupBox.setBounds(604, 199, 223, 27);
+		groupBox.setBounds(637, 165, 223, 27);
 		ManageSesFrm.getContentPane().add(groupBox);
 		
 		
@@ -1370,13 +1370,13 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		label_2.setHorizontalAlignment(SwingConstants.CENTER);
 		label_2.setForeground(Color.WHITE);
 		label_2.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_2.setBounds(615, 152, 215, 37);
+		label_2.setBounds(625, 118, 215, 37);
 		ManageSesFrm.getContentPane().add(label_2);
 		
 		JLabel label_3_1 = new JLabel("Search by Subject :");
 		label_3_1.setForeground(Color.WHITE);
 		label_3_1.setFont(new Font("Tahoma", Font.BOLD, 12));
-		label_3_1.setBounds(968, 152, 215, 37);
+		label_3_1.setBounds(1001, 118, 215, 37);
 		ManageSesFrm.getContentPane().add(label_3_1);
 		
 		
@@ -1416,7 +1416,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		subjBox.setBackground(Color.WHITE);
 		subjBox.setModel(new DefaultComboBoxModel(new String[] {"                      Select Subject"}));
 		
-		subjBox.setBounds(930, 200, 223, 27);
+		subjBox.setBounds(963, 166, 223, 27);
 		ManageSesFrm.getContentPane().add(subjBox);
 		
 		
