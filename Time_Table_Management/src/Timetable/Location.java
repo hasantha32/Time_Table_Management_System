@@ -56,6 +56,7 @@ import javax.swing.border.LineBorder;
 import java.awt.Panel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.JMenuBar;
 
 public class Location {
 
@@ -338,6 +339,14 @@ public class Location {
 		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 		btnDelete.setBackground(Color.BLACK);
 		panel_2_1.add(btnDelete);
+		
+		JMenuBar menuBar = new JMenuBar();
+		menuBar.setForeground(Color.BLACK);
+		menuBar.setBorderPainted(false);
+		menuBar.setBorder(null);
+		menuBar.setBackground(Color.BLACK);
+		menuBar.setBounds(0, 0, 1344, 37);
+		frmAddStudentGroup.getContentPane().add(menuBar);
 		btnNewButton_2_1_2.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
