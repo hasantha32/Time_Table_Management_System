@@ -190,7 +190,7 @@ public class Student {
 	 */
 	private void initialize() {
 		frmAddStudentGroup = new JFrame();
-		frmAddStudentGroup.getContentPane().setBackground(SystemColor.inactiveCaptionBorder);
+		frmAddStudentGroup.getContentPane().setBackground(SystemColor.activeCaption);
 		frmAddStudentGroup.setBackground(Color.YELLOW);
 		frmAddStudentGroup.setResizable(false);
 		frmAddStudentGroup.setTitle("Time Table Management System");
@@ -222,39 +222,16 @@ public class Student {
 		
 		JPanel panel_6 = new JPanel();
 		panel_6.setLayout(null);
-		panel_6.setBackground(new Color(230, 230, 250));
-		panel_6.setBounds(263, 62, 1081, 603);
+		panel_6.setBackground(SystemColor.activeCaption);
+		panel_6.setBounds(263, 143, 1081, 522);
 		frmAddStudentGroup.getContentPane().add(panel_6);
-		
-		
-		
-
-		JPanel panel_6_1_1 = new JPanel();
-		panel_6_1_1.setLayout(null);
-		panel_6_1_1.setBounds(0, 40, 1081, 38);
-		panel_6.add(panel_6_1_1);
-		
-		JLabel lblNewLabel_1_1 = new JLabel("Student");
-		lblNewLabel_1_1.setForeground(new Color(0, 128, 128));
-		lblNewLabel_1_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lblNewLabel_1_1.setBounds(556, 0, 278, 31);
-		panel_6_1_1.add(lblNewLabel_1_1);
-		
-		
-		
-		
-		JSeparator separator_1 = new JSeparator();
-		separator_1.setForeground(new Color(32, 178, 170));
-		separator_1.setBackground(new Color(0, 139, 139));
-		separator_1.setBounds(0, 37, 1094, 19);
-		panel_6.add(separator_1);
 		
 		
 		
 		
 		
 		JPanel panel_7 = new JPanel();
-		panel_7.setBounds(10, 91, 1059, 499);
+		panel_7.setBounds(10, 10, 1059, 499);
 		panel_6.add(panel_7);
 		
 	
@@ -301,7 +278,7 @@ public class Student {
 		
 		btnNewButton_2.setForeground(Color.WHITE);
 		btnNewButton_2.setFont(new Font("Times New Roman", Font.BOLD, 15));
-		btnNewButton_2.setBackground(new Color(0, 139, 139));
+		btnNewButton_2.setBackground(Color.BLACK);
 		panel_7.add(btnNewButton_2);
 		
 		
@@ -339,7 +316,7 @@ public class Student {
 	
 		btnNewButton_3.setForeground(Color.WHITE);
 		btnNewButton_3.setFont(new Font("Times New Roman", Font.BOLD, 15));
-		btnNewButton_3.setBackground(new Color(0, 139, 139));
+		btnNewButton_3.setBackground(Color.BLACK);
 		panel_7.add(btnNewButton_3);
 		
 		comboBox = new JComboBox();
@@ -369,18 +346,27 @@ public class Student {
 		
 		//lecturer button
 		JButton btnNewButton_2_1 = new JButton("Lecture");
+		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1.setForeground(Color.WHITE);
+		btnNewButton_2_1.setBackground(Color.BLACK);
 		btnNewButton_2_1.setBounds(0, 319, 183, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1);
 		
 		
 		//student button
 		JButton btnNewButton_2_1_1 = new JButton("Student");
+		btnNewButton_2_1_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1_1.setForeground(Color.RED);
+		btnNewButton_2_1_1.setBackground(Color.BLACK);
 		btnNewButton_2_1_1.setBounds(0, 355, 183, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_1);
 		
 		
 		//location button
 		JButton btnNewButton_2_1_2 = new JButton("Location");
+		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1_2.setForeground(Color.WHITE);
+		btnNewButton_2_1_2.setBackground(Color.BLACK);
 		btnNewButton_2_1_2.setBounds(0, 391, 183, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
 		btnNewButton_2_1_2.addActionListener(new ActionListener() {
