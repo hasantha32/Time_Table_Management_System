@@ -154,7 +154,7 @@ public class Location {
 	 */
 	private void initialize() {
 		frmAddStudentGroup = new JFrame();
-		frmAddStudentGroup.getContentPane().setBackground(SystemColor.inactiveCaptionBorder);
+		frmAddStudentGroup.getContentPane().setBackground(SystemColor.activeCaption);
 		frmAddStudentGroup.setBackground(Color.YELLOW);
 		frmAddStudentGroup.setResizable(false);
 		frmAddStudentGroup.setTitle(" Time Table Management System");
@@ -179,15 +179,15 @@ public class Location {
 		lblNewLabel_10.setForeground(Color.WHITE);
 		lblNewLabel_10.setFont(new Font("Times New Roman", Font.BOLD, 27));
 		lblNewLabel_10.setBackground(Color.WHITE);
-		lblNewLabel_10.setBounds(573, 10, 333, 29);
+		lblNewLabel_10.setBounds(573, 26, 333, 29);
 		panel.add(lblNewLabel_10);
 				
 				
 		
 		JPanel panel_6 = new JPanel();
 		panel_6.setLayout(null);
-		panel_6.setBackground(new Color(230, 230, 250));
-		panel_6.setBounds(263, 128, 1081, 535);
+		panel_6.setBackground(SystemColor.activeCaption);
+		panel_6.setBounds(224, 148, 1081, 505);
 		frmAddStudentGroup.getContentPane().add(panel_6);
 		
 		
@@ -302,6 +302,21 @@ public class Location {
 		btnNewButton_2_1_2.setBackground(Color.BLACK);
 		btnNewButton_2_1_2.setBounds(0, 437, 198, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
+		
+		JPanel panel_5 = new JPanel();
+		panel_5.setLayout(null);
+		panel_5.setForeground(Color.RED);
+		panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
+		panel_5.setBackground(Color.BLACK);
+		panel_5.setBounds(0, 99, 1334, 45);
+		frmAddStudentGroup.getContentPane().add(panel_5);
+		
+		JLabel lblLocation = new JLabel("LOCATION");
+		lblLocation.setHorizontalAlignment(SwingConstants.CENTER);
+		lblLocation.setForeground(Color.RED);
+		lblLocation.setFont(new Font("Arial Black", Font.BOLD, 20));
+		lblLocation.setBounds(541, 10, 278, 31);
+		panel_5.add(lblLocation);
 		btnNewButton_2_1_2.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
