@@ -827,6 +827,27 @@ public void refreshtable() {
 		lblNotAvailableTime.setFont(new Font("Arial Black", Font.BOLD, 19));
 		lblNotAvailableTime.setBounds(522, 10, 278, 31);
 		panel_5.add(lblNotAvailableTime);
+		
+		JPanel panel_1_1 = new JPanel();
+		panel_1_1.setBackground(Color.GRAY);
+		panel_1_1.setBounds(0, 145, 245, 110);
+		frame.getContentPane().add(panel_1_1);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GRAY);
+		panel_1.setBounds(0, 393, 245, 220);
+		frame.getContentPane().add(panel_1);
+		
+		JPanel panel_2_1 = new JPanel();
+		panel_2_1.setBackground(Color.GRAY);
+		panel_2_1.setBounds(0, 609, 245, 54);
+		frame.getContentPane().add(panel_2_1);
+		
+		JButton btnDelete = new JButton("<<Back");
+		btnDelete.setForeground(new Color(240, 248, 255));
+		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
+		btnDelete.setBackground(Color.BLACK);
+		panel_2_1.add(btnDelete);
 		btnNotAvailableTime.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
