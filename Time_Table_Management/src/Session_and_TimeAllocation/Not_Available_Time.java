@@ -877,7 +877,7 @@ public void refreshtable() {
 			public void actionPerformed(ActionEvent e) {
 
 				frame.dispose();
-				new Consecutive_sessions();
+				new SessionsANDnotAvailableTimeAllocationConsecutive();
 				
 			}
 		});
