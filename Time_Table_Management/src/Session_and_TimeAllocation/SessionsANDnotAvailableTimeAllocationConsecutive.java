@@ -57,6 +57,7 @@ import javax.swing.border.LineBorder;
 import java.awt.Panel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.JMenuBar;
 
 public class SessionsANDnotAvailableTimeAllocationConsecutive {
 
@@ -69,6 +70,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 	private JComboBox comboBox_s2;
 	private JComboBox comboBox_s3;
 	private JTextField gensession;
+	private JTextField textField;
 	
 	
 	//fill  session 1
@@ -227,7 +229,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 	 */
 	private void initialize() {
 		frmAddStudentGroup = new JFrame();
-		frmAddStudentGroup.getContentPane().setBackground(SystemColor.inactiveCaptionBorder);
+		frmAddStudentGroup.getContentPane().setBackground(SystemColor.activeCaption);
 		frmAddStudentGroup.setBackground(Color.YELLOW);
 		frmAddStudentGroup.setResizable(false);
 		frmAddStudentGroup.setTitle(" Time Table Management System ");
@@ -245,7 +247,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 		
 		JPanel panel_6 = new JPanel();
 		panel_6.setLayout(null);
-		panel_6.setBackground(new Color(230, 230, 250));
+		panel_6.setBackground(SystemColor.activeCaption);
 		panel_6.setBounds(268, 152, 1081, 501);
 		frmAddStudentGroup.getContentPane().add(panel_6);
 		
@@ -254,6 +256,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 		
 		
 		JPanel panel_7 = new JPanel();
+		panel_7.setBackground(Color.DARK_GRAY);
 		panel_7.setLayout(null);
 		panel_7.setBounds(10, 10, 1030, 476);
 		panel_6.add(panel_7);
@@ -263,6 +266,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 		
 		//session 1
 		JLabel lblNewLabel_4_1 = new JLabel("Session 1");
+		lblNewLabel_4_1.setForeground(Color.WHITE);
 		lblNewLabel_4_1.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		lblNewLabel_4_1.setBounds(24, 24, 80, 21);
 		panel_7.add(lblNewLabel_4_1);
@@ -279,6 +283,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 		
 		//session 2
 		JLabel lblNewLabel_4 = new JLabel("Session 2");
+		lblNewLabel_4.setForeground(Color.WHITE);
 		lblNewLabel_4.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		lblNewLabel_4.setBounds(24, 87, 80, 21);
 		panel_7.add(lblNewLabel_4);
@@ -297,6 +302,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 		
 		//session 3
 		JLabel lblNewLabel_5 = new JLabel("Session 3");
+		lblNewLabel_5.setForeground(Color.WHITE);
 		lblNewLabel_5.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		lblNewLabel_5.setBounds(24, 150, 96, 16);
 		panel_7.add(lblNewLabel_5);
@@ -374,7 +380,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 		
 		btnNewButton_2.setForeground(Color.WHITE);
 		btnNewButton_2.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnNewButton_2.setBackground(new Color(0, 139, 139));
+		btnNewButton_2.setBackground(Color.BLACK);
 		btnNewButton_2.setBounds(607, 203, 164, 40);
 		panel_7.add(btnNewButton_2);
 		
@@ -398,7 +404,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 		
 		btnNewButton_3.setForeground(Color.WHITE);
 		btnNewButton_3.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnNewButton_3.setBackground(new Color(0, 139, 139));
+		btnNewButton_3.setBackground(Color.BLACK);
 		btnNewButton_3.setBounds(798, 203, 155, 40);
 		panel_7.add(btnNewButton_3);
 		
@@ -443,24 +449,65 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 			table.setModel(DbUtils.resultSetToTableModel(rs));
 			
 			JButton btnNewButton_2_1 = new JButton("Conseccutive Sessions");
-			btnNewButton_2_1.setBounds(-11, 284, 275, 37);
+			btnNewButton_2_1.setForeground(Color.RED);
+			btnNewButton_2_1.setBackground(Color.BLACK);
+			btnNewButton_2_1.setBounds(-11, 284, 280, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1);
 			btnNewButton_2_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_1 = new JButton("Parallel Sessions");
+			btnNewButton_2_1_1.setForeground(Color.WHITE);
+			btnNewButton_2_1_1.setBackground(Color.BLACK);
 			btnNewButton_2_1_1.setBounds(-1, 321, 275, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_1);
 			btnNewButton_2_1_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_2 = new JButton("Non Overlapping Sessions");
+			btnNewButton_2_1_2.setForeground(Color.WHITE);
+			btnNewButton_2_1_2.setBackground(Color.BLACK);
 			btnNewButton_2_1_2.setBounds(-1, 357, 275, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
 			btnNewButton_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_3 = new JButton("Not Available Times");
+			btnNewButton_2_1_3.setForeground(Color.WHITE);
+			btnNewButton_2_1_3.setBackground(Color.BLACK);
 			btnNewButton_2_1_3.setBounds(-1, 393, 268, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_3);
 			btnNewButton_2_1_3.setFont(new Font("Tahoma", Font.BOLD, 14));
+			
+			textField = new JTextField();
+			textField.setText("                                                                       Time Table Management System");
+			textField.setForeground(Color.WHITE);
+			textField.setFont(new Font("Tahoma", Font.PLAIN, 23));
+			textField.setEditable(false);
+			textField.setColumns(10);
+			textField.setBackground(Color.GRAY);
+			textField.setBounds(-1, 35, 1334, 74);
+			frmAddStudentGroup.getContentPane().add(textField);
+			
+			JPanel panel_5 = new JPanel();
+			panel_5.setLayout(null);
+			panel_5.setForeground(Color.RED);
+			panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
+			panel_5.setBackground(Color.BLACK);
+			panel_5.setBounds(-1, 102, 1334, 42);
+			frmAddStudentGroup.getContentPane().add(panel_5);
+			
+			JLabel lblConsecutiveSessions = new JLabel("CONSECUTIVE SESSIONS");
+			lblConsecutiveSessions.setHorizontalAlignment(SwingConstants.CENTER);
+			lblConsecutiveSessions.setForeground(Color.RED);
+			lblConsecutiveSessions.setFont(new Font("Arial Black", Font.BOLD, 19));
+			lblConsecutiveSessions.setBounds(504, 10, 321, 31);
+			panel_5.add(lblConsecutiveSessions);
+			
+			JMenuBar menuBar = new JMenuBar();
+			menuBar.setForeground(Color.BLACK);
+			menuBar.setBorderPainted(false);
+			menuBar.setBorder(null);
+			menuBar.setBackground(Color.BLACK);
+			menuBar.setBounds(-1, 0, 1344, 37);
+			frmAddStudentGroup.getContentPane().add(menuBar);
 			btnNewButton_2_1_3.addActionListener(new ActionListener() {
 				
 				public void actionPerformed(ActionEvent e) {
