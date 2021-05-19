@@ -213,7 +213,7 @@ public class Location {
 		
 		btnNewButton_2.setForeground(Color.WHITE);
 		btnNewButton_2.setFont(new Font("Times New Roman", Font.BOLD, 15));
-		btnNewButton_2.setBackground(new Color(0, 139, 139));
+		btnNewButton_2.setBackground(Color.BLACK);
 		btnNewButton_2.setBounds(698, 13, 164, 40);
 		panel_7.add(btnNewButton_2);
 		
@@ -248,7 +248,7 @@ public class Location {
 	
 		btnNewButton_3.setForeground(Color.WHITE);
 		btnNewButton_3.setFont(new Font("Times New Roman", Font.BOLD, 15));
-		btnNewButton_3.setBackground(new Color(0, 139, 139));
+		btnNewButton_3.setBackground(Color.BLACK);
 		btnNewButton_3.setBounds(874, 13, 155, 40);
 		panel_7.add(btnNewButton_3);
 		
@@ -283,14 +283,23 @@ public class Location {
 		scrollPane.setViewportView(table);
 		
 		JButton btnNewButton_2_1 = new JButton("Lecture");
+		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1.setForeground(Color.WHITE);
+		btnNewButton_2_1.setBackground(Color.BLACK);
 		btnNewButton_2_1.setBounds(0, 369, 198, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1);
 		
 		JButton btnNewButton_2_1_1 = new JButton("Student");
+		btnNewButton_2_1_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1_1.setForeground(Color.WHITE);
+		btnNewButton_2_1_1.setBackground(Color.BLACK);
 		btnNewButton_2_1_1.setBounds(0, 403, 198, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_1);
 		
 		JButton btnNewButton_2_1_2 = new JButton("Location");
+		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1_2.setForeground(Color.RED);
+		btnNewButton_2_1_2.setBackground(Color.BLACK);
 		btnNewButton_2_1_2.setBounds(0, 437, 198, 37);
 		frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
 		btnNewButton_2_1_2.addActionListener(new ActionListener() {
