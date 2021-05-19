@@ -862,7 +862,7 @@ public void refreshtable() {
 			public void actionPerformed(ActionEvent e) {
 		
 				frame.dispose();
-				new Non_overlappingSessions();
+				new SessionsANDnotAvailableTimeAllocationNoneOverlaping();
 			}
 		});
 		btnNewButton_2_1_1.addActionListener(new ActionListener() {

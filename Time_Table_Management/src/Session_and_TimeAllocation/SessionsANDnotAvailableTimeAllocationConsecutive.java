@@ -48,7 +48,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 
-
+import DBC.DBConnection;
 import Timetable.Lecturer;
 
 import net.proteanit.sql.DbUtils;
@@ -78,7 +78,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 			
 			try {
 				
-				 Connection con = DbConnection.connect();
+				 Connection con = DBConnection.connect();
 				 
 				 String query="select * from session";
 				 
@@ -108,7 +108,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 			
 			try {
 				
-				 Connection con = DbConnection.connect();
+				 Connection con = DBConnection.connect();
 				 
 				 String query="select * from session";
 				 
@@ -138,7 +138,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 			
 			try {
 				
-				 Connection con = DbConnection.connect();
+				 Connection con = DBConnection.connect();
 				 
 				 String query="select * from session";
 				 
@@ -169,7 +169,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 	  public void refreshTable() {
 			
 			try {
-				Connection con = DbConnection.connect();
+				Connection con = DBConnection.connect();
 				
 				String query="select conSessionID AS SID,conSession AS ConsecutiveSession from consecutiveSession ";
 				PreparedStatement pst=con.prepareStatement(query);
@@ -238,7 +238,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 		frmAddStudentGroup.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmAddStudentGroup.getContentPane().setLayout(null);
 		frmAddStudentGroup.setExtendedState(frmAddStudentGroup.getExtendedState() | JFrame.MAXIMIZED_BOTH);
-		frmAddStudentGroup.setIconImage(logo);
+
 		
 		frmAddStudentGroup.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
 		frmAddStudentGroup.setVisible(true);
@@ -344,7 +344,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 				
 				 try {
 					 
-					 Connection con = DbConnection.connect();
+					 Connection con = DBConnection.connect();
 					 
 					  
 
@@ -440,7 +440,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 		try {
 			
 			
-			Connection con = DbConnection.connect();
+			Connection con = DBConnection.connect();
 			 
 			 
 			String query="select conSessionID AS SID,conSession AS ConsecutiveSession from consecutiveSession ";
@@ -537,7 +537,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 					//NotAvailableTime not= new NotAvailableTime();
 					//not.main(null);
 					frmAddStudentGroup.dispose();
-					new  NotAvailableTime();
+					new  Not_Available_Time();
 					
 				}
 			});
@@ -546,7 +546,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 				public void actionPerformed(ActionEvent e) {
 				
 					frmAddStudentGroup.dispose();
-					new  Non_overlappingSessions();
+					new  SessionsANDnotAvailableTimeAllocationNoneOverlaping();
 					
 				}
 			});
