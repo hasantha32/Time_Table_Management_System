@@ -622,6 +622,25 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(txtSid);
 		txtSid.setColumns(10);
 		
+		JButton btnNewButton = new JButton("Refresh");
+		btnNewButton.setToolTipText("Click button to clear search bar");
+		btnNewButton.setForeground(Color.WHITE);
+		btnNewButton.setFont(new Font("Dialog", Font.BOLD, 13));
+		btnNewButton.setBackground(Color.BLACK);
+		btnNewButton.setBounds(510, 26, 140, 27);
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				lecbox.setSelectedIndex(0);;
+				groupBox.setSelectedIndex(0);
+				subjBox.setSelectedIndex(0);
+				refreshtable();
+				
+				
+			}
+		});
+		panel_3.add(btnNewButton);
+		
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setForeground(Color.BLACK);
 		menuBar.setBorderPainted(false);
