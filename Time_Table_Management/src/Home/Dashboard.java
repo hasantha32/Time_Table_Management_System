@@ -488,7 +488,7 @@ public class Dashboard {
 		
 		
 		JMenu mnNewMenu_33 = new JMenu("Generate Time Tables");
-		mnNewMenu.add(mnNewMenu_3);
+		mnNewMenu.add(mnNewMenu_33);
 		
 		JMenuItem mntmNewMenuItem_111 = new JMenuItem("Lecturer");
 		mntmNewMenuItem_111.addActionListener(new ActionListener() {

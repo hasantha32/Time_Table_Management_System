@@ -36,10 +36,11 @@ import Students_and_Tags.Add_Student_Groups;
 import Students_and_Tags.Add_Tag;
 import Students_and_Tags.Manage_Student_Groups;
 import Students_and_Tags.Manage_Tags;
+import Timetable.Lecturer;
+import Timetable.Location;
+import Timetable.Student;
 import Working_Days_and_Hours.Add_Workingdays_Hours;
-import Working_Days_and_Hours.Genarate_Lecturer_Time_Table;
-import Working_Days_and_Hours.Genarate_Student_TimeTable;
-import Working_Days_and_Hours.Genarate_TimeLocation;
+
 import Working_Days_and_Hours.Manage_Workingdays_Hours;
 
 import javax.swing.JRadioButton;
@@ -377,48 +378,6 @@ public class Add_Lecturer {
 		});
 		mnNewMenu_3.add(mntmNewMenuItem_65);
 		
-		JMenuItem mntmNewMenuItem_20 = new JMenuItem("Genarate Lecture Time Table");
-		mntmNewMenuItem_20.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Genarate_Lecturer_Time_Table genarate_Lecturer_Time_Table=new Genarate_Lecturer_Time_Table();
-				Genarate_Lecturer_Time_Table.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		
-		mnNewMenu_3.add(mntmNewMenuItem_20);
-		
-		JMenuItem mntmNewMenuItem_12 = new JMenuItem("Genarate Student Time Table");
-		mntmNewMenuItem_12.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Genarate_Student_TimeTable genarate_Student_TimeTable=new Genarate_Student_TimeTable();
-				Genarate_Student_TimeTable.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		
-		mnNewMenu_3.add(mntmNewMenuItem_12);
-		
-		JMenuItem mntmNewMenuItem_13 = new JMenuItem("Genarate Time Location");
-		mntmNewMenuItem_13.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Genarate_TimeLocation genarate_TimeLocation=new Genarate_TimeLocation();
-				Genarate_TimeLocation.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		
-		
-		mnNewMenu_3.add(mntmNewMenuItem_13);
 		
 		JMenu mnNewMenu_4 = new JMenu("Student & Tags");
 		mnNewMenu.add(mnNewMenu_4);
@@ -556,9 +515,50 @@ public class Add_Lecturer {
 		
 		
 		
+		JMenu mnNewMenu_33 = new JMenu("Generate Time Tables");
+		mnNewMenu.add(mnNewMenu_33);
+		
+		JMenuItem mntmNewMenuItem_111 = new JMenuItem("Lecturer");
+		mntmNewMenuItem_111.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Lecturer lec=new Lecturer();
+				Lecturer.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		mnNewMenu_33.add(mntmNewMenuItem_111);
 		
 		
 		
+		JMenuItem mntmNewMenuItem_655 = new JMenuItem("Student");
+		mntmNewMenuItem_655.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Student student=new Student();
+				Student.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		mnNewMenu_33.add(mntmNewMenuItem_655);
+
+		
+		JMenuItem mntmNewMenuItem_432 = new JMenuItem("Location");
+		mntmNewMenuItem_432.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Location location=new Location();
+				Location.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		mnNewMenu_33.add(mntmNewMenuItem_432);
 		
 		
 		
@@ -600,6 +600,7 @@ public class Add_Lecturer {
 		});
 		
 		mnNewMenu_7.add(mntmNewMenuItem_22);
+		
 		
 		
 		
