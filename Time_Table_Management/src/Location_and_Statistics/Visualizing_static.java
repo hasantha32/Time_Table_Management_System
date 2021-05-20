@@ -42,7 +42,6 @@ import Leactures_and_Subjects.Add_Subjects;
 import Leactures_and_Subjects.Manage_Lecturer;
 import Leactures_and_Subjects.Manage_Subjects;
 import Session_and_TimeAllocation.Add_Session;
-import Session_and_TimeAllocation.ConsecutiveSessionRooms;
 import Session_and_TimeAllocation.Manage_Not_Available_Times;
 
 import Session_and_TimeAllocation.Manage_Sessions;
@@ -50,14 +49,10 @@ import Session_and_TimeAllocation.Not_Available_Time;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationConsecutive;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationNoneOverlaping;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationParallel;
-import Session_and_TimeAllocation.SessionsRooms;
 import Students_and_Tags.Add_Student_Groups;
 import Students_and_Tags.Add_Tag;
 import Students_and_Tags.Manage_Student_Groups;
 import Students_and_Tags.Manage_Tags;
-import Timetable.Lecturer;
-import Timetable.Location;
-import Timetable.Student;
 import Working_Days_and_Hours.Add_Workingdays_Hours;
 
 import Working_Days_and_Hours.Manage_Workingdays_Hours;
@@ -304,9 +299,9 @@ public class Visualizing_static {
 		mnNewMenu.setFont(new Font("Segoe UI", Font.BOLD, 15));
 		mnNewMenu.setBackground(Color.BLACK);
 		mnNewMenu.setForeground(Color.YELLOW);
-		menuBar.add(mnNewMenu);
+		menuBar_2.add(mnNewMenu);
 		
-		JMenu mnNewMenu_1 = new JMenu("Lectures & Subjects");
+		JMenu mnNewMenu_1 = new JMenu("Lecture & Subject");
 		mnNewMenu_1.setBackground(new Color(128, 128, 128));
 		mnNewMenu.add(mnNewMenu_1);
 		
@@ -316,7 +311,7 @@ public class Visualizing_static {
 				
 				Add_Lecturer add_Lecturer=new Add_Lecturer();
 				Add_Lecturer.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -329,7 +324,7 @@ public class Visualizing_static {
 				
 				Add_Subjects add_Subjects=new Add_Subjects();
 				Add_Subjects.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -342,7 +337,7 @@ public class Visualizing_static {
 				
 				Manage_Lecturer manage_Lecturer=new Manage_Lecturer();
 				Manage_Lecturer.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -355,7 +350,7 @@ public class Visualizing_static {
 				
 				Manage_Subjects manage_Subjects=new Manage_Subjects();
 				Manage_Subjects.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -374,7 +369,7 @@ public class Visualizing_static {
 				
 				Add_Session add_Session=new Add_Session();
 				Add_Session.main(null);
-				frame.setVisible(false);
+				menuBar_2.setVisible(false);
 				
 			}
 			
@@ -387,20 +382,20 @@ public class Visualizing_static {
 				
 				Manage_Not_Available_Times manage_Not_Available_Times=new Manage_Not_Available_Times();
 				Manage_Not_Available_Times.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
 		});
 		mnNewMenu_2.add(mntmNewMenuItem_4);
 		
-		JMenuItem mntmNewMenuItem_6 = new JMenuItem("Consecutive Session rooms");
+		JMenuItem mntmNewMenuItem_6 = new JMenuItem("Manage Session Rooms");
 		mntmNewMenuItem_6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				ConsecutiveSessionRooms manage_Session_Rooms=new ConsecutiveSessionRooms();
-				ConsecutiveSessionRooms.main(null);
-				frame.setVisible(false);
+				Manage_Session_Rooms manage_Session_Rooms=new Manage_Session_Rooms();
+				Manage_Session_Rooms.main(null);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -414,7 +409,7 @@ public class Visualizing_static {
 				
 				Manage_Sessions manage_Sessions=new Manage_Sessions();
 				Manage_Sessions.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -423,34 +418,13 @@ public class Visualizing_static {
 		
 		mnNewMenu_2.add(mntmNewMenuItem_7);
 		
-		///
-		
-		
-		JMenuItem mntmNewMenuItem_21 = new JMenuItem("Session Rooms");
-		mntmNewMenuItem_21.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				SessionsRooms manage_Session_Rooms=new SessionsRooms();
-				SessionsRooms.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		
-		mnNewMenu_2.add(mntmNewMenuItem_21);
-		///
-		
-		
-		
-		
 		JMenuItem mntmNewMenuItem_8 = new JMenuItem("Not Available Time");
 		mntmNewMenuItem_8.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				Not_Available_Time not_Available_Time=new Not_Available_Time();
 				Not_Available_Time.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -465,7 +439,7 @@ public class Visualizing_static {
 				
 				SessionsANDnotAvailableTimeAllocationConsecutive sessionsANDnotAvailableTimeAllocationConsecutive=new SessionsANDnotAvailableTimeAllocationConsecutive();
 				SessionsANDnotAvailableTimeAllocationConsecutive.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -479,7 +453,7 @@ public class Visualizing_static {
 				
 				SessionsANDnotAvailableTimeAllocationNoneOverlaping sessionsANDnotAvailableTimeAllocationNoneOverlaping=new SessionsANDnotAvailableTimeAllocationNoneOverlaping();
 				SessionsANDnotAvailableTimeAllocationNoneOverlaping.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -493,13 +467,14 @@ public class Visualizing_static {
 				
 				SessionsANDnotAvailableTimeAllocationParallel sessionsANDnotAvailableTimeAllocationParallel=new SessionsANDnotAvailableTimeAllocationParallel();
 				SessionsANDnotAvailableTimeAllocationParallel.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
 		});
 		mnNewMenu_2.add(mntmNewMenuItem_31);
 
+		
 
 		
 		JMenu mnNewMenu_3 = new JMenu("Working Days & Hours ");
@@ -511,14 +486,12 @@ public class Visualizing_static {
 				
 				Add_Workingdays_Hours add_Workingdays_Hours=new Add_Workingdays_Hours();
 				Add_Workingdays_Hours.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
 		});
 		mnNewMenu_3.add(mntmNewMenuItem_11);
-		
-		
 		
 		JMenuItem mntmNewMenuItem_65 = new JMenuItem("Manage Workingdays Hours");
 		mntmNewMenuItem_65.addActionListener(new ActionListener() {
@@ -526,13 +499,55 @@ public class Visualizing_static {
 				
 				Manage_Workingdays_Hours add_Workingdays_Hours=new Manage_Workingdays_Hours();
 				Manage_Workingdays_Hours.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
 		});
 		mnNewMenu_3.add(mntmNewMenuItem_65);
 		
+		JMenuItem mntmNewMenuItem_20 = new JMenuItem("Genarate Lecture Time Table");
+		mntmNewMenuItem_20.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Genarate_Lecturer_Time_Table genarate_Lecturer_Time_Table=new Genarate_Lecturer_Time_Table();
+				Genarate_Lecturer_Time_Table.main(null);
+				staticFrame.setVisible(false);
+				
+			}
+			
+		});
+		
+		mnNewMenu_3.add(mntmNewMenuItem_20);
+		
+		JMenuItem mntmNewMenuItem_12 = new JMenuItem("Genarate Student Time Table");
+		mntmNewMenuItem_12.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Genarate_Student_TimeTable genarate_Student_TimeTable=new Genarate_Student_TimeTable();
+				Genarate_Student_TimeTable.main(null);
+				staticFrame.setVisible(false);
+				
+			}
+			
+		});
+		
+		mnNewMenu_3.add(mntmNewMenuItem_12);
+		
+		JMenuItem mntmNewMenuItem_13 = new JMenuItem("Genarate Time Location");
+		mntmNewMenuItem_13.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Genarate_TimeLocation genarate_TimeLocation=new Genarate_TimeLocation();
+				Genarate_TimeLocation.main(null);
+				staticFrame.setVisible(false);
+				
+			}
+			
+		});
+		
+		
+		mnNewMenu_3.add(mntmNewMenuItem_13);
 		
 		JMenu mnNewMenu_4 = new JMenu("Student & Tags");
 		mnNewMenu.add(mnNewMenu_4);
@@ -544,7 +559,7 @@ public class Visualizing_static {
 				
 				Add_Student_Groups addstudentgroups=new Add_Student_Groups();
 				Add_Student_Groups.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -559,7 +574,7 @@ public class Visualizing_static {
 				
 				Add_Tag addtags=new Add_Tag();
 				Add_Tag.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -575,7 +590,7 @@ public class Visualizing_static {
 				
 				Manage_Student_Groups managestudentgroups=new Manage_Student_Groups();
 				Manage_Student_Groups.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -591,7 +606,7 @@ public class Visualizing_static {
 				
 				Manage_Tags managetags=new Manage_Tags();
 				Manage_Tags.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -608,7 +623,7 @@ public class Visualizing_static {
 				
 				Add_Locations_Sessions addlocationssessions=new Add_Locations_Sessions();
 				Add_Locations_Sessions.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -626,7 +641,7 @@ public class Visualizing_static {
 				
 				Add_Locations addlocations=new Add_Locations();
 				Add_Locations.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -642,14 +657,13 @@ public class Visualizing_static {
 				
 				Manage_Locations managelocations=new Manage_Locations();
 				Manage_Locations.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
 		});
 		
 		mnNewMenu_5.add(mntmNewMenuItem_30);
-		
 		
 	JMenuItem mntmNewMenuItem_34 = new JMenuItem("Visualizing Static");
 		
@@ -660,7 +674,7 @@ public class Visualizing_static {
 				
 				Visualizing_static visualizing_static=new Visualizing_static();
 				Visualizing_static.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
@@ -670,50 +684,9 @@ public class Visualizing_static {
 		
 		
 		
-		JMenu mnNewMenu_33 = new JMenu("Generate Time Tables");
-		mnNewMenu.add(mnNewMenu_33);
-		
-		JMenuItem mntmNewMenuItem_111 = new JMenuItem("Lecturer");
-		mntmNewMenuItem_111.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Lecturer lec=new Lecturer();
-				Lecturer.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		mnNewMenu_33.add(mntmNewMenuItem_111);
 		
 		
 		
-		JMenuItem mntmNewMenuItem_655 = new JMenuItem("Student");
-		mntmNewMenuItem_655.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Student student=new Student();
-				Student.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		mnNewMenu_33.add(mntmNewMenuItem_655);
-
-		
-		JMenuItem mntmNewMenuItem_432 = new JMenuItem("Location");
-		mntmNewMenuItem_432.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Location location=new Location();
-				Location.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		mnNewMenu_33.add(mntmNewMenuItem_432);
 		
 		
 		
@@ -736,7 +709,7 @@ public class Visualizing_static {
 		mnNewMenu_7.setFont(new Font("Segoe UI", Font.BOLD, 15));
 		mnNewMenu_7.setBackground(Color.BLACK);
 		mnNewMenu_7.setForeground(Color.WHITE);
-		menuBar.add(mnNewMenu_7);
+		menuBar_2.add(mnNewMenu_7);
 		
 		JMenuItem mntmNewMenuItem_22 = new JMenuItem("About");
 		
@@ -748,25 +721,13 @@ public class Visualizing_static {
 				
 				StartUp startup=new StartUp();
 				StartUp.main(null);
-				frame.setVisible(false);
+				staticFrame.setVisible(false);
 				
 			}
 			
 		});
 		
 		mnNewMenu_7.add(mntmNewMenuItem_22);
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//////////////////////////
-
 		
 		
 	//////
