@@ -501,7 +501,7 @@ public class Dashboard {
 			}
 			
 		});
-		mnNewMenu_3.add(mntmNewMenuItem_111);
+		mnNewMenu_33.add(mntmNewMenuItem_111);
 		
 		
 		
@@ -516,7 +516,7 @@ public class Dashboard {
 			}
 			
 		});
-		mnNewMenu_3.add(mntmNewMenuItem_655);
+		mnNewMenu_33.add(mntmNewMenuItem_655);
 
 		
 		JMenuItem mntmNewMenuItem_432 = new JMenuItem("Location");
@@ -530,7 +530,7 @@ public class Dashboard {
 			}
 			
 		});
-		mnNewMenu_3.add(mntmNewMenuItem_432);
+		mnNewMenu_33.add(mntmNewMenuItem_432);
 		
 		
 		
@@ -575,6 +575,15 @@ public class Dashboard {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		//////////////////////////
+
 		
 		
 		
