@@ -699,7 +699,7 @@ lblNewLabel_1.setForeground(Color.WHITE);
 		
 		panel = new JPanel();
 		panel.setBackground(Color.GRAY);
-		panel.setBounds(0, 362, 174, 159);
+		panel.setBounds(0, 361, 174, 160);
 		frame.getContentPane().add(panel);
 		
 		panel_2 = new JPanel();

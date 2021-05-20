@@ -46,6 +46,8 @@ public class ConsecutiveSessionRooms {
 	private JTable crtable_2;
 	private JComboBox consession;
 	private JComboBox consessionroom;
+	private JTextField txtAddConsecutiveSession;
+	private JTextField txtTimeTableManagement;
 	
 	
 	public  void  loadConSession(){ 
@@ -134,42 +136,32 @@ public class ConsecutiveSessionRooms {
 		crframe.setLocationRelativeTo(null);
 		crframe.setVisible(true);
 		
-		/*JLabel rlblNewLabel_1 = new JLabel(" Manage Sessions Rooms");
-		rlblNewLabel_1.setForeground(new Color(32, 178, 170));
-		rlblNewLabel_1.setBackground(new Color(32, 178, 170));
-		rlblNewLabel_1.setBounds(262, 69, 1082, 36);
-		rlblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
-		rlblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 22));
-		rframe.getContentPane().add(rlblNewLabel_1);*/
-		
-		JSeparator separator = new JSeparator();
-		separator.setBounds(262, 108, 1082, 12);
-		separator.setForeground(new Color(32, 178, 170));
-		separator.setBackground(new Color(0, 139, 139));
-		crframe.getContentPane().add(separator);
-		
 		JPanel crpanel_2 = new JPanel();
-		crpanel_2.setBackground(new Color(230, 230, 250));
-		crpanel_2.setBounds(262, 108, 1082, 563);
+		crpanel_2.setBackground(SystemColor.activeCaption);
+		crpanel_2.setBounds(252, 150, 1092, 521);
 		crframe.getContentPane().add(crpanel_2);
 		crpanel_2.setLayout(null);
 		
 		JPanel crpanel_3 = new JPanel();
-		crpanel_3.setBounds(138, 83, 756, 428);
+		crpanel_3.setBackground(Color.DARK_GRAY);
+		crpanel_3.setBounds(135, 39, 756, 428);
 		crpanel_2.add(crpanel_3);
 		crpanel_3.setLayout(null);
 		
 		JLabel crlblNewLabel = new JLabel("Select Consecutive Session");
+		crlblNewLabel.setForeground(Color.WHITE);
 		crlblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		crlblNewLabel.setBounds(73, 79, 161, 13);
 		crpanel_3.add(crlblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Select Room");
+		lblNewLabel_1.setForeground(Color.WHITE);
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblNewLabel_1.setBounds(462, 79, 78, 13);
 		crpanel_3.add(lblNewLabel_1);
 		
 		JLabel crlblNewLabel_2 = new JLabel("Selected ConsecutiveSession Room");
+		crlblNewLabel_2.setForeground(Color.WHITE);
 		crlblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		crlblNewLabel_2.setBounds(73, 164, 200, 32);
 		crpanel_3.add(crlblNewLabel_2);
@@ -180,7 +172,7 @@ public class ConsecutiveSessionRooms {
 		
 		JButton crbtnNewButton_4 = new JButton("SUBMIT");
 		crbtnNewButton_4.setFont(new Font("Tahoma", Font.BOLD, 12));
-		crbtnNewButton_4.setForeground(new Color(255, 255, 255));
+		crbtnNewButton_4.setForeground(Color.WHITE);
 		crbtnNewButton_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				generateConSesRoom.setText(consession.getSelectedItem().toString()+"\n"+"-"+consessionroom.getSelectedItem().toString());
@@ -214,13 +206,13 @@ public class ConsecutiveSessionRooms {
 				}
 			}
 		});
-		crbtnNewButton_4.setBackground(new Color(0, 139, 139));
-		crbtnNewButton_4.setBounds(317, 291, 105, 32);
+		crbtnNewButton_4.setBackground(Color.BLACK);
+		crbtnNewButton_4.setBounds(296, 291, 105, 32);
 		crpanel_3.add(crbtnNewButton_4);
 		
 		JButton crbtnNewButton_5 = new JButton("CLEAR");
 		crbtnNewButton_5.setFont(new Font("Tahoma", Font.BOLD, 12));
-		crbtnNewButton_5.setForeground(new Color(255, 255, 255));
+		crbtnNewButton_5.setForeground(Color.WHITE);
 		crbtnNewButton_5.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				generateConSesRoom.setText("");
@@ -229,7 +221,7 @@ public class ConsecutiveSessionRooms {
 				
 			}
 		});
-		crbtnNewButton_5.setBackground(new Color(0, 139, 139));
+		crbtnNewButton_5.setBackground(Color.BLACK);
 		crbtnNewButton_5.setBounds(490, 291, 105, 32);
 		crpanel_3.add(crbtnNewButton_5);
 		
@@ -247,21 +239,11 @@ public class ConsecutiveSessionRooms {
 		
 		loadConsessionRoom();
 		
-		JPanel srpanel_6 = new JPanel();
-		srpanel_6.setBounds(0, 0, 1082, 49);
-		crpanel_2.add(srpanel_6);
-		srpanel_6.setLayout(null);
-		
-		
-		JLabel lollblNewLabel_1 = new JLabel("Add Consecutive Session Rooms");
-		lollblNewLabel_1.setForeground(new Color(0, 128, 128));
-		lollblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lollblNewLabel_1.setBounds(406, 13, 278, 31);
-		srpanel_6.add(lollblNewLabel_1);
-		
 		//addsessionroom button
 		
 		JButton btnNewButton = new JButton("Add SessionRooms");
+		btnNewButton.setBackground(Color.BLACK);
+		btnNewButton.setForeground(Color.WHITE);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//ManageSessionsRooms manage_ro = new ManageSessionsRooms();
@@ -270,11 +252,13 @@ public class ConsecutiveSessionRooms {
 				new SessionsRooms();
 			}
 		});
-		btnNewButton.setBounds(0, 319, 179, 39);
+		btnNewButton.setBounds(0, 319, 252, 39);
 		crframe.getContentPane().add(btnNewButton);
 		
 		//add consession button
 		JButton btnNewButton_2 = new JButton("Add ConsecutiveSessionsRooms");
+		btnNewButton_2.setBackground(Color.BLACK);
+		btnNewButton_2.setForeground(Color.RED);
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//ConsecutiveSessionRooms add_con = new ConsecutiveSessionRooms();
@@ -285,6 +269,47 @@ public class ConsecutiveSessionRooms {
 		});
 		btnNewButton_2.setBounds(0, 356, 251, 39);
 		crframe.getContentPane().add(btnNewButton_2);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.GRAY);
+		panel.setBounds(0, 394, 252, 198);
+		crframe.getContentPane().add(panel);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(Color.GRAY);
+		panel_2.setBounds(0, 592, 252, 71);
+		crframe.getContentPane().add(panel_2);
+		
+		JButton btnDelete_1 = new JButton("<<Back");
+		btnDelete_1.setForeground(new Color(240, 248, 255));
+		btnDelete_1.setFont(new Font("SansSerif", Font.BOLD, 13));
+		btnDelete_1.setBackground(Color.BLACK);
+		panel_2.add(btnDelete_1);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GRAY);
+		panel_1.setBounds(0, 150, 252, 170);
+		crframe.getContentPane().add(panel_1);
+		
+		txtAddConsecutiveSession = new JTextField();
+		txtAddConsecutiveSession.setText("                                                                      ADD CONSECUTIVE SESSION ROOMS");
+		txtAddConsecutiveSession.setForeground(Color.RED);
+		txtAddConsecutiveSession.setFont(new Font("Arial Black", Font.BOLD, 19));
+		txtAddConsecutiveSession.setEditable(false);
+		txtAddConsecutiveSession.setColumns(10);
+		txtAddConsecutiveSession.setBackground(Color.BLACK);
+		txtAddConsecutiveSession.setBounds(0, 123, 1344, 29);
+		crframe.getContentPane().add(txtAddConsecutiveSession);
+		
+		txtTimeTableManagement = new JTextField();
+		txtTimeTableManagement.setText("                                                                  Time Table Management System");
+		txtTimeTableManagement.setForeground(Color.WHITE);
+		txtTimeTableManagement.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		txtTimeTableManagement.setEditable(false);
+		txtTimeTableManagement.setColumns(10);
+		txtTimeTableManagement.setBackground(Color.GRAY);
+		txtTimeTableManagement.setBounds(0, 39, 1344, 87);
+		crframe.getContentPane().add(txtTimeTableManagement);
 		
 	}
 }
