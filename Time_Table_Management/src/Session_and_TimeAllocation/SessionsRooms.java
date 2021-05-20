@@ -273,6 +273,7 @@ public class SessionsRooms {
 		
 		//addsessionroom button
 		JButton btnNewButton = new JButton("Add SessionRooms");
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnNewButton.setForeground(Color.RED);
 		btnNewButton.setBackground(Color.BLACK);
 		btnNewButton.addActionListener(new ActionListener() {
@@ -289,6 +290,7 @@ public class SessionsRooms {
 		
 		//add consession button
 		JButton btnNewButton_2 = new JButton("Add ConsecutiveSessionsRooms");
+		btnNewButton_2.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnNewButton_2.setForeground(Color.WHITE);
 		btnNewButton_2.setBackground(new Color(0, 0, 0));
 		btnNewButton_2.addActionListener(new ActionListener() {
