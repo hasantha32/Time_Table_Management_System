@@ -23,6 +23,7 @@ import javax.swing.JComboBox;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
+import DBC.DBConnection;
 import Home.StartUp;
 import Leactures_and_Subjects.Add_Lecturer;
 import Leactures_and_Subjects.Add_Subjects;
@@ -42,8 +43,12 @@ import Timetable.Student;
 import Working_Days_and_Hours.Add_Workingdays_Hours;
 
 import Working_Days_and_Hours.Manage_Workingdays_Hours;
+import net.proteanit.sql.DbUtils;
 
 import java.awt.event.ActionListener;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.awt.event.ActionEvent;
 import javax.swing.JPanel;
 import java.awt.SystemColor;
@@ -572,6 +577,34 @@ public class Manage_Not_Available_Times {
 		
 		
 		
+		
+		JButton btnRefresh = new JButton("Refresh");
+		btnRefresh.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				try {
+					Connection con = DBConnection.connect();
+					
+					String query="select * from roomSession ";
+
+					PreparedStatement pst=con.prepareStatement(query);
+					ResultSet rs=pst.executeQuery();
+					table.setModel(DbUtils.resultSetToTableModel(rs));
+					
+				}
+				catch(Exception ex) {
+					ex.printStackTrace();
+				}
+			}
+		});
+		btnRefresh.setForeground(Color.WHITE);
+		btnRefresh.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnRefresh.setBackground(Color.GRAY);
+		btnRefresh.setBounds(447, 509, 105, 35);
+		frame.getContentPane().add(btnRefresh);
+		
+		
+		
+		
 		JButton btnClearsubmanage = new JButton("Clear");
 		
 		JScrollPane scrollPane = new JScrollPane();
@@ -690,13 +723,6 @@ public class Manage_Not_Available_Times {
 		textField_1.setBackground(Color.GRAY);
 		textField_1.setBounds(0, 0, 946, 87);
 		frame.getContentPane().add(textField_1);
-		
-		JButton btnDelete_1 = new JButton("Refresh");
-		btnDelete_1.setForeground(new Color(240, 248, 255));
-		btnDelete_1.setFont(new Font("SansSerif", Font.BOLD, 13));
-		btnDelete_1.setBackground(Color.BLACK);
-		btnDelete_1.setBounds(462, 508, 132, 35);
-		frame.getContentPane().add(btnDelete_1);
 		
 		JPanel panel_2_1 = new JPanel();
 		panel_2_1.setLayout(null);
