@@ -39,7 +39,7 @@ import Location_and_Statistics.Manage_Locations;
 import Location_and_Statistics.Visualizing_static;
 import Session_and_TimeAllocation.Add_Session;
 import Session_and_TimeAllocation.Manage_Not_Available_Times;
-import Session_and_TimeAllocation.Manage_Session_Rooms;
+
 import Session_and_TimeAllocation.Manage_Sessions;
 import Session_and_TimeAllocation.Not_Available_Time;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationConsecutive;
@@ -47,9 +47,7 @@ import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationNoneOverl
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationParallel;
 
 import Working_Days_and_Hours.Add_Workingdays_Hours;
-import Working_Days_and_Hours.Genarate_Lecturer_Time_Table;
-import Working_Days_and_Hours.Genarate_Student_TimeTable;
-import Working_Days_and_Hours.Genarate_TimeLocation;
+
 import Working_Days_and_Hours.Manage_Workingdays_Hours;
 
 import javax.swing.JToggleButton;

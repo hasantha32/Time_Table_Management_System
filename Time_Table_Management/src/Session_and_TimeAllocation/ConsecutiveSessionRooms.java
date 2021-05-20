@@ -74,7 +74,7 @@ public class ConsecutiveSessionRooms {
 	 public void loadConsessionRoom() {
 		 try {
 			 
-			 Connection con = DbConnection.connect();
+			 Connection con = DBConnection.connect();
 			 
 			 String query ="select * from location";
 			 PreparedStatement pst=con.prepareStatement(query);
