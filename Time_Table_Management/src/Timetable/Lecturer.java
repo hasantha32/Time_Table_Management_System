@@ -90,7 +90,7 @@ public class Lecturer {
 
 	
 
-	
+	private JFrame frame;
 	private JFrame frmAddStudentGroup;
 	private JFrame frmAddStudentGroup_1;	private JTextField txtLecturer;
 	private JComboBox comboBox;	

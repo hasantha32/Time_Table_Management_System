@@ -88,7 +88,7 @@ public class Location {
 
 	
 	
-	
+	private JFrame frame;
 	private JFrame frmAddStudentGroup;	private JTextField txtLecturer;
 	private JComboBox comboBox;
 	private JTable table;
