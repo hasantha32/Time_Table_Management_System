@@ -434,7 +434,7 @@ public void refreshtable() {
 		add.setForeground(Color.WHITE);
 		add.setFont(new Font("Tahoma", Font.BOLD, 14));
 		add.setEnabled(true);
-		add.setBackground(new Color(0, 153, 153));
+		add.setBackground(Color.BLACK);
 		
 		
 		//clear data from fields
@@ -444,7 +444,7 @@ public void refreshtable() {
 		btnClear.setForeground(Color.WHITE);
 		btnClear.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnClear.setEnabled(true);
-		btnClear.setBackground(new Color(0, 153, 153));
+		btnClear.setBackground(Color.BLACK);
 		
 		id = new JTextField();
 		id.setBackground(SystemColor.menu);
@@ -612,7 +612,7 @@ public void refreshtable() {
 		delete.setForeground(Color.WHITE);
 		delete.setFont(new Font("Tahoma", Font.BOLD, 14));
 		delete.setEnabled(true);
-		delete.setBackground(new Color(0, 153, 153));
+		delete.setBackground(Color.BLACK);
 		delete.setBounds(597, 467, 141, 31);
 		panel_3.add(delete);
 		
@@ -763,7 +763,7 @@ public void refreshtable() {
 		btnUpdate.setForeground(Color.WHITE);
 		btnUpdate.setFont(new Font("Tahoma", Font.BOLD, 14));
 		btnUpdate.setEnabled(true);
-		btnUpdate.setBackground(new Color(0, 153, 153));
+		btnUpdate.setBackground(Color.BLACK);
 		btnUpdate.setBounds(319, 467, 141, 31);
 		panel_3.add(btnUpdate);
 		
