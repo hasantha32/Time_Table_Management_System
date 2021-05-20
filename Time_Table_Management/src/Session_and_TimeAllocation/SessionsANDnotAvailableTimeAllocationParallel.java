@@ -350,7 +350,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 		
 		btnNewButton_2.setForeground(Color.WHITE);
 		btnNewButton_2.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnNewButton_2.setBackground(new Color(0, 139, 139));
+		btnNewButton_2.setBackground(Color.BLACK);
 		btnNewButton_2.setBounds(606, 203, 164, 40);
 		panel_7.add(btnNewButton_2);
 		
@@ -368,7 +368,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 		});
 		btnNewButton_3.setForeground(Color.WHITE);
 		btnNewButton_3.setFont(new Font("Tahoma", Font.BOLD, 13));
-		btnNewButton_3.setBackground(new Color(0, 139, 139));
+		btnNewButton_3.setBackground(Color.BLACK);
 		btnNewButton_3.setBounds(813, 203, 155, 40);
 		panel_7.add(btnNewButton_3);
 		
@@ -411,21 +411,29 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 			table.setModel(DbUtils.resultSetToTableModel(rs));
 			
 			JButton btnNewButton_2_1 = new JButton("Conseccutive Sessions");
+			btnNewButton_2_1.setBackground(Color.BLACK);
+			btnNewButton_2_1.setForeground(Color.WHITE);
 			btnNewButton_2_1.setBounds(0, 293, 268, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1);
 			btnNewButton_2_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_1 = new JButton("Parallel Sessions");
+			btnNewButton_2_1_1.setBackground(Color.BLACK);
+			btnNewButton_2_1_1.setForeground(Color.RED);
 			btnNewButton_2_1_1.setBounds(0, 327, 275, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_1);
 			btnNewButton_2_1_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_2 = new JButton("Non Overlapping Sessions");
+			btnNewButton_2_1_2.setBackground(Color.BLACK);
+			btnNewButton_2_1_2.setForeground(Color.WHITE);
 			btnNewButton_2_1_2.setBounds(0, 361, 275, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
 			btnNewButton_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_3 = new JButton("Not Available Times");
+			btnNewButton_2_1_3.setBackground(Color.BLACK);
+			btnNewButton_2_1_3.setForeground(Color.WHITE);
 			btnNewButton_2_1_3.setBounds(0, 395, 268, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_3);
 			btnNewButton_2_1_3.setFont(new Font("Tahoma", Font.BOLD, 14));
