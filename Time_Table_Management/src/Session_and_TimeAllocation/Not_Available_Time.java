@@ -769,6 +769,7 @@ public void refreshtable() {
 		
 		//conseccutive sessions button
 		JButton btnNewButton_2_1 = new JButton("Conseccutive Sessions");
+		btnNewButton_2_1.setBackground(Color.BLACK);
 		btnNewButton_2_1.setForeground(Color.WHITE);
 		btnNewButton_2_1.setBounds(0, 251, 268, 37);
 		frame.getContentPane().add(btnNewButton_2_1);
@@ -777,6 +778,7 @@ public void refreshtable() {
 		
 		//parallel sessions button
 		JButton btnNewButton_2_1_1 = new JButton("Parallel Sessions");
+		btnNewButton_2_1_1.setBackground(Color.BLACK);
 		btnNewButton_2_1_1.setForeground(Color.WHITE);
 		btnNewButton_2_1_1.setBounds(0, 286, 275, 37);
 		frame.getContentPane().add(btnNewButton_2_1_1);
@@ -784,6 +786,7 @@ public void refreshtable() {
 		
 		//non overlapping session button
 		JButton btnNewButton_2_1_2 = new JButton("Non Overlapping Sessions");
+		btnNewButton_2_1_2.setBackground(Color.BLACK);
 		btnNewButton_2_1_2.setForeground(Color.WHITE);
 		btnNewButton_2_1_2.setBounds(0, 323, 275, 37);
 		frame.getContentPane().add(btnNewButton_2_1_2);

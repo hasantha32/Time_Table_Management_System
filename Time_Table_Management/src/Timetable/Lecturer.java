@@ -76,14 +76,14 @@ public class Lecturer {
 				
 				 Connection con = DBConnection.connect();
 				 
-				 String query="select * from lecturers";
+				 String query="select * from Lecturers";
 				 
 				 PreparedStatement pst = con.prepareStatement(query);
 				 ResultSet rs = pst.executeQuery();
 				 
 				 while(rs.next()) {
 					 
-					 String name =rs.getString("lectureName");
+					 String name =rs.getString("LectureName");
 					 comboBox.addItem(name);
 					 //comboBox_4_1.addItem(rs.getString("SubGroupID"));
 					 

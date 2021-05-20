@@ -76,14 +76,14 @@ public class Student {
 				
 				 Connection con = DBConnection.connect();
 				 
-				 String query="select * from StudentGroup";
+				 String query="select * from Student_Groups";
 				 
 				 PreparedStatement pst = con.prepareStatement(query);
 				 ResultSet rs = pst.executeQuery();
 				 
 				 while(rs.next()) {
 					 
-					 String name =rs.getString("GroupID");
+					 String name =rs.getString("G_ID");
 					 comboBox.addItem(name);
 					 //comboBox_4_1.addItem(rs.getString("SubGroupID"));
 					 
@@ -105,14 +105,14 @@ public class Student {
 				
 				 Connection con = DBConnection.connect();
 				 
-				 String query="select * from StudentGroup";
+				 String query="select * from Student_Groups";
 				 
 				 PreparedStatement pst = con.prepareStatement(query);
 				 ResultSet rs = pst.executeQuery();
 				 
 				 while(rs.next()) {
 					 
-					 String name =rs.getString("SubGroupID");
+					 String name =rs.getString("Sub_G_ID");
 					 comboBox.addItem(name);
 					 //comboBox_4_1.addItem(rs.getString("SubGroupID"));
 					 
