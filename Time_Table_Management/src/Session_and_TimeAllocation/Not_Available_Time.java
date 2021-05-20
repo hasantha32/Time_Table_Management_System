@@ -788,6 +788,17 @@ public void refreshtable() {
 		
 		//conseccutive sessions button
 		JButton btnNewButton_2_1 = new JButton("Conseccutive Sessions");
+		btnNewButton_2_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				SessionsANDnotAvailableTimeAllocationConsecutive addlecturer=new SessionsANDnotAvailableTimeAllocationConsecutive();
+				SessionsANDnotAvailableTimeAllocationConsecutive.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnNewButton_2_1.setBackground(Color.BLACK);
 		btnNewButton_2_1.setForeground(Color.WHITE);
 		btnNewButton_2_1.setBounds(0, 251, 268, 37);
@@ -797,6 +808,17 @@ public void refreshtable() {
 		
 		//parallel sessions button
 		JButton btnNewButton_2_1_1 = new JButton("Parallel Sessions");
+		btnNewButton_2_1_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				SessionsANDnotAvailableTimeAllocationParallel addlecturer=new SessionsANDnotAvailableTimeAllocationParallel();
+				SessionsANDnotAvailableTimeAllocationParallel.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
 		btnNewButton_2_1_1.setBackground(Color.BLACK);
 		btnNewButton_2_1_1.setForeground(Color.WHITE);
 		btnNewButton_2_1_1.setBounds(0, 286, 275, 37);
@@ -805,12 +827,34 @@ public void refreshtable() {
 		
 		//non overlapping session button
 		JButton btnNewButton_2_1_2 = new JButton("Non Overlapping Sessions");
+		btnNewButton_2_1_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				SessionsANDnotAvailableTimeAllocationNoneOverlaping addlecturer=new SessionsANDnotAvailableTimeAllocationNoneOverlaping();
+				SessionsANDnotAvailableTimeAllocationNoneOverlaping.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
 		btnNewButton_2_1_2.setBackground(Color.BLACK);
 		btnNewButton_2_1_2.setForeground(Color.WHITE);
 		btnNewButton_2_1_2.setBounds(0, 323, 275, 37);
 		frame.getContentPane().add(btnNewButton_2_1_2);
 		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
 		JButton btnNotAvailableTime = new JButton("Not available time");
+		btnNotAvailableTime.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Not_Available_Time addlecturer=new Not_Available_Time();
+				Not_Available_Time.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+
 		btnNotAvailableTime.setBackground(Color.BLACK);
 		btnNotAvailableTime.setForeground(Color.RED);
 		btnNotAvailableTime.setBounds(0, 358, 263, 37);

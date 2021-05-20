@@ -435,6 +435,16 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 			table.setModel(DbUtils.resultSetToTableModel(rs));
 			
 			JButton btnNewButton_2_1 = new JButton("Conseccutive Sessions");
+			btnNewButton_2_1.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+					
+					SessionsANDnotAvailableTimeAllocationConsecutive addlecturer=new SessionsANDnotAvailableTimeAllocationConsecutive();
+					SessionsANDnotAvailableTimeAllocationConsecutive.main(null);
+					frame.setVisible(false);
+					
+				}
+				
+			});
 			btnNewButton_2_1.setBackground(Color.BLACK);
 			btnNewButton_2_1.setForeground(Color.WHITE);
 			btnNewButton_2_1.setBounds(0, 293, 268, 37);
@@ -442,6 +452,17 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 			btnNewButton_2_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_1 = new JButton("Parallel Sessions");
+			btnNewButton_2_1_1.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+					
+					SessionsANDnotAvailableTimeAllocationParallel addlecturer=new SessionsANDnotAvailableTimeAllocationParallel();
+					SessionsANDnotAvailableTimeAllocationParallel.main(null);
+					frame.setVisible(false);
+					
+				}
+				
+			});
+
 			btnNewButton_2_1_1.setBackground(Color.BLACK);
 			btnNewButton_2_1_1.setForeground(Color.RED);
 			btnNewButton_2_1_1.setBounds(0, 327, 275, 37);
@@ -449,6 +470,17 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 			btnNewButton_2_1_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_2 = new JButton("Non Overlapping Sessions");
+			btnNewButton_2_1_2.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+					
+					SessionsANDnotAvailableTimeAllocationNoneOverlaping addlecturer=new SessionsANDnotAvailableTimeAllocationNoneOverlaping();
+					SessionsANDnotAvailableTimeAllocationNoneOverlaping.main(null);
+					frame.setVisible(false);
+					
+				}
+				
+			});
+
 			btnNewButton_2_1_2.setBackground(Color.BLACK);
 			btnNewButton_2_1_2.setForeground(Color.WHITE);
 			btnNewButton_2_1_2.setBounds(0, 361, 275, 37);
@@ -456,6 +488,17 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 			btnNewButton_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
 			JButton btnNewButton_2_1_3 = new JButton("Not Available Times");
+			btnNewButton_2_1_3.addActionListener(new ActionListener() {
+				public void actionPerformed(ActionEvent arg0) {
+					
+					Not_Available_Time addlecturer=new Not_Available_Time();
+					Not_Available_Time.main(null);
+					frame.setVisible(false);
+					
+				}
+				
+			});
+
 			btnNewButton_2_1_3.setBackground(Color.BLACK);
 			btnNewButton_2_1_3.setForeground(Color.WHITE);
 			btnNewButton_2_1_3.setBounds(0, 395, 268, 37);
@@ -955,7 +998,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 			panel_5.setBounds(0, 103, 1334, 42);
 			frmAddStudentGroup.getContentPane().add(panel_5);
 			
-			JLabel lblNotAvaailableSessions = new JLabel("NOT OVRLAPPING SESSIONS");
+			JLabel lblNotAvaailableSessions = new JLabel("PARALLEL SESSIONS");
 			lblNotAvaailableSessions.setHorizontalAlignment(SwingConstants.CENTER);
 			lblNotAvaailableSessions.setForeground(Color.RED);
 			lblNotAvaailableSessions.setFont(new Font("Arial Black", Font.BOLD, 19));
