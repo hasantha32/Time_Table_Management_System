@@ -50,6 +50,7 @@ import javax.swing.border.LineBorder;
 import java.awt.Panel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.ScrollPaneConstants;
+import javax.swing.JMenuBar;
 
 public class SessionsANDnotAvailableTimeAllocationParallel {
 
@@ -61,6 +62,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 	private JComboBox comboBox_s2;
 	private JComboBox comboBox_s3;
 	private JTextField genPara;
+	private JTextField textField;
 	
 	
 	//fill session_01
@@ -237,6 +239,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 		
 		
 		JPanel panel_7 = new JPanel();
+		panel_7.setBackground(Color.DARK_GRAY);
 		panel_7.setLayout(null);
 		panel_7.setBounds(21, 20, 1032, 460);
 		panel_6.add(panel_7);
@@ -245,6 +248,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 		
 		//session 1
 		JLabel lblNewLabel_4_1 = new JLabel("Session 1");
+		lblNewLabel_4_1.setForeground(Color.WHITE);
 		lblNewLabel_4_1.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		lblNewLabel_4_1.setBounds(44, 13, 80, 21);
 		panel_7.add(lblNewLabel_4_1);
@@ -260,6 +264,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 		
 		//session 2
 		JLabel lblNewLabel_4 = new JLabel("Session 2");
+		lblNewLabel_4.setForeground(Color.WHITE);
 		lblNewLabel_4.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		lblNewLabel_4.setBounds(44, 76, 80, 21);
 		panel_7.add(lblNewLabel_4);
@@ -277,6 +282,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 		
 		//session 3
 		JLabel lblNewLabel_5 = new JLabel("Session 3");
+		lblNewLabel_5.setForeground(Color.WHITE);
 		lblNewLabel_5.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		lblNewLabel_5.setBounds(44, 142, 96, 16);
 		panel_7.add(lblNewLabel_5);
@@ -437,6 +443,60 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 			btnNewButton_2_1_3.setBounds(0, 395, 268, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_3);
 			btnNewButton_2_1_3.setFont(new Font("Tahoma", Font.BOLD, 14));
+			
+			JMenuBar menuBar = new JMenuBar();
+			menuBar.setForeground(Color.BLACK);
+			menuBar.setBorderPainted(false);
+			menuBar.setBorder(null);
+			menuBar.setBackground(Color.BLACK);
+			menuBar.setBounds(0, 0, 1344, 37);
+			frmAddStudentGroup.getContentPane().add(menuBar);
+			
+			textField = new JTextField();
+			textField.setText("                                                                       Time Table Management System");
+			textField.setForeground(Color.WHITE);
+			textField.setFont(new Font("Tahoma", Font.PLAIN, 23));
+			textField.setEditable(false);
+			textField.setColumns(10);
+			textField.setBackground(Color.GRAY);
+			textField.setBounds(0, 36, 1334, 74);
+			frmAddStudentGroup.getContentPane().add(textField);
+			
+			JPanel panel_5 = new JPanel();
+			panel_5.setLayout(null);
+			panel_5.setForeground(Color.RED);
+			panel_5.setBorder(new MatteBorder(0, 0, 1, 0, (Color) Color.LIGHT_GRAY));
+			panel_5.setBackground(Color.BLACK);
+			panel_5.setBounds(0, 103, 1334, 42);
+			frmAddStudentGroup.getContentPane().add(panel_5);
+			
+			JLabel lblNotAvaailableSessions = new JLabel("NOT OVRLAPPING SESSIONS");
+			lblNotAvaailableSessions.setHorizontalAlignment(SwingConstants.CENTER);
+			lblNotAvaailableSessions.setForeground(Color.RED);
+			lblNotAvaailableSessions.setFont(new Font("Arial Black", Font.BOLD, 19));
+			lblNotAvaailableSessions.setBounds(507, 10, 319, 31);
+			panel_5.add(lblNotAvaailableSessions);
+			
+			JPanel panel_1_1 = new JPanel();
+			panel_1_1.setBackground(Color.GRAY);
+			panel_1_1.setBounds(0, 144, 262, 150);
+			frmAddStudentGroup.getContentPane().add(panel_1_1);
+			
+			JPanel panel_1 = new JPanel();
+			panel_1.setBackground(Color.GRAY);
+			panel_1.setBounds(0, 430, 268, 181);
+			frmAddStudentGroup.getContentPane().add(panel_1);
+			
+			JPanel panel_2_1 = new JPanel();
+			panel_2_1.setBackground(Color.GRAY);
+			panel_2_1.setBounds(0, 607, 268, 54);
+			frmAddStudentGroup.getContentPane().add(panel_2_1);
+			
+			JButton btnDelete = new JButton("<<Back");
+			btnDelete.setForeground(new Color(240, 248, 255));
+			btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
+			btnDelete.setBackground(Color.BLACK);
+			panel_2_1.add(btnDelete);
 			btnNewButton_2_1_3.addActionListener(new ActionListener() {
 				
 				public void actionPerformed(ActionEvent e) {
