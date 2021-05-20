@@ -283,7 +283,7 @@ public class Location {
 		//table.set
 		scrollPane.setViewportView(table);
 		
-		JButton btnNewButton_2_1 = new JButton("Lecture");
+		JButton btnNewButton_2_1 = new JButton("Lecturer");
 		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnNewButton_2_1.setForeground(Color.WHITE);
 		btnNewButton_2_1.setBackground(Color.BLACK);

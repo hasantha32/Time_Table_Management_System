@@ -83,7 +83,7 @@ public class Lecturer {
 				 
 				 while(rs.next()) {
 					 
-					 String name =rs.getString("LectureName");
+					 String name =rs.getString("LecturerName");
 					 comboBox.addItem(name);
 					 //comboBox_4_1.addItem(rs.getString("SubGroupID"));
 					 
@@ -328,7 +328,7 @@ public class Lecturer {
 		table.setFont(new Font("Trebuchet MS", Font.BOLD, 16));
 		scrollPane.setViewportView(table);
 		
-		JButton btnNewButton_2_1 = new JButton("Lecture");
+		JButton btnNewButton_2_1 = new JButton("Lecturer");
 		btnNewButton_2_1.setBackground(Color.BLACK);
 		btnNewButton_2_1.setForeground(Color.RED);
 		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
