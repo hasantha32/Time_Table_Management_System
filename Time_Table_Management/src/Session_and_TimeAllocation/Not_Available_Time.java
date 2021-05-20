@@ -151,14 +151,14 @@ public void refreshtable() {
 				
 				 Connection con = DBConnection.connect();
 				 
-				 String query="select * from StudentGroup";
+				 String query="select * from Student_Groups";
 				 
 				 PreparedStatement pst = con.prepareStatement(query);
 				 ResultSet rs = pst.executeQuery();
 				 
 				 while(rs.next()) {
 					 
-					 String name =rs.getString("GroupID");
+					 String name =rs.getString("G_ID");
 					 
 					 selectgroup.addItem(name);
 					 
@@ -184,14 +184,14 @@ public void refreshtable() {
 				
 				 Connection con = DBConnection.connect();
 				 
-				 String query="select * from StudentGroup";
+				 String query="select * from Student_Groups";
 				 
 				 PreparedStatement pst = con.prepareStatement(query);
 				 ResultSet rs = pst.executeQuery();
 				 
 				 while(rs.next()) {
 					 
-					 String name =rs.getString("SubGroupID");
+					 String name =rs.getString("Sub_G_ID");
 					 
 					 selectsubgroup .addItem(name);
 					 
