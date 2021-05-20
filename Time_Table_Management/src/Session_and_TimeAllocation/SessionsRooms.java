@@ -33,19 +33,11 @@ import javax.swing.border.MatteBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 
-import Advanced.Consecutive_sessions;
-import DB.DbConnection;
+
 import DBC.DBConnection;
-import Home.Home;
-import Lecturer.Add_Lecturer;
-import Locations.ManageLocations;
-import Session.Add_Session;
-import Statistics.Statistics;
-import Student.Add_StudentGroup;
-import Subject.Add_Subjects;
-import Tags.Add_Tags;
+
 import Timetable.Lecturer;
-import WorkingDays.AddWorkingdays;
+
 
 import javax.swing.JComboBox;
 import javax.swing.JTextArea;
@@ -54,19 +46,6 @@ import javax.swing.DefaultComboBoxModel;
 import net.proteanit.sql.DbUtils;
 
 public class SessionsRooms {
-	private Image home_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/home.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image lec_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/lecturer.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image stu_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/student.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image sub_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/subject.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image session_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/session.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image tag_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/tags.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image location_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/location.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image st_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/statics.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image days_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/Wdays.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image time_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/time.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image adv_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/adv1.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image room_logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/room.png")).getImage().getScaledInstance(30,30,Image.SCALE_SMOOTH);
-	private Image logo = new ImageIcon(Add_StudentGroup.class.getResource("/images/pp.png")).getImage().getScaledInstance(1000,1000,Image.SCALE_SMOOTH);
 
 	private JFrame rframe;
 	private JTable rtable;
@@ -159,7 +138,7 @@ public class SessionsRooms {
 		rframe.setBounds(0, 0, 1350, 700);
 		rframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		rframe.getContentPane().setLayout(null);
-		rframe.setIconImage(logo);
+	
 		rframe.setLocationRelativeTo(null);
 		rframe.setVisible(true);
 		
@@ -207,7 +186,7 @@ public class SessionsRooms {
 				String sessionRoomCode = generateroom.getText();
 				
 				try {
-					Connection con = DbConnection.connect();
+					Connection con = DBConnection.connect();
 					
 					String query = "INSERT INTO roomSession values (null,'"+sessionCode+"','"+room+"','"+sessionRoomCode+"')";
 					Statement sta = con.createStatement();

@@ -22,16 +22,16 @@ import Location_and_Statistics.Add_Locations_Sessions;
 import Location_and_Statistics.Manage_Locations;
 import Location_and_Statistics.Visualizing_static;
 import Session_and_TimeAllocation.Add_Session;
+import Session_and_TimeAllocation.ConsecutiveSessionRooms;
 import Session_and_TimeAllocation.Manage_Not_Available_Times;
-import Session_and_TimeAllocation.Manage_Session_Rooms;
+
 import Session_and_TimeAllocation.Manage_Sessions;
 import Session_and_TimeAllocation.Not_Available_Time;
 
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationConsecutive;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationNoneOverlaping;
 import Session_and_TimeAllocation.SessionsANDnotAvailableTimeAllocationParallel;
-
-
+import Session_and_TimeAllocation.SessionsRooms;
 import Students_and_Tags.Add_Student_Groups;
 import Students_and_Tags.Add_Tag;
 import Students_and_Tags.Manage_Student_Groups;
@@ -150,7 +150,7 @@ public class Add_Lecturer {
 		mnNewMenu.setForeground(Color.YELLOW);
 		menuBar.add(mnNewMenu);
 		
-		JMenu mnNewMenu_1 = new JMenu("Lecture & Subject");
+		JMenu mnNewMenu_1 = new JMenu("Lectures & Subjects");
 		mnNewMenu_1.setBackground(new Color(128, 128, 128));
 		mnNewMenu.add(mnNewMenu_1);
 		
@@ -238,12 +238,12 @@ public class Add_Lecturer {
 		});
 		mnNewMenu_2.add(mntmNewMenuItem_4);
 		
-		JMenuItem mntmNewMenuItem_6 = new JMenuItem("Manage Session Rooms");
+		JMenuItem mntmNewMenuItem_6 = new JMenuItem("Consecutive Session rooms");
 		mntmNewMenuItem_6.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				Manage_Session_Rooms manage_Session_Rooms=new Manage_Session_Rooms();
-				Manage_Session_Rooms.main(null);
+				ConsecutiveSessionRooms manage_Session_Rooms=new ConsecutiveSessionRooms();
+				ConsecutiveSessionRooms.main(null);
 				frame.setVisible(false);
 				
 			}
@@ -266,6 +266,27 @@ public class Add_Lecturer {
 		
 		
 		mnNewMenu_2.add(mntmNewMenuItem_7);
+		
+		///
+		
+		
+		JMenuItem mntmNewMenuItem_21 = new JMenuItem("Session Rooms");
+		mntmNewMenuItem_21.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				SessionsRooms manage_Session_Rooms=new SessionsRooms();
+				SessionsRooms.main(null);
+				frame.setVisible(false);
+				
+			}
+			
+		});
+		
+		mnNewMenu_2.add(mntmNewMenuItem_21);
+		///
+		
+		
+		
 		
 		JMenuItem mntmNewMenuItem_8 = new JMenuItem("Not Available Time");
 		mntmNewMenuItem_8.addActionListener(new ActionListener() {
@@ -323,7 +344,6 @@ public class Add_Lecturer {
 		});
 		mnNewMenu_2.add(mntmNewMenuItem_31);
 
-		
 
 		
 		JMenu mnNewMenu_3 = new JMenu("Working Days & Hours ");
@@ -341,6 +361,8 @@ public class Add_Lecturer {
 			
 		});
 		mnNewMenu_3.add(mntmNewMenuItem_11);
+		
+		
 		
 		JMenuItem mntmNewMenuItem_65 = new JMenuItem("Manage Workingdays Hours");
 		mntmNewMenuItem_65.addActionListener(new ActionListener() {
@@ -514,6 +536,7 @@ public class Add_Lecturer {
 		
 		mnNewMenu_5.add(mntmNewMenuItem_30);
 		
+		
 	JMenuItem mntmNewMenuItem_34 = new JMenuItem("Visualizing Static");
 		
 		
@@ -577,6 +600,7 @@ public class Add_Lecturer {
 		});
 		
 		mnNewMenu_7.add(mntmNewMenuItem_22);
+		
 		
 		
 		

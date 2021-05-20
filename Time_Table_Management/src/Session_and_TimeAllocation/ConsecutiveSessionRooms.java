@@ -28,19 +28,11 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import Advanced.Consecutive_sessions;
-import DB.DbConnection;
+
 import DBC.DBConnection;
-import Home.Home;
-import Lecturer.Add_Lecturer;
-import Locations.ManageLocations;
-import Session.Add_Session;
-import Statistics.Statistics;
-import Student.Add_StudentGroup;
-import Subject.Add_Subjects;
-import Tags.Add_Tags;
+
 import Timetable.Lecturer;
-import WorkingDays.AddWorkingdays;
+
 import javax.swing.DefaultComboBoxModel;
 
 public class ConsecutiveSessionRooms {
@@ -138,7 +130,7 @@ public class ConsecutiveSessionRooms {
 		crframe.setBounds(0, 0, 1350, 700);
 		crframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		crframe.getContentPane().setLayout(null);
-		crframe.setIconImage(logo);
+	
 		crframe.setLocationRelativeTo(null);
 		crframe.setVisible(true);
 		
@@ -198,7 +190,7 @@ public class ConsecutiveSessionRooms {
 				String consessionRoomCode = generateConSesRoom.getText();
 				
 				try {
-					Connection con = DbConnection.connect();
+					Connection con = DBConnection.connect();
 					
 					String query = "INSERT INTO roomconsecutivesession values (null,'"+consessionCode+"','"+cRoom+"','"+consessionRoomCode+"')";
 					Statement sta = con.createStatement();
