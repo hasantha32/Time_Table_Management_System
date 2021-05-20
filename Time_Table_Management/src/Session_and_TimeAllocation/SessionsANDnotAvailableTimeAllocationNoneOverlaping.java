@@ -352,7 +352,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 
 			btnNewButton_2_1_1.setBackground(Color.BLACK);
 			btnNewButton_2_1_1.setForeground(Color.WHITE);
-			btnNewButton_2_1_1.setBounds(0, 270, 275, 37);
+			btnNewButton_2_1_1.setBounds(0, 270, 268, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_1);
 			btnNewButton_2_1_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
@@ -370,7 +370,7 @@ public class SessionsANDnotAvailableTimeAllocationNoneOverlaping {
 
 			btnNewButton_2_1_2.setBackground(Color.BLACK);
 			btnNewButton_2_1_2.setForeground(Color.RED);
-			btnNewButton_2_1_2.setBounds(0, 303, 275, 37);
+			btnNewButton_2_1_2.setBounds(0, 303, 268, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
 			btnNewButton_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 14));
 			

@@ -801,7 +801,7 @@ public void refreshtable() {
 		
 		btnNewButton_2_1.setBackground(Color.BLACK);
 		btnNewButton_2_1.setForeground(Color.WHITE);
-		btnNewButton_2_1.setBounds(0, 251, 268, 37);
+		btnNewButton_2_1.setBounds(0, 251, 245, 37);
 		frame.getContentPane().add(btnNewButton_2_1);
 		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		
@@ -821,7 +821,7 @@ public void refreshtable() {
 
 		btnNewButton_2_1_1.setBackground(Color.BLACK);
 		btnNewButton_2_1_1.setForeground(Color.WHITE);
-		btnNewButton_2_1_1.setBounds(0, 286, 275, 37);
+		btnNewButton_2_1_1.setBounds(0, 286, 245, 37);
 		frame.getContentPane().add(btnNewButton_2_1_1);
 		btnNewButton_2_1_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		
@@ -840,7 +840,7 @@ public void refreshtable() {
 
 		btnNewButton_2_1_2.setBackground(Color.BLACK);
 		btnNewButton_2_1_2.setForeground(Color.WHITE);
-		btnNewButton_2_1_2.setBounds(0, 323, 275, 37);
+		btnNewButton_2_1_2.setBounds(0, 323, 245, 37);
 		frame.getContentPane().add(btnNewButton_2_1_2);
 		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
 		JButton btnNotAvailableTime = new JButton("Not available time");
@@ -857,7 +857,7 @@ public void refreshtable() {
 
 		btnNotAvailableTime.setBackground(Color.BLACK);
 		btnNotAvailableTime.setForeground(Color.RED);
-		btnNotAvailableTime.setBounds(0, 358, 263, 37);
+		btnNotAvailableTime.setBounds(0, 358, 245, 37);
 		frame.getContentPane().add(btnNotAvailableTime);
 		btnNotAvailableTime.setFont(new Font("Arial Black", Font.BOLD, 11));
 		

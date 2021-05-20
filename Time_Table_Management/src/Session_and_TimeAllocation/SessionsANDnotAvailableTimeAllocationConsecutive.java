@@ -516,7 +516,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 			
 			btnNewButton_2_1_2.setForeground(Color.WHITE);
 			btnNewButton_2_1_2.setBackground(Color.BLACK);
-			btnNewButton_2_1_2.setBounds(-1, 357, 275, 37);
+			btnNewButton_2_1_2.setBounds(-1, 357, 270, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
 			btnNewButton_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 14));
 			

@@ -447,7 +447,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 			});
 			btnNewButton_2_1.setBackground(Color.BLACK);
 			btnNewButton_2_1.setForeground(Color.WHITE);
-			btnNewButton_2_1.setBounds(0, 293, 268, 37);
+			btnNewButton_2_1.setBounds(0, 293, 262, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1);
 			btnNewButton_2_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
@@ -465,7 +465,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 
 			btnNewButton_2_1_1.setBackground(Color.BLACK);
 			btnNewButton_2_1_1.setForeground(Color.RED);
-			btnNewButton_2_1_1.setBounds(0, 327, 275, 37);
+			btnNewButton_2_1_1.setBounds(0, 327, 262, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_1);
 			btnNewButton_2_1_1.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
@@ -483,7 +483,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 
 			btnNewButton_2_1_2.setBackground(Color.BLACK);
 			btnNewButton_2_1_2.setForeground(Color.WHITE);
-			btnNewButton_2_1_2.setBounds(0, 361, 275, 37);
+			btnNewButton_2_1_2.setBounds(0, 361, 262, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_2);
 			btnNewButton_2_1_2.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
@@ -501,7 +501,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 
 			btnNewButton_2_1_3.setBackground(Color.BLACK);
 			btnNewButton_2_1_3.setForeground(Color.WHITE);
-			btnNewButton_2_1_3.setBounds(0, 395, 268, 37);
+			btnNewButton_2_1_3.setBounds(0, 395, 262, 37);
 			frmAddStudentGroup.getContentPane().add(btnNewButton_2_1_3);
 			btnNewButton_2_1_3.setFont(new Font("Tahoma", Font.BOLD, 14));
 			
