@@ -54,6 +54,8 @@ public class SessionsRooms {
 	private JComboBox session;
 	private JComboBox sessionroom;
 	private JTextArea generateroom;
+	private JTextField txtTimeTableManagement;
+	private JTextField txtAddSessionRooms;
 	
 	 public  void  loadSession(){ 
 		  try {
@@ -143,27 +145,31 @@ public class SessionsRooms {
 		rframe.setVisible(true);
 		
 		JPanel srpanel_2 = new JPanel();
-		srpanel_2.setBackground(new Color(230, 230, 250));
-		srpanel_2.setBounds(262, 108, 1082, 563);
+		srpanel_2.setBackground(SystemColor.activeCaption);
+		srpanel_2.setBounds(247, 147, 1097, 524);
 		rframe.getContentPane().add(srpanel_2);
 		srpanel_2.setLayout(null);
 		
 		JPanel srpanel_3 = new JPanel();
-		srpanel_3.setBounds(138, 83, 756, 428);
+		srpanel_3.setBackground(Color.DARK_GRAY);
+		srpanel_3.setBounds(141, 41, 756, 428);
 		srpanel_2.add(srpanel_3);
 		srpanel_3.setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("Select Session");
+		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblNewLabel.setBounds(108, 79, 85, 13);
 		srpanel_3.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Select Room");
+		lblNewLabel_1.setForeground(Color.WHITE);
 		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblNewLabel_1.setBounds(462, 79, 78, 13);
 		srpanel_3.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("Selected Session Room");
+		lblNewLabel_2.setForeground(Color.WHITE);
 		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 12));
 		lblNewLabel_2.setBounds(108, 164, 134, 32);
 		srpanel_3.add(lblNewLabel_2);
@@ -213,7 +219,7 @@ public class SessionsRooms {
 		
 	});
 		
-		btnNewButton_4.setBackground(new Color(0, 139, 139));
+		btnNewButton_4.setBackground(Color.BLACK);
 		btnNewButton_4.setBounds(303, 254, 105, 32);
 		srpanel_3.add(btnNewButton_4);
 		
@@ -229,7 +235,7 @@ public class SessionsRooms {
 				
 			}
 		});
-		btnNewButton_5.setBackground(new Color(0, 139, 139));
+		btnNewButton_5.setBackground(Color.BLACK);
 		btnNewButton_5.setBounds(511, 254, 105, 32);
 		srpanel_3.add(btnNewButton_5);
 		
@@ -247,20 +253,10 @@ public class SessionsRooms {
 		
 		loadsessionRoom();
 		
-		JPanel srpanel_6 = new JPanel();
-		srpanel_6.setBounds(0, 0, 1082, 49);
-		srpanel_2.add(srpanel_6);
-		srpanel_6.setLayout(null);
-		
-		
-		JLabel lollblNewLabel_1 = new JLabel("Add Session Rooms");
-		lollblNewLabel_1.setForeground(new Color(0, 128, 128));
-		lollblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lollblNewLabel_1.setBounds(406, 13, 278, 31);
-		srpanel_6.add(lollblNewLabel_1);
-		
 		//addsessionroom button
 		JButton btnNewButton = new JButton("Add SessionRooms");
+		btnNewButton.setForeground(Color.RED);
+		btnNewButton.setBackground(Color.BLACK);
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//ManageSessionsRooms manage_ro = new ManageSessionsRooms();
@@ -270,11 +266,13 @@ public class SessionsRooms {
 				
 			}
 		});
-		btnNewButton.setBounds(0, 274, 179, 38);
+		btnNewButton.setBounds(1, 329, 251, 38);
 		rframe.getContentPane().add(btnNewButton);
 		
 		//add consession button
 		JButton btnNewButton_2 = new JButton("Add ConsecutiveSessionsRooms");
+		btnNewButton_2.setForeground(Color.WHITE);
+		btnNewButton_2.setBackground(new Color(0, 0, 0));
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				//ConsecutiveSessionRooms add_con = new ConsecutiveSessionRooms();
@@ -284,8 +282,49 @@ public class SessionsRooms {
 			
 			}
 		});
-		btnNewButton_2.setBounds(0, 311, 251, 38);
+		btnNewButton_2.setBounds(1, 366, 251, 38);
 		rframe.getContentPane().add(btnNewButton_2);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(Color.GRAY);
+		panel_1.setBounds(0, 147, 252, 181);
+		rframe.getContentPane().add(panel_1);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(Color.GRAY);
+		panel.setBounds(0, 403, 252, 189);
+		rframe.getContentPane().add(panel);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(Color.GRAY);
+		panel_2.setBounds(0, 592, 252, 71);
+		rframe.getContentPane().add(panel_2);
+		
+		JButton btnDelete_1 = new JButton("<<Back");
+		btnDelete_1.setForeground(new Color(240, 248, 255));
+		btnDelete_1.setFont(new Font("SansSerif", Font.BOLD, 13));
+		btnDelete_1.setBackground(Color.BLACK);
+		panel_2.add(btnDelete_1);
+		
+		txtTimeTableManagement = new JTextField();
+		txtTimeTableManagement.setText("                                                                       Time Table Management System");
+		txtTimeTableManagement.setForeground(Color.WHITE);
+		txtTimeTableManagement.setFont(new Font("Tahoma", Font.PLAIN, 23));
+		txtTimeTableManagement.setEditable(false);
+		txtTimeTableManagement.setColumns(10);
+		txtTimeTableManagement.setBackground(Color.GRAY);
+		txtTimeTableManagement.setBounds(0, 29, 1344, 92);
+		rframe.getContentPane().add(txtTimeTableManagement);
+		
+		txtAddSessionRooms = new JTextField();
+		txtAddSessionRooms.setText("                                                                                         ADD SESSION ROOMS");
+		txtAddSessionRooms.setForeground(Color.RED);
+		txtAddSessionRooms.setFont(new Font("Arial Black", Font.BOLD, 19));
+		txtAddSessionRooms.setEditable(false);
+		txtAddSessionRooms.setColumns(10);
+		txtAddSessionRooms.setBackground(Color.BLACK);
+		txtAddSessionRooms.setBounds(0, 118, 1344, 29);
+		rframe.getContentPane().add(txtAddSessionRooms);
 		
 		
 		
