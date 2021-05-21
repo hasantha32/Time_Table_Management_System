@@ -53,6 +53,7 @@ public class StartUp {
 		frame.setBounds(100, 100, 960, 635);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
+		frame.setTitle("Time Table Management System");
 		frame.setLocationRelativeTo(null);
 		
 		JLabel lblNewLabel = new JLabel("");
