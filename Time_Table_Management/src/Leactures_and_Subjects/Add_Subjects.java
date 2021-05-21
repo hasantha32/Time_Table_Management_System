@@ -108,6 +108,7 @@ public class Add_Subjects {
 		frame.setBounds(30, 30, 970, 675);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
+		frame.setLocationRelativeTo(null);  //this method display the JFrame to center position of a screen
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setBackground(Color.DARK_GRAY);

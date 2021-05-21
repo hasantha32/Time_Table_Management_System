@@ -160,7 +160,7 @@ public class SessionsRooms {
 		rframe.getContentPane().setLayout(null);
 	
 		rframe.setLocationRelativeTo(null);
-		rframe.setVisible(true);
+		//rframe.setVisible(true);
 		
 		JPanel srpanel_2 = new JPanel();
 		srpanel_2.setBackground(SystemColor.activeCaption);

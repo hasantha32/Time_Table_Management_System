@@ -259,7 +259,7 @@ public class SessionsANDnotAvailableTimeAllocationConsecutive {
 
 		
 		frmAddStudentGroup.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
-		frmAddStudentGroup.setVisible(true);
+		//frmAddStudentGroup.setVisible(true);
 		
 		
 		

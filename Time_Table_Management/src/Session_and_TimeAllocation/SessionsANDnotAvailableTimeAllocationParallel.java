@@ -245,7 +245,7 @@ public class SessionsANDnotAvailableTimeAllocationParallel {
 		
 		
 		frmAddStudentGroup.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
-		frmAddStudentGroup.setVisible(true);
+		//frmAddStudentGroup.setVisible(true);
 		
 		
 		JPanel panel_6 = new JPanel();

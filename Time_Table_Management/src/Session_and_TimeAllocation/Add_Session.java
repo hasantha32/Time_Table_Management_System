@@ -264,7 +264,7 @@ public class Add_Session {
 		AddsessFrm.setBounds(0, 0, 1350, 700);
 		AddsessFrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		AddsessFrm.getContentPane().setLayout(null);
-		AddsessFrm.setLocationRelativeTo(null);
+		AddsessFrm.setLocationRelativeTo(null); //this method display the JFrame to center position of a screen
 		//AddsessFrm.setVisible(true);
 
 		JPanel panel_2 = new JPanel();

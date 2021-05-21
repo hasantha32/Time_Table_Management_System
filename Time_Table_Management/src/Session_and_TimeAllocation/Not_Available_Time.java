@@ -321,7 +321,7 @@ public void refreshtable() {
 		frame.getContentPane().setLayout(null);
 		
 		frame.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
-		frame.setVisible(true);
+		//frame.setVisible(true);
 		
 		JPanel panel_3 = new JPanel();
 		panel_3.setLayout(null);

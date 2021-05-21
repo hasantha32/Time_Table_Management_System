@@ -153,7 +153,7 @@ public class ConsecutiveSessionRooms {
 		crframe.getContentPane().setLayout(null);
 	
 		crframe.setLocationRelativeTo(null);
-		crframe.setVisible(true);
+		//crframe.setVisible(true);
 		
 		JPanel crpanel_2 = new JPanel();
 		crpanel_2.setBackground(SystemColor.activeCaption);

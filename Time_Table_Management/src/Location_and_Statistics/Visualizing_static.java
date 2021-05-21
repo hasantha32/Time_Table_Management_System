@@ -205,8 +205,8 @@ public class Visualizing_static {
 		staticFrame.setBounds(0, 0, 1050, 700);
 		staticFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		staticFrame.setLocationRelativeTo(null);
-		staticFrame.setVisible(true);
+		staticFrame.setLocationRelativeTo(null); //this method display the JFrame to center position of a screen
+		//staticFrame.setVisible(true);
 		staticFrame.getContentPane().setLayout(null);
 		
 		JPanel panel_2 = new JPanel();

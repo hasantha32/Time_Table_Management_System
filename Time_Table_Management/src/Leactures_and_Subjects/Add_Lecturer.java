@@ -135,7 +135,7 @@ public class Add_Lecturer {
 		frame.setBounds(100,100, 960, 635);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		frame.setLocationRelativeTo(null);
+		frame.setLocationRelativeTo(null); //this method display the JFrame to center position of a screen
 		
 		
 		JMenuBar menuBar = new JMenuBar();

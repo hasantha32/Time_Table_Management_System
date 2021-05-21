@@ -320,7 +320,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		//ManageSesFrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		ManageSesFrm.getContentPane().setLayout(null);
 	
-		ManageSesFrm.setLocationRelativeTo(null);
+		ManageSesFrm.setLocationRelativeTo(null); //this method display the JFrame to center position of a screen
 		//ManageSesFrm.setVisible(true);
 
 		JPanel panel_2 = new JPanel();

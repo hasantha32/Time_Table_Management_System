@@ -125,6 +125,7 @@ public class Manage_Lecturer {
 		frame.setBounds(1, 30, 1540, 760);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
+		frame.setLocationRelativeTo(null); //this method display the JFrame to center position of a screen
 		
 	
 		
