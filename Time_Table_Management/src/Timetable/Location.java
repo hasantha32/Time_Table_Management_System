@@ -51,6 +51,7 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 
 import DBC.DBConnection;
+import Home.Dashboard;
 import Home.StartUp;
 import Leactures_and_Subjects.Add_Lecturer;
 import Leactures_and_Subjects.Add_Subjects;
@@ -385,6 +386,17 @@ public class Location {
 		frmAddStudentGroup.getContentPane().add(panel_2_1);
 		
 		JButton btnDelete = new JButton("<<Back");
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Dashboard dashboard=new Dashboard();
+				Dashboard.main(null);
+				frmAddStudentGroup.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnDelete.setForeground(new Color(240, 248, 255));
 		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 		btnDelete.setBackground(Color.BLACK);

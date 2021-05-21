@@ -588,7 +588,7 @@ public class Add_Session {
 				
 				Dashboard dashboard=new Dashboard();
 				Dashboard.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -757,7 +757,7 @@ public class Add_Session {
 				
 				Add_Lecturer add_Lecturer=new Add_Lecturer();
 				Add_Lecturer.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -770,7 +770,7 @@ public class Add_Session {
 				
 				Add_Subjects add_Subjects=new Add_Subjects();
 				Add_Subjects.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -783,7 +783,7 @@ public class Add_Session {
 				
 				Manage_Lecturer manage_Lecturer=new Manage_Lecturer();
 				Manage_Lecturer.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -796,7 +796,7 @@ public class Add_Session {
 				
 				Manage_Subjects manage_Subjects=new Manage_Subjects();
 				Manage_Subjects.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -815,7 +815,7 @@ public class Add_Session {
 				
 				Add_Session add_Session=new Add_Session();
 				Add_Session.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -828,7 +828,7 @@ public class Add_Session {
 				
 				Manage_Not_Available_Times manage_Not_Available_Times=new Manage_Not_Available_Times();
 				Manage_Not_Available_Times.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -841,7 +841,7 @@ public class Add_Session {
 				
 				ConsecutiveSessionRooms manage_Session_Rooms=new ConsecutiveSessionRooms();
 				ConsecutiveSessionRooms.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -855,7 +855,7 @@ public class Add_Session {
 				
 				Manage_Sessions manage_Sessions=new Manage_Sessions();
 				Manage_Sessions.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -873,7 +873,7 @@ public class Add_Session {
 				
 				SessionsRooms manage_Session_Rooms=new SessionsRooms();
 				SessionsRooms.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -891,7 +891,7 @@ public class Add_Session {
 				
 				Not_Available_Time not_Available_Time=new Not_Available_Time();
 				Not_Available_Time.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -906,7 +906,7 @@ public class Add_Session {
 				
 				SessionsANDnotAvailableTimeAllocationConsecutive sessionsANDnotAvailableTimeAllocationConsecutive=new SessionsANDnotAvailableTimeAllocationConsecutive();
 				SessionsANDnotAvailableTimeAllocationConsecutive.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -920,7 +920,7 @@ public class Add_Session {
 				
 				SessionsANDnotAvailableTimeAllocationNoneOverlaping sessionsANDnotAvailableTimeAllocationNoneOverlaping=new SessionsANDnotAvailableTimeAllocationNoneOverlaping();
 				SessionsANDnotAvailableTimeAllocationNoneOverlaping.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -934,7 +934,7 @@ public class Add_Session {
 				
 				SessionsANDnotAvailableTimeAllocationParallel sessionsANDnotAvailableTimeAllocationParallel=new SessionsANDnotAvailableTimeAllocationParallel();
 				SessionsANDnotAvailableTimeAllocationParallel.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -952,7 +952,7 @@ public class Add_Session {
 				
 				Add_Workingdays_Hours add_Workingdays_Hours=new Add_Workingdays_Hours();
 				Add_Workingdays_Hours.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -967,7 +967,7 @@ public class Add_Session {
 				
 				Manage_Workingdays_Hours add_Workingdays_Hours=new Manage_Workingdays_Hours();
 				Manage_Workingdays_Hours.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -985,7 +985,7 @@ public class Add_Session {
 				
 				Add_Student_Groups addstudentgroups=new Add_Student_Groups();
 				Add_Student_Groups.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1000,7 +1000,7 @@ public class Add_Session {
 				
 				Add_Tag addtags=new Add_Tag();
 				Add_Tag.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1016,7 +1016,7 @@ public class Add_Session {
 				
 				Manage_Student_Groups managestudentgroups=new Manage_Student_Groups();
 				Manage_Student_Groups.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1032,7 +1032,7 @@ public class Add_Session {
 				
 				Manage_Tags managetags=new Manage_Tags();
 				Manage_Tags.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1053,7 +1053,7 @@ public class Add_Session {
 				
 				Add_Locations addlocations=new Add_Locations();
 				Add_Locations.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1069,7 +1069,7 @@ public class Add_Session {
 				
 				Manage_Locations managelocations=new Manage_Locations();
 				Manage_Locations.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1087,7 +1087,7 @@ public class Add_Session {
 				
 				Visualizing_static visualizing_static=new Visualizing_static();
 				Visualizing_static.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1106,7 +1106,7 @@ public class Add_Session {
 				
 				Lecturer lec=new Lecturer();
 				Lecturer.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1121,7 +1121,7 @@ public class Add_Session {
 				
 				Student student=new Student();
 				Student.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1135,7 +1135,7 @@ public class Add_Session {
 				
 				Location location=new Location();
 				Location.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -1175,7 +1175,7 @@ public class Add_Session {
 				
 				StartUp startup=new StartUp();
 				StartUp.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
