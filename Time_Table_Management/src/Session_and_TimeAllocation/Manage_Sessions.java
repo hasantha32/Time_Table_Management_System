@@ -77,8 +77,9 @@ import javax.swing.JMenuItem;
 import javax.swing.border.LineBorder;
 
 public class Manage_Sessions {
-	private JFrame frame;
 	private JFrame ManageSesFrm;
+	private JFrame frame;
+	
 	
 	private JTable table;
 	private JComboBox lecr1;
@@ -320,7 +321,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		ManageSesFrm.getContentPane().setLayout(null);
 	
 		ManageSesFrm.setLocationRelativeTo(null);
-		ManageSesFrm.setVisible(true);
+		//ManageSesFrm.setVisible(true);
 
 		JPanel panel_2 = new JPanel();
 		panel_2.setLayout(null);
@@ -623,6 +624,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		panel_3.add(txtSid);
 		txtSid.setColumns(10);
 		
+		//Refresh table
 		JButton btnNewButton = new JButton("Refresh");
 		btnNewButton.setToolTipText("Click button to clear search bar");
 		btnNewButton.setForeground(Color.WHITE);
@@ -642,6 +644,8 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		});
 		panel_3.add(btnNewButton);
 		
+		
+		//HEADER NAVIGATION
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setForeground(Color.BLACK);
 		menuBar.setBorderPainted(false);
@@ -1155,7 +1159,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				
 				Add_Lecturer addlecturer=new Add_Lecturer();
 				Add_Lecturer.main(null);
-				frame.setVisible(false);
+				ManageSesFrm.setVisible(false);
 				
 			}
 			
@@ -1174,7 +1178,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				
 				Manage_Lecturer managelecture=new Manage_Lecturer();
 				Manage_Lecturer.main(null);
-				frame.setVisible(false);
+				ManageSesFrm.setVisible(false);
 				
 			}
 			
@@ -1192,7 +1196,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				
 				Add_Subjects addsubjects=new Add_Subjects();
 				Add_Subjects.main(null);
-				frame.setVisible(false);
+				ManageSesFrm.setVisible(false);
 				
 			}
 			
@@ -1211,7 +1215,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				
 				Manage_Subjects managesubjects=new Manage_Subjects();
 				Manage_Subjects.main(null);
-				frame.setVisible(false);
+				ManageSesFrm.setVisible(false);
 				
 			}
 			
@@ -1230,7 +1234,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				
 				Add_Session addsession=new Add_Session();
 				Add_Session.main(null);
-				frame.setVisible(false);
+				ManageSesFrm.setVisible(false);
 				
 			}
 			
@@ -1249,7 +1253,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				
 				Manage_Sessions managesession=new Manage_Sessions();
 				Manage_Sessions.main(null);
-				frame.setVisible(false);
+				ManageSesFrm.setVisible(false);
 				
 			}
 			
@@ -1449,8 +1453,11 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				
 				String lecregx = "-";
 				String lecrs = "----------Select Lecturer 1 ----------";
+				
 				String namer = "----------Select Subject----------";
+				
 				String tagr = "------------Select Tag ------------";
+				
 				String grpidr = "--------Select Group/Sub Group ID--------";
 				
 				if(lecr1.getSelectedItem().toString().equals(lecrs)||sbj.getSelectedItem().toString().equals(namer)|| tg.getSelectedItem().toString().equals(tagr)|| grpId.getSelectedItem().toString().equals(grpidr)|| noStud.getValue().equals(0)|| duration.getValue().equals(0))

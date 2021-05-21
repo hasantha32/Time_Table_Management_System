@@ -264,7 +264,7 @@ public class Add_Session {
 		AddsessFrm.setBounds(0, 0, 1350, 700);
 		AddsessFrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		AddsessFrm.getContentPane().setLayout(null);
-		//AddsessFrm.setLocationRelativeTo(null);
+		AddsessFrm.setLocationRelativeTo(null);
 		//AddsessFrm.setVisible(true);
 
 		JPanel panel_2 = new JPanel();
@@ -610,7 +610,7 @@ public class Add_Session {
 				
 				Manage_Sessions managesession=new Manage_Sessions();
 				Manage_Sessions.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -637,7 +637,7 @@ public class Add_Session {
 				
 				Manage_Subjects managesubjects=new Manage_Subjects();
 				Manage_Subjects.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -656,7 +656,7 @@ public class Add_Session {
 				
 				Add_Subjects addsubjects=new Add_Subjects();
 				Add_Subjects.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -670,25 +670,14 @@ public class Add_Session {
 		
 		JButton btnManageLecturer = new JButton("MANAGE LECTURERS");
 
-		btnUpdateSession.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Manage_Subjects managesubjects=new Manage_Subjects();
-				Manage_Subjects.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-
-		
+	
 		
 		btnManageLecturer.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
 				Manage_Lecturer managelecture=new Manage_Lecturer();
 				Manage_Lecturer.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			
@@ -708,7 +697,7 @@ public class Add_Session {
 				
 				Add_Lecturer addlecturer=new Add_Lecturer();
 				Add_Lecturer.main(null);
-				frame.setVisible(false);
+				AddsessFrm.setVisible(false);
 				
 			}
 			

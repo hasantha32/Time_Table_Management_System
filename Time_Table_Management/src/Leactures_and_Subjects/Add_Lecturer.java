@@ -135,7 +135,7 @@ public class Add_Lecturer {
 		frame.setBounds(100,100, 960, 635);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
+		frame.setLocationRelativeTo(null);
 		
 		
 		JMenuBar menuBar = new JMenuBar();
