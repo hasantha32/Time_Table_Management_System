@@ -53,6 +53,7 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableColumnModel;
 
 import DBC.DBConnection;
+import Home.Dashboard;
 import Home.StartUp;
 import Leactures_and_Subjects.Add_Lecturer;
 import Leactures_and_Subjects.Add_Subjects;
@@ -249,6 +250,7 @@ public class Lecturer {
 		
 		
 		JPanel panel_7 = new JPanel();
+		panel_7.setBackground(Color.DARK_GRAY);
 		panel_7.setBounds(0, 27, 1059, 453);
 		panel_6.add(panel_7);
 		
@@ -345,7 +347,7 @@ public class Lecturer {
 		panel_7.add(lblNewLabel);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(12, 66, 1035, 420);
+		scrollPane.setBounds(12, 66, 1035, 364);
 		//frmAddStudentGroup.getContentPane().add(scrollPane);
 		panel_7.add(scrollPane);
 		
@@ -357,7 +359,7 @@ public class Lecturer {
 		JButton btnNewButton_2_1 = new JButton("Lecturer");
 		btnNewButton_2_1.setBackground(Color.BLACK);
 		btnNewButton_2_1.setForeground(Color.RED);
-		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 12));
 		btnNewButton_2_1.setBounds(0, 339, 192, 37);
 		frmAddStudentGroup_1.getContentPane().add(btnNewButton_2_1);
 		
@@ -377,7 +379,7 @@ public class Lecturer {
 		
 		btnNewButton_2_1_1.setBackground(Color.BLACK);
 		btnNewButton_2_1_1.setForeground(Color.WHITE);
-		btnNewButton_2_1_1.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1_1.setFont(new Font("Arial Black", Font.BOLD, 12));
 		btnNewButton_2_1_1.setBounds(0, 376, 192, 37);
 		frmAddStudentGroup_1.getContentPane().add(btnNewButton_2_1_1);
 		
@@ -394,7 +396,7 @@ public class Lecturer {
 		});
 		btnNewButton_2_1_2.setBackground(Color.BLACK);
 		btnNewButton_2_1_2.setForeground(Color.WHITE);
-		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
+		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 12));
 		btnNewButton_2_1_2.setBounds(0, 412, 192, 37);
 		frmAddStudentGroup_1.getContentPane().add(btnNewButton_2_1_2);
 		
@@ -429,6 +431,17 @@ public class Lecturer {
 		frmAddStudentGroup_1.getContentPane().add(panel_2_1);
 		
 		JButton btnDelete = new JButton("<<Back");
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Dashboard dashboard=new Dashboard();
+				Dashboard.main(null);
+				frmAddStudentGroup_1.setVisible(false);
+				
+			}
+			
+		});
+		
 		btnDelete.setForeground(new Color(240, 248, 255));
 		btnDelete.setFont(new Font("SansSerif", Font.BOLD, 13));
 		btnDelete.setBackground(Color.BLACK);

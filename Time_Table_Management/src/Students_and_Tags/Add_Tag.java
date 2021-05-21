@@ -745,7 +745,7 @@ lblNewLabel_1.setForeground(Color.WHITE);
 
 		                	Connection con = DBConnection.connect();
 
-		                    String query = "INSERT INTO Tag values('" + Name + "','" + tagcode + "','" + relatedtag + "')";
+		                    String query = "INSERT INTO Tag values(null, '" + Name + "','" + tagcode + "','" + relatedtag + "')";
 
 		                    java.sql.Statement sta = con.createStatement();
 		                    int xx = sta.executeUpdate(query);

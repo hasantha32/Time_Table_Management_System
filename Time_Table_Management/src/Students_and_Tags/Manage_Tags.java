@@ -83,6 +83,7 @@ public class Manage_Tags {
 	PreparedStatement pst = null;
 	PreparedStatement ptsID=null;
 	ResultSet rs = null;
+	private JTextField textField;
 
 	/**
 	 * Launch the application.
@@ -756,7 +757,7 @@ public class Manage_Tags {
 					}else{
 					Connection con = DBConnection.connect();
 					
-					String query="Update Tag set Name='"+textField_2.getText()+"',tagcode ='"+textField_3.getText()+"',relatedtag ='"+comboBox.getSelectedItem()+"'where tagcode='"+textField_3.getText()+"' ";//spinner_1
+					String query="Update Tag set Name='"+textField_2.getText()+"',tagcode ='"+textField_3.getText()+"',relatedtag ='"+comboBox.getSelectedItem()+"'where TagID='"+textField.getText()+"' ";//spinner_1
 					PreparedStatement pst=con.prepareStatement(query);
 					pst.executeUpdate();
 					JOptionPane.showMessageDialog(null, "Data Updated");
@@ -904,5 +905,14 @@ public class Manage_Tags {
 		panel_3.setBackground(Color.DARK_GRAY);
 		panel_3.setBounds(340, 325, 469, 157);
 		frame.getContentPane().add(panel_3);
+		
+		textField = new JTextField();
+		textField.setBackground(SystemColor.activeCaption);
+		textField.setForeground(SystemColor.menu);
+		textField.setEnabled(false);
+		textField.setEditable(false);
+		textField.setColumns(10);
+		textField.setBounds(268, 476, 636, 6);
+		frame.getContentPane().add(textField);
 	}
 }
