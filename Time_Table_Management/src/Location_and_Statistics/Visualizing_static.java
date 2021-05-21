@@ -601,21 +601,7 @@ public class Visualizing_static {
 		JMenu mnNewMenu_5 = new JMenu("Location & Statistics");
 		mnNewMenu.add(mnNewMenu_5);
 		
-		JMenuItem mntmNewMenuItem_18 = new JMenuItem("Add Locations Sessions");
-		
-		mntmNewMenuItem_18.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Add_Locations_Sessions addlocationssessions=new Add_Locations_Sessions();
-				Add_Locations_Sessions.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		
-		
-		mnNewMenu_5.add(mntmNewMenuItem_18);
+
 		
 		JMenuItem mntmNewMenuItem_19 = new JMenuItem("Add Locations");
 		
