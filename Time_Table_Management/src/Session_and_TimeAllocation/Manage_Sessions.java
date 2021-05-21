@@ -53,7 +53,7 @@ import Leactures_and_Subjects.Add_Subjects;
 import Leactures_and_Subjects.Manage_Lecturer;
 import Leactures_and_Subjects.Manage_Subjects;
 import Location_and_Statistics.Add_Locations;
-import Location_and_Statistics.Add_Locations_Sessions;
+
 import Location_and_Statistics.Manage_Locations;
 import Location_and_Statistics.Visualizing_static;
 import Students_and_Tags.Add_Student_Groups;
@@ -954,21 +954,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		JMenu mnNewMenu_5 = new JMenu("Location & Statistics");
 		mnNewMenu.add(mnNewMenu_5);
 		
-		JMenuItem mntmNewMenuItem_18 = new JMenuItem("Add Locations Sessions");
-		
-		mntmNewMenuItem_18.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent arg0) {
-				
-				Add_Locations_Sessions addlocationssessions=new Add_Locations_Sessions();
-				Add_Locations_Sessions.main(null);
-				frame.setVisible(false);
-				
-			}
-			
-		});
-		
-		
-		mnNewMenu_5.add(mntmNewMenuItem_18);
+
 		
 		JMenuItem mntmNewMenuItem_19 = new JMenuItem("Add Locations");
 		

@@ -30,7 +30,7 @@ import DBC.DBConnection;
 import Home.Dashboard;
 import Home.StartUp;
 import Location_and_Statistics.Add_Locations;
-import Location_and_Statistics.Add_Locations_Sessions;
+
 import Location_and_Statistics.Manage_Locations;
 import Location_and_Statistics.Visualizing_static;
 import Session_and_TimeAllocation.Add_Session;
