@@ -240,6 +240,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				while(rs.next())
 				{
 					String name =rs.getString("G_ID");
+					groupBox.addItem(name);
 					grpId.addItem(name);
 					 
 				}
@@ -264,8 +265,9 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				while(rs.next())
 				{
 					String name =rs.getString("Sub_G_ID");
+					
+					
 					grpId.addItem(name);
-					groupBox.addItem(name);
 					 
 				}
 
