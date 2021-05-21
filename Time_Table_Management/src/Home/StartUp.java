@@ -75,7 +75,7 @@ public class StartUp {
 		lblNewLabel_2.setBounds(66, 217, 564, 49);
 		frame.getContentPane().add(lblNewLabel_2);
 		
-		JButton btnNewButton = new JButton("LAUNCH APPLICATION ");
+		JButton btnNewButton = new JButton("LAUNCH APPLICATION >>>");
 		
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -88,10 +88,10 @@ public class StartUp {
 			
 		});
 		
-		btnNewButton.setBackground(new Color(51, 51, 153));
-		btnNewButton.setForeground(new Color(255, 255, 255));
+		btnNewButton.setBackground(Color.WHITE);
+		btnNewButton.setForeground(new Color(0, 0, 139));
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 15));
-		btnNewButton.setBounds(368, 467, 230, 27);
+		btnNewButton.setBounds(346, 451, 266, 43);
 		frame.getContentPane().add(btnNewButton);
 		
 		JLabel lblNewLabel_1 = new JLabel("Time Table Management System.");
