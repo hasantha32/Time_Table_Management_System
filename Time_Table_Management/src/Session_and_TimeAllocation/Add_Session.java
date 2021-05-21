@@ -486,7 +486,7 @@ public class Add_Session {
 					JOptionPane.showMessageDialog(null, "Please Generate Session Signature.","Alert",JOptionPane.WARNING_MESSAGE);
 
 				}else if(lec1.getSelectedItem().toString().equals(lec2.getSelectedItem().toString())){
-					JOptionPane.showMessageDialog(null, "Select a different lecturer for lecturer 2");
+					JOptionPane.showMessageDialog(null, "Select a different lecturer for lecturer 2","Alert",JOptionPane.WARNING_MESSAGE);
 					
 				}
 				
@@ -495,7 +495,7 @@ public class Add_Session {
 					try {
 
 						if(lec1.getSelectedItem().toString().equals(lecrs) || subname.getSelectedItem().equals(namer) || txtSubcod.getText().equals("") ||tag.getSelectedItem().toString().equals(tagr)||groupId.getSelectedItem().toString().equals(grpidr)|| duration.getValue().equals(0)||students.getValue().equals(0)) {
-							JOptionPane.showMessageDialog(null, "       Please Fill All the Fields","Failed",JOptionPane.WARNING_MESSAGE);
+							JOptionPane.showMessageDialog(null, "      Please Fill All the Fields","Failed",JOptionPane.WARNING_MESSAGE);
 
 						}else {
 							
@@ -516,6 +516,7 @@ public class Add_Session {
 
 
 							// JOptionPane.showMessageDialog(btnNewButton, "This is alredy exist");
+							
 						} else {
 							//JOptionPane.showMessageDialog(btnNewButton,"Welcome, Student Group details successfully inserted!");
 
