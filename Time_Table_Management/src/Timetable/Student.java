@@ -258,6 +258,7 @@ public class Student {
 		
 		
 		JPanel panel_7 = new JPanel();
+		panel_7.setBackground(Color.DARK_GRAY);
 		panel_7.setBounds(10, 10, 1059, 499);
 		panel_6.add(panel_7);
 		
@@ -356,6 +357,7 @@ public class Student {
 		fillSubGroupID();
 		
 		JLabel lblNewLabel = new JLabel("Group :");
+		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		lblNewLabel.setBounds(185, 18, 103, 30);
 		panel_7.add(lblNewLabel);

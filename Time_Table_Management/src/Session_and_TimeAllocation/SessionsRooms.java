@@ -177,7 +177,7 @@ public class SessionsRooms {
 		JLabel lblNewLabel = new JLabel("Select Session");
 		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 12));
-		lblNewLabel.setBounds(108, 79, 85, 13);
+		lblNewLabel.setBounds(25, 79, 85, 13);
 		srpanel_3.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Select Room");
@@ -259,14 +259,14 @@ public class SessionsRooms {
 		
 		session = new JComboBox();
 		session.setModel(new DefaultComboBoxModel(new String[] {"Select Session---------------"}));
-		session.setBounds(252, 76, 180, 21);
+		session.setBounds(120, 76, 332, 21);
 		srpanel_3.add(session);
 		
 		loadSession();
 		
 		sessionroom = new JComboBox();
 		sessionroom.setModel(new DefaultComboBoxModel(new String[] {"Select Room-------------"}));
-		sessionroom.setBounds(561, 76, 134, 21);
+		sessionroom.setBounds(561, 76, 185, 21);
 		srpanel_3.add(sessionroom);
 		
 		loadsessionRoom();

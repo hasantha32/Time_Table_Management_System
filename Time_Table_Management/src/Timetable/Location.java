@@ -223,6 +223,7 @@ public class Location {
 		
 		
 		JPanel panel_7 = new JPanel();
+		panel_7.setBackground(Color.DARK_GRAY);
 		panel_7.setLayout(null);
 		panel_7.setBounds(10, 32, 1059, 499);
 		panel_6.add(panel_7);
@@ -281,6 +282,7 @@ public class Location {
 		panel_7.add(btnNewButton_3);
 		
 		JLabel lblNewLabel = new JLabel("Location :");
+		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		lblNewLabel.setBounds(137, 25, 93, 28);
 		panel_7.add(lblNewLabel);
