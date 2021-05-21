@@ -273,7 +273,7 @@ public class SessionsRooms {
 		
 		//addsessionroom button
 		JButton btnNewButton = new JButton("Add SessionRooms");
-		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnNewButton.setForeground(Color.RED);
 		btnNewButton.setBackground(Color.BLACK);
 		btnNewButton.addActionListener(new ActionListener() {
@@ -290,18 +290,20 @@ public class SessionsRooms {
 		
 		//add consession button
 		JButton btnNewButton_2 = new JButton("Add ConsecutiveSessionsRooms");
-		btnNewButton_2.setFont(new Font("Tahoma", Font.BOLD, 14));
+		btnNewButton_2.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnNewButton_2.setForeground(Color.WHITE);
 		btnNewButton_2.setBackground(new Color(0, 0, 0));
+		
 		btnNewButton_2.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				//ConsecutiveSessionRooms add_con = new ConsecutiveSessionRooms();
-				//add_con.main(null);
-				rframe.dispose();
-				new ConsecutiveSessionRooms();
-			
-			}
-		});
+				public void actionPerformed(ActionEvent arg0) {
+					
+					ConsecutiveSessionRooms con_sessionrooms=new ConsecutiveSessionRooms();
+					ConsecutiveSessionRooms.main(null);
+					rframe.setVisible(false);
+					
+				}
+				
+			});
 		btnNewButton_2.setBounds(1, 366, 251, 38);
 		rframe.getContentPane().add(btnNewButton_2);
 		

@@ -264,14 +264,18 @@ public class ConsecutiveSessionRooms {
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 13));
 		btnNewButton.setBackground(Color.BLACK);
 		btnNewButton.setForeground(Color.WHITE);
+		
+			
 		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				//ManageSessionsRooms manage_ro = new ManageSessionsRooms();
-				//manage_ro.main(null);
-				crframe.dispose();
-				new SessionsRooms();
-			}
-		});
+				public void actionPerformed(ActionEvent arg0) {
+					
+					SessionsRooms sessionrooms=new SessionsRooms();
+					SessionsRooms.main(null);
+					crframe.setVisible(false);
+					
+				}
+				
+			});
 		btnNewButton.setBounds(0, 319, 252, 39);
 		crframe.getContentPane().add(btnNewButton);
 		
