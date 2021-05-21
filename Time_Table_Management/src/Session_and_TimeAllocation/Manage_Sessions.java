@@ -1494,6 +1494,23 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		//Update Session details
 		btnEdit.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
+				String signature =sign.getText();
+				
+				String lect1 = lecr1.getSelectedItem().toString();
+				String lect2 = lecr2.getSelectedItem().toString();
+				//
+				if(sign.getText().equals("")) {
+					
+					JOptionPane.showMessageDialog(null, "Please click a table row!,Then click update button.","Alert",JOptionPane.WARNING_MESSAGE);
+
+				}else if(lecr1.getSelectedItem().toString().equals(lecr2.getSelectedItem().toString())){
+					JOptionPane.showMessageDialog(null, "Select a different lecturer for lecturer 2","Alert",JOptionPane.WARNING_MESSAGE);
+					
+				}
+				
+				else {
+				//
 				try { 
 
 
@@ -1518,7 +1535,7 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 				} catch(Exception ea) {
 					ea.printStackTrace(); 
 				}
-				
+				}
 			}
 		});
 		
