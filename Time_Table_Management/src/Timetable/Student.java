@@ -371,7 +371,17 @@ public class Student {
 		
 		
 		//lecturer button
-		JButton btnNewButton_2_1 = new JButton("Lecture");
+		JButton btnNewButton_2_1 = new JButton("Lecturer");
+		btnNewButton_2_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Lecturer timetable=new Lecturer();
+				Lecturer.main(null);
+				frmAddStudentGroup.setVisible(false);
+				
+			}
+			
+		});
 		btnNewButton_2_1.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnNewButton_2_1.setForeground(Color.WHITE);
 		btnNewButton_2_1.setBackground(Color.BLACK);
@@ -390,6 +400,16 @@ public class Student {
 		
 		//location button
 		JButton btnNewButton_2_1_2 = new JButton("Location");
+		btnNewButton_2_1_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Location timetable=new Location();
+				Location.main(null);
+				frmAddStudentGroup.setVisible(false);
+				
+			}
+			
+		});
 		
 		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnNewButton_2_1_2.setForeground(Color.WHITE);
@@ -451,7 +471,7 @@ public class Student {
 		mnNewMenu_1.setBackground(new Color(128, 128, 128));
 		mnNewMenu.add(mnNewMenu_1);
 		
-		JMenuItem mntmNewMenuItem = new JMenuItem("Add Lecture");
+		JMenuItem mntmNewMenuItem = new JMenuItem("Add Lecturer");
 		mntmNewMenuItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
