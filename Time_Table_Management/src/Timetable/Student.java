@@ -227,7 +227,7 @@ public class Student {
 	
 		
 		frmAddStudentGroup.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
-		frmAddStudentGroup.setVisible(true);
+		//frmAddStudentGroup.setVisible(true);
 		
 		
 		
@@ -390,6 +390,7 @@ public class Student {
 		
 		//location button
 		JButton btnNewButton_2_1_2 = new JButton("Location");
+		
 		btnNewButton_2_1_2.setFont(new Font("Arial Black", Font.BOLD, 11));
 		btnNewButton_2_1_2.setForeground(Color.WHITE);
 		btnNewButton_2_1_2.setBackground(Color.BLACK);

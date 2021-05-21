@@ -116,7 +116,7 @@ public class Manage_Tags {
 		frame.setBounds(100, 100, 960, 635);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
-		
+		frame.setLocationRelativeTo(null); //this method display the JFrame to center position of a screen
 		
 		
 		

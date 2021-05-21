@@ -220,7 +220,7 @@ public class Lecturer {
 		
 		
 		frmAddStudentGroup_1.setLocationRelativeTo(null); // this method display the JFrame to center position of a screen
-		frmAddStudentGroup_1.setVisible(true);
+		//frmAddStudentGroup_1.setVisible(true);
 		
 		
 		

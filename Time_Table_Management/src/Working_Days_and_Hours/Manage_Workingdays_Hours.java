@@ -110,7 +110,7 @@ public class Manage_Workingdays_Hours {
 		lblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 14));
 		lblNewLabel_1.setBounds(228, 238, 141, 20);
 		frame.getContentPane().add(lblNewLabel_1);
-		
+		frame.setLocationRelativeTo(null); //this method display the JFrame to center position of a screen
 		
 		
 		
