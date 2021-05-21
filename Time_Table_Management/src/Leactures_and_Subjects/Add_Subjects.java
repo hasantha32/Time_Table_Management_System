@@ -193,24 +193,24 @@ public class Add_Subjects {
 		
 		 spinner_1 = new JSpinner();
 		spinner_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		spinner_1.setModel(new SpinnerNumberModel(1, 1, 10, 1));
+		spinner_1.setModel(new SpinnerNumberModel(1, 0, 10, 1));
 		spinner_1.setBounds(572, 197, 144, 33);
 		panel_3.add(spinner_1);
 		
 		spinner_1_1 = new JSpinner();
-		spinner_1_1.setModel(new SpinnerNumberModel(1, 1, 10, 1));
+		spinner_1_1.setModel(new SpinnerNumberModel(1, 0, 10, 1));
 		spinner_1_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		spinner_1_1.setBounds(572, 144, 144, 33);
 		panel_3.add(spinner_1_1);
 		
 		 spinner_1_2 = new JSpinner();
-		spinner_1_2.setModel(new SpinnerNumberModel(1, 1, 10, 1));
+		spinner_1_2.setModel(new SpinnerNumberModel(1, 0, 10, 1));
 		spinner_1_2.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		spinner_1_2.setBounds(572, 98, 144, 33);
 		panel_3.add(spinner_1_2);
 		
 		 spinner_1_3 = new JSpinner();
-		spinner_1_3.setModel(new SpinnerNumberModel(1, 1, 10, 1));
+		spinner_1_3.setModel(new SpinnerNumberModel(1, 0, 10, 1));
 		spinner_1_3.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		spinner_1_3.setBounds(572, 53, 144, 33);
 		panel_3.add(spinner_1_3);

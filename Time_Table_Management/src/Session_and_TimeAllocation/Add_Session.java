@@ -258,14 +258,14 @@ public class Add_Session {
 		AddsessFrm.getContentPane().setForeground(SystemColor.activeCaption);
 		AddsessFrm.getContentPane().setBackground(SystemColor.activeCaption);
 		AddsessFrm.setBackground(Color.YELLOW);
-		AddsessFrm.setResizable(false);
+		//AddsessFrm.setResizable(false);
 		AddsessFrm.setTitle("Add Session");
 		AddsessFrm.setSize(1400, 860);
 		AddsessFrm.setBounds(0, 0, 1350, 700);
 		AddsessFrm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		AddsessFrm.getContentPane().setLayout(null);
-		AddsessFrm.setLocationRelativeTo(null);
-		AddsessFrm.setVisible(true);
+		//AddsessFrm.setLocationRelativeTo(null);
+		//AddsessFrm.setVisible(true);
 
 		JPanel panel_2 = new JPanel();
 		panel_2.setForeground(SystemColor.activeCaption);

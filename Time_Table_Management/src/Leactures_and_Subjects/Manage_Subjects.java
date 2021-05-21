@@ -127,7 +127,7 @@ public class Manage_Subjects {
 		JSpinner spinner = new JSpinner();
 		spinner.setForeground(Color.BLACK);
 		spinner.setFont(new Font("Times New Roman", Font.BOLD, 16));
-		spinner.setModel(new SpinnerNumberModel(1, 1, 20, 1));
+		spinner.setModel(new SpinnerNumberModel(1, 0, 20, 1));
 		spinner.setBounds(626, 284, 144, 33);
 		panel_3.add(spinner);
 		
@@ -263,21 +263,21 @@ public class Manage_Subjects {
 		panel_3.add(comboBox_2);
 		
 		 spinner_1 = new JSpinner();
-		spinner_1.setModel(new SpinnerNumberModel(1, 1, 20, 1));
+		spinner_1.setModel(new SpinnerNumberModel(1, 0, 20, 1));
 		spinner_1.setForeground(Color.BLACK);
 		spinner_1.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		spinner_1.setBounds(626, 333, 144, 31);
 		panel_3.add(spinner_1);
 		
 		 spinner_2 = new JSpinner();
-		spinner_2.setModel(new SpinnerNumberModel(1, 1, 20, 1));
+		spinner_2.setModel(new SpinnerNumberModel(1, 0, 20, 1));
 		spinner_2.setForeground(Color.BLACK);
 		spinner_2.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		spinner_2.setBounds(626, 382, 144, 33);
 		panel_3.add(spinner_2);
 		
 		 spinner_3 = new JSpinner();
-		spinner_3.setModel(new SpinnerNumberModel(1, 1, 20, 1));
+		spinner_3.setModel(new SpinnerNumberModel(1, 0, 20, 1));
 		spinner_3.setForeground(Color.BLACK);
 		spinner_3.setFont(new Font("Times New Roman", Font.BOLD, 16));
 		spinner_3.setBounds(626, 434, 144, 33);
