@@ -17,6 +17,7 @@ import javax.swing.JList;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JLabel;
 import javax.swing.JSpinner;
 import javax.swing.JComboBox;
@@ -52,6 +53,8 @@ import java.sql.ResultSet;
 import java.awt.event.ActionEvent;
 import javax.swing.JPanel;
 import java.awt.SystemColor;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class Manage_Not_Available_Times {
 
@@ -612,6 +615,22 @@ public class Manage_Not_Available_Times {
 		frame.getContentPane().add(scrollPane);
 		
 		table = new JTable();
+		table.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				
+				
+				
+				  int selectedRow=table.getSelectedRow();
+					
+					
+					//textField.setText(table.getValueAt(selectedRow, 1).toString());
+	                
+	                textField_1.setText(table.getValueAt(selectedRow,0).toString());
+				
+				
+			}
+		});
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
 				{null, null, null, null, null, null, null},
@@ -641,32 +660,6 @@ public class Manage_Not_Available_Times {
 		table.getColumnModel().getColumn(4).setPreferredWidth(76);
 		table.getColumnModel().getColumn(5).setPreferredWidth(67);
 		scrollPane.setViewportView(table);
-		
-		JButton btnManageNotAvailable = new JButton("MANAGE NOT AVAILABLE TIMES");
-		btnManageNotAvailable.setForeground(Color.RED);
-		btnManageNotAvailable.setFont(new Font("Arial Black", Font.BOLD, 11));
-		btnManageNotAvailable.setBackground(Color.BLACK);
-		btnManageNotAvailable.setBounds(0, 300, 265, 35);
-		frame.getContentPane().add(btnManageNotAvailable);
-		
-		JButton btnManageSessionRooms = new JButton("MANAGE SESSION ROOMS");
-		btnManageSessionRooms.setForeground(Color.WHITE);
-		btnManageSessionRooms.setFont(new Font("Arial Black", Font.BOLD, 11));
-		btnManageSessionRooms.setBackground(Color.BLACK);
-		btnManageSessionRooms.setBounds(0, 334, 265, 29);
-		frame.getContentPane().add(btnManageSessionRooms);
-		
-		JButton btnManageSessions = new JButton("MANAGE SESSIONS");
-		btnManageSessions.setForeground(Color.WHITE);
-		btnManageSessions.setFont(new Font("Arial Black", Font.BOLD, 11));
-		btnManageSessions.setBackground(Color.BLACK);
-		btnManageSessions.setBounds(0, 360, 265, 35);
-		frame.getContentPane().add(btnManageSessions);
-		
-		JPanel panel_1 = new JPanel();
-		panel_1.setBackground(Color.GRAY);
-		panel_1.setBounds(0, 393, 265, 128);
-		frame.getContentPane().add(panel_1);
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.GRAY);
@@ -703,7 +696,7 @@ public class Manage_Not_Available_Times {
 		
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setBackground(Color.GRAY);
-		panel_1_1.setBounds(0, 113, 265, 192);
+		panel_1_1.setBounds(0, 113, 265, 408);
 		frame.getContentPane().add(panel_1_1);
 		
 		txtManageNotAvailable = new JTextField();
@@ -731,6 +724,36 @@ public class Manage_Not_Available_Times {
 		frame.getContentPane().add(panel_2_1);
 		
 		JButton btnDelete = new JButton("Delete");
+		
+		
+		
+		btnDelete.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+	
+				
+				try {
+					if(textField_1.getText().equals("")){
+						JOptionPane.showMessageDialog(null, "PLEASE SELECT A SUBJECT");
+					}else {
+					Connection con = DBConnection.connect();
+					
+					String query="Delete from roomSession where sessionRoomID='"+textField_1.getText()+"'";
+					PreparedStatement pst=con.prepareStatement(query);
+					pst.executeUpdate();
+					JOptionPane.showMessageDialog(null, " Deleted");
+					pst.close();
+					}
+					
+				}
+				catch(Exception q) {
+					q.printStackTrace();
+				}
+				
+	
+				
+			}
+		});
 		btnDelete.setBounds(629, 508, 132, 35);
 		frame.getContentPane().add(btnDelete);
 		btnDelete.setForeground(Color.WHITE);
