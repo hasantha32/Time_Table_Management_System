@@ -39,7 +39,7 @@ import Location_and_Statistics.Manage_Locations;
 import Location_and_Statistics.Visualizing_static;
 import Session_and_TimeAllocation.Add_Session;
 import Session_and_TimeAllocation.ConsecutiveSessionRooms;
-import Session_and_TimeAllocation.Manage_Not_Available_Times;
+import Session_and_TimeAllocation.Manage_Session_Rooms;
 
 import Session_and_TimeAllocation.Manage_Sessions;
 import Session_and_TimeAllocation.Not_Available_Time;
@@ -212,8 +212,8 @@ public class Manage_Student_Groups {
 		mntmNewMenuItem_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				Manage_Not_Available_Times manage_Not_Available_Times=new Manage_Not_Available_Times();
-				Manage_Not_Available_Times.main(null);
+				Manage_Session_Rooms manage_Not_Available_Times=new Manage_Session_Rooms();
+				Manage_Session_Rooms.main(null);
 				frame.setVisible(false);
 				
 			}

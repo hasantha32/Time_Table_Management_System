@@ -56,7 +56,7 @@ import java.awt.SystemColor;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class Manage_Not_Available_Times {
+public class Manage_Session_Rooms {
 
 	private JFrame frame;
 	private JLabel lblNewLabel_5;
@@ -73,7 +73,7 @@ public class Manage_Not_Available_Times {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Manage_Not_Available_Times window = new Manage_Not_Available_Times();
+					Manage_Session_Rooms window = new Manage_Session_Rooms();
 					window.frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -85,7 +85,7 @@ public class Manage_Not_Available_Times {
 	/**
 	 * Create the application.
 	 */
-	public Manage_Not_Available_Times() {
+	public Manage_Session_Rooms() {
 		initialize();
 	}
 
@@ -195,8 +195,8 @@ public class Manage_Not_Available_Times {
 		mntmNewMenuItem_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				Manage_Not_Available_Times manage_Not_Available_Times=new Manage_Not_Available_Times();
-				Manage_Not_Available_Times.main(null);
+				Manage_Session_Rooms manage_Not_Available_Times=new Manage_Session_Rooms();
+				Manage_Session_Rooms.main(null);
 				frame.setVisible(false);
 				
 			}
@@ -686,7 +686,7 @@ public class Manage_Not_Available_Times {
 		frame.getContentPane().add(panel_1_1);
 		
 		txtManageNotAvailable = new JTextField();
-		txtManageNotAvailable.setText("                                              MANAGE NOT AVAILABLE TIMES");
+		txtManageNotAvailable.setText("                                                     MANAGE SESSION ROOMS");
 		txtManageNotAvailable.setForeground(Color.RED);
 		txtManageNotAvailable.setFont(new Font("Arial Black", Font.BOLD, 19));
 		txtManageNotAvailable.setColumns(10);

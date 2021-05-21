@@ -742,8 +742,8 @@ String query="select sessionID As SID, lec1 As Lecturer1,lec2 As Lecturer2,subCo
 		mntmNewMenuItem_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				Manage_Not_Available_Times manage_Not_Available_Times=new Manage_Not_Available_Times();
-				Manage_Not_Available_Times.main(null);
+				Manage_Session_Rooms manage_Not_Available_Times=new Manage_Session_Rooms();
+				Manage_Session_Rooms.main(null);
 				ManageSesFrm.setVisible(false);
 				
 			}

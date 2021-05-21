@@ -827,8 +827,8 @@ public class Add_Session {
 		mntmNewMenuItem_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				Manage_Not_Available_Times manage_Not_Available_Times=new Manage_Not_Available_Times();
-				Manage_Not_Available_Times.main(null);
+				Manage_Session_Rooms manage_Not_Available_Times=new Manage_Session_Rooms();
+				Manage_Session_Rooms.main(null);
 				AddsessFrm.setVisible(false);
 				
 			}

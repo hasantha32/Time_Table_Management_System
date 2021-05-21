@@ -285,7 +285,7 @@ public class SessionsRooms {
 				
 			}
 		});
-		btnNewButton.setBounds(1, 329, 251, 38);
+		btnNewButton.setBounds(1, 329, 245, 38);
 		rframe.getContentPane().add(btnNewButton);
 		
 		//add consession button
@@ -304,7 +304,7 @@ public class SessionsRooms {
 				}
 				
 			});
-		btnNewButton_2.setBounds(1, 366, 251, 38);
+		btnNewButton_2.setBounds(1, 406, 245, 38);
 		rframe.getContentPane().add(btnNewButton_2);
 		
 		JPanel panel_1 = new JPanel();
@@ -314,7 +314,7 @@ public class SessionsRooms {
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(Color.GRAY);
-		panel.setBounds(0, 403, 252, 189);
+		panel.setBounds(0, 442, 252, 150);
 		rframe.getContentPane().add(panel);
 		
 		JPanel panel_2 = new JPanel();
@@ -441,8 +441,8 @@ public class SessionsRooms {
 		mntmNewMenuItem_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				
-				Manage_Not_Available_Times manage_Not_Available_Times=new Manage_Not_Available_Times();
-				Manage_Not_Available_Times.main(null);
+				Manage_Session_Rooms manage_Not_Available_Times=new Manage_Session_Rooms();
+				Manage_Session_Rooms.main(null);
 				frame.setVisible(false);
 				
 			}
@@ -797,6 +797,23 @@ public class SessionsRooms {
 		});
 		
 		mnNewMenu_7.add(mntmNewMenuItem_22);
+		
+		JButton btnManageSessionrooms = new JButton("Manage SessionRooms");
+		btnManageSessionrooms.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				Manage_Session_Rooms managelecture=new Manage_Session_Rooms();
+				Manage_Session_Rooms.main(null);
+				rframe.setVisible(false);
+				
+			}
+			
+		});
+		btnManageSessionrooms.setForeground(Color.WHITE);
+		btnManageSessionrooms.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnManageSessionrooms.setBackground(Color.BLACK);
+		btnManageSessionrooms.setBounds(1, 368, 245, 38);
+		rframe.getContentPane().add(btnManageSessionrooms);
 		
 		
 		
