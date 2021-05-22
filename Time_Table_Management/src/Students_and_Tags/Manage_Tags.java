@@ -755,6 +755,7 @@ public class Manage_Tags {
 						JOptionPane.showMessageDialog(null, "Please fill the form");
 						
 					}else{
+						
 					Connection con = DBConnection.connect();
 					
 					String query="Update Tag set Name='"+textField_2.getText()+"',tagcode ='"+textField_3.getText()+"',relatedtag ='"+comboBox.getSelectedItem()+"'where TagID='"+textField.getText()+"' ";//spinner_1
@@ -869,6 +870,7 @@ public class Manage_Tags {
 				
 	            try {
 	            	String sql="Select * from Tag ";
+	            	
 					pst=conn.prepareStatement(sql);
 					
 					rs=pst.executeQuery();

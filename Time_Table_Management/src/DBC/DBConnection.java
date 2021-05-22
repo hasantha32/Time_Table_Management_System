@@ -15,6 +15,7 @@ public class DBConnection {
 	         Connection conn = null;
 	        try{
 	        	Class.forName("org.sqlite.JDBC");
+	        	
 				conn=DriverManager.getConnection("jdbc:sqlite:ITPM.db");
 	            System.out.println("Connected!");
 	        }catch(Exception e){
