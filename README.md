@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-# Time_Table_Management_System
-Time Table Management Project in Java
-=======
-Time_Table_Management_System in JAVA
-=====
+
 >>>>>>> =======
 >>>>>>> >>>>>>> >>>>>>> >>>>>>> =======
-
 
 Time_Table_Management_System in JAVA
 =====
