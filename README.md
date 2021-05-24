@@ -1,4 +1,7 @@
 
+
+TIME TABLE MANAGEMENT
+==
 >>>>>>> JAVA PROJECT  ![visitors](https://visitor-badge.glitch.me/badge?page_id=hasantha32.hasantha32)      
 >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> =
 >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>>
@@ -9,14 +12,5 @@
 >>>>>>> =====
 >>>>>>> branch 'main' of https://github.com/hasantha32/Time_Table_Management_System.git
 >>>>>>> >>>>>>> TIME TABLE MANAGEMENT
->>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> ========
+>>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> ============
 
-TIME TABLE MANAGEMENT
-==
->>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> =
->>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>>
-
-JAVA PROJECT
-==
-
->>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> ======
