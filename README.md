@@ -10,3 +10,13 @@
 >>>>>>> branch 'main' of https://github.com/hasantha32/Time_Table_Management_System.git
 >>>>>>> >>>>>>> TIME TABLE MANAGEMENT
 >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> ========
+
+TIME TABLE MANAGEMENT
+==
+>>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> =
+>>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>>
+
+JAVA PROJECT
+==
+
+>>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> ======
