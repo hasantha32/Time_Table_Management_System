@@ -14,3 +14,11 @@ TIME TABLE MANAGEMENT
 >>>>>>> >>>>>>> TIME TABLE MANAGEMENT
 >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>> >>>>>>>============
 
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.timetable management({div:'#foo'})
+  }
+}
+```
+ >>>>>>> >>>>>>> ==
