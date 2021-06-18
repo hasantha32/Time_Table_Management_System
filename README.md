@@ -17,7 +17,7 @@ TIME TABLE MANAGEMENT
 ```javascript
 function fancyAlert(arg) {
   if(arg) {
-    $.timetable management ayatem({div:'#foo'})
+    $.timetable management syatem({div:'#foo'})
   }
 }
 ```
